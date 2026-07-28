@@ -1,48 +1,10 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { CATEGORIES, heroLeatherRolls, leatherSwatchesStacked, aboutInteriorDining } from '../data/mockData';
+import { CATEGORIES, FEATURED_COLLECTIONS } from '../data/mockData';
 
 interface CollectionsSectionProps {
   onSelectCollection: (colId: string) => void;
 }
-
-const FEATURED_COLLECTIONS_MOCK = [
-  {
-    id: 'milano',
-    title: 'MILANO',
-    subtitle: 'COLLECTION',
-    designs: '30 Designs',
-    image: heroLeatherRolls,
-  },
-  {
-    id: 'supreme',
-    title: 'SUPREME',
-    subtitle: 'COLLECTION',
-    designs: '28 Designs',
-    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=800&auto=format&fit=crop',
-  },
-  {
-    id: 'royal',
-    title: 'ROYAL',
-    subtitle: 'COLLECTION',
-    designs: '32 Designs',
-    image: aboutInteriorDining,
-  },
-  {
-    id: 'elite',
-    title: 'ELITE',
-    subtitle: 'COLLECTION',
-    designs: '26 Designs',
-    image: leatherSwatchesStacked,
-  },
-  {
-    id: 'signature',
-    title: 'SIGNATURE',
-    subtitle: 'COLLECTION',
-    designs: '29 Designs',
-    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800&auto=format&fit=crop',
-  },
-];
 
 export const CollectionsSection: React.FC<CollectionsSectionProps> = ({
   onSelectCollection,
@@ -88,17 +50,17 @@ export const CollectionsSection: React.FC<CollectionsSectionProps> = ({
               FEATURED COLLECTIONS
             </h2>
 
-            <a
-              href="#collections"
-              className="font-button text-xs font-bold text-[#C67C4E] hover:underline uppercase tracking-wider flex items-center gap-1.5 transition-colors"
+            <button
+              onClick={() => onSelectCollection('all')}
+              className="font-button text-xs font-bold text-[#C67C4E] hover:underline uppercase tracking-wider flex items-center gap-1.5 transition-colors cursor-pointer"
             >
               <span>VIEW ALL</span>
               <ArrowRight className="w-3.5 h-3.5" />
-            </a>
+            </button>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {FEATURED_COLLECTIONS_MOCK.map((col) => (
+            {FEATURED_COLLECTIONS.map((col) => (
               <div
                 key={col.id}
                 onClick={() => onSelectCollection(col.id)}

@@ -120,6 +120,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/about" className="hover:text-white transition-colors">Certifications</Link></li>
               <li><Link to="/about" className="hover:text-white transition-colors">Sustainability</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+              <li><Link to="/sitemap" className="hover:text-[#C67C4E] font-bold transition-colors">Sitemap</Link></li>
             </ul>
           </div>
 
@@ -179,6 +180,8 @@ export const Footer: React.FC = () => {
           <p>© 2026 Rexine Centre. All rights reserved.</p>
 
           <div className="flex flex-wrap items-center gap-4">
+            <Link to="/sitemap" className="hover:text-white transition-colors font-semibold text-gray-300">Sitemap</Link>
+            <span>|</span>
             <Link to="/contact" className="hover:text-white transition-colors">Privacy Policy</Link>
             <span>|</span>
             <Link to="/contact" className="hover:text-white transition-colors">Terms & Conditions</Link>

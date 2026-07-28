@@ -4,7 +4,12 @@ export interface Product {
   name: string;
   category: string;
   subCategory?: string;
-  rrp: number;
+  collectionId?: string;
+  collectionName?: string;
+  bookId?: string;
+  bookTitle?: string;
+  shadeName?: string;
+  rrp: number; // Retail Price ONLY
   unit: string;
   description: string;
   image: string;
@@ -16,10 +21,32 @@ export interface Product {
     finish?: string;
     gsm?: string;
     rollLength?: string;
+    abrasion?: string;
   };
   featured?: boolean;
   isNew?: boolean;
   inStock?: boolean;
+}
+
+export interface BrandCollection {
+  id: string;
+  name: string;
+  tagline: string;
+  description: string;
+  image: string;
+  accentColor?: string;
+  totalBooks: number;
+}
+
+export interface FeaturedCollection {
+  id: string;
+  title: string;
+  subtitle: string;
+  tagline: string;
+  description: string;
+  designs: string;
+  image: string;
+  accentColor?: string;
 }
 
 export interface CategoryItem {
@@ -35,10 +62,21 @@ export interface SampleBook {
   id: string;
   code: string;
   name: string;
+  collectionId: string;
+  collectionName: string;
+  category: string;
+  year: string;
+  description: string;
   totalSwatches: number;
   coverImage: string;
-  category: string;
   qrCodeUrl: string;
+  specs?: {
+    thickness?: string;
+    width?: string;
+    backing?: string;
+    finish?: string;
+    targetUse?: string;
+  };
 }
 
 export interface IndustryItem {

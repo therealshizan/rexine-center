@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { HeroBanner } from '../components/HeroBanner';
 import { HighlightsBar } from '../components/HighlightsBar';
 import { SearchSection } from '../components/SearchSection';
@@ -27,6 +28,8 @@ export const HomePage: React.FC<HomePageProps> = ({
   onSelectProduct,
   onSelectApplication,
 }) => {
+  const navigate = useNavigate();
+
   return (
     <div>
       {/* 1. Hero Banner */}
@@ -47,7 +50,11 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* 4. Rexine Collections */}
       <CollectionsSection
         onSelectCollection={(colId) => {
-          // handled in parent or navigate
+          if (colId === 'all') {
+            navigate('/collections');
+          } else {
+            navigate(`/collections?category=${colId}`);
+          }
         }}
       />
 

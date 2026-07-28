@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import { ChevronRight, ArrowRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import heroLeatherFolds from '../assets/images/hero_leather_folds_1785161428952.jpg';
 import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.jpg';
-import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
+import rexineCognacNappa from '../assets/images/rexine_cognac_nappa_1785227277160.jpg';
+import rexineBurgundyWine from '../assets/images/rexine_burgundy_wine_1785227406807.jpg';
+import rexineEmeraldGreen from '../assets/images/rexine_emerald_green_1785227447891.jpg';
+import rexineMidnightNavy from '../assets/images/rexine_midnight_navy_1785227463408.jpg';
+import rexineSlateCharcoal from '../assets/images/rexine_slate_charcoal_1785227428841.jpg';
 
 interface HeroBannerProps {
   onOpenBookScanner: () => void;
@@ -30,24 +34,40 @@ export const HERO_SLIDES = [
     title: 'COGNAC SILKY NAPPA FINISH.',
     description: 'Rich amber cognac upholstery hide engineered with supreme anti-peel & 100k-rub abrasion resistance.',
     button: 'VIEW COGNAC SWATCHES',
-    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1600&auto=format&fit=crop',
+    image: rexineCognacNappa,
     color: '#A66E38',
-    subtitle: 'Silky Nappa Finish',
+    subtitle: 'Silky Cognac Nappa',
   },
   {
     title: 'ROYAL BURGUNDY EMBOSSED.',
     description: 'Luxury deep wine red artificial leather folds for executive chairs, headboards, and accent walls.',
     button: 'REQUEST SAMPLE BINDER',
-    image: leatherSwatchesStacked,
+    image: rexineBurgundyWine,
     color: '#581825',
-    subtitle: 'Royal Wine Red',
+    subtitle: 'Royal Wine Burgundy',
+  },
+  {
+    title: 'EMERALD FOREST METALLIC.',
+    description: 'Deep emerald forest green embossed leatherette roll with metallic sheen for automotive & interior accents.',
+    button: 'EXPLORE EMERALD',
+    image: rexineEmeraldGreen,
+    color: '#1E4D3A',
+    subtitle: 'Emerald Forest Grain',
+  },
+  {
+    title: 'MIDNIGHT NAVY LUXURY GRADE.',
+    description: 'Premium navy blue leatherette engineered for marine upholstery, executive seating, and commercial decor.',
+    button: 'VIEW NAVY SWATCHES',
+    image: rexineMidnightNavy,
+    color: '#1E2A38',
+    subtitle: 'Midnight Navy Sheen',
   },
   {
     title: 'MODERN SLATE & CHARCOAL.',
     description: 'Contemporary dark slate texture for minimalist commercial spaces, pods, and luxury interiors.',
     button: 'EXPLORE BOOKS',
-    image: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1600&auto=format&fit=crop',
-    color: '#444444',
+    image: rexineSlateCharcoal,
+    color: '#383D42',
     subtitle: 'Modern Slate Texture',
   },
 ];

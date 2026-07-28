@@ -84,12 +84,51 @@ export const Navbar: React.FC<NavbarProps> = ({
             Home
           </NavLink>
 
-          <NavLink to="/collections" className={navLinkStyle}>
-            Collections
-          </NavLink>
+          {/* Collections with Dropdown */}
+          <div className="relative group py-2">
+            <NavLink to="/collections" className={navLinkStyle}>
+              <span className="flex items-center gap-1">
+                <span>Collections</span>
+                <ChevronDown className="w-3 h-3 text-gray-500 group-hover:rotate-180 transition-transform" />
+              </span>
+            </NavLink>
 
-          <NavLink to="/customizer" className={navLinkStyle}>
-            Books
+            {/* Submenu Dropdown */}
+            <div className="absolute top-full left-0 w-64 bg-white rounded-2xl shadow-xl border border-gray-200 p-3 hidden group-hover:block animate-fade-in z-50">
+              <div className="text-[9px] font-button font-bold text-gray-400 uppercase tracking-widest px-3 py-1 mb-1 border-b border-gray-100">
+                Featured Series
+              </div>
+              <Link to="/collections?category=milano" className="flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-gray-800 hover:bg-[#F8F6F2] hover:text-[#C67C4E] transition-colors">
+                <span>Milano Collection</span>
+                <span className="text-[9px] font-normal text-gray-400">Nappa</span>
+              </Link>
+              <Link to="/collections?category=supreme" className="flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-gray-800 hover:bg-[#F8F6F2] hover:text-[#C67C4E] transition-colors">
+                <span>Supreme Collection</span>
+                <span className="text-[9px] font-normal text-gray-400">Auto Grade</span>
+              </Link>
+              <Link to="/collections?category=royal" className="flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-gray-800 hover:bg-[#F8F6F2] hover:text-[#C67C4E] transition-colors">
+                <span>Royal Collection</span>
+                <span className="text-[9px] font-normal text-gray-400">Velvet</span>
+              </Link>
+              <Link to="/collections?category=elite" className="flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-gray-800 hover:bg-[#F8F6F2] hover:text-[#C67C4E] transition-colors">
+                <span>Elite Collection</span>
+                <span className="text-[9px] font-normal text-gray-400">PVC Sheets</span>
+              </Link>
+              <Link to="/collections?category=signature" className="flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-gray-800 hover:bg-[#F8F6F2] hover:text-[#C67C4E] transition-colors">
+                <span>Signature Collection</span>
+                <span className="text-[9px] font-normal text-gray-400">Quilted</span>
+              </Link>
+
+              <div className="mt-2 pt-2 border-t border-gray-100">
+                <Link to="/collections" className="block text-center py-2 text-[10px] font-bold text-[#C67C4E] hover:underline uppercase tracking-wider">
+                  View All Collections →
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <NavLink to="/books" className={navLinkStyle}>
+            Sample Books
           </NavLink>
 
           <NavLink to="/applications" className={navLinkStyle}>

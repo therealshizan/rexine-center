@@ -11,12 +11,15 @@ import { FloatingElements } from './components/FloatingElements';
 // Pages
 import { HomePage } from './pages/HomePage';
 import { CollectionsPage } from './pages/CollectionsPage';
+import { BooksPage } from './pages/BooksPage';
+import { BookDetailPage } from './pages/BookDetailPage';
 import { ApplicationsPage } from './pages/ApplicationsPage';
 import { CustomizerPage } from './pages/CustomizerPage';
 import { ResourcesPage } from './pages/ResourcesPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { CitiesSupplyPage } from './pages/CitiesSupplyPage';
+import { SitemapPage } from './pages/SitemapPage';
 
 // Modals & Drawers
 import { WishlistDrawer } from './components/WishlistDrawer';
@@ -143,6 +146,35 @@ function MainAppContent() {
               />
 
               <Route
+                path="/collections/:collectionId"
+                element={
+                  <CollectionsPage
+                    onSelectProduct={(p) => setDetailProduct(p)}
+                    onOpenEnquiry={handleOpenEnquiryWithProduct}
+                  />
+                }
+              />
+
+              <Route
+                path="/books"
+                element={
+                  <BooksPage
+                    onOpenEnquiry={handleOpenEnquiryWithProduct}
+                  />
+                }
+              />
+
+              <Route
+                path="/books/:bookId"
+                element={
+                  <BookDetailPage
+                    onSelectProduct={(p) => setDetailProduct(p)}
+                    onOpenEnquiry={handleOpenEnquiryWithProduct}
+                  />
+                }
+              />
+
+              <Route
                 path="/applications"
                 element={
                   <ApplicationsPage
@@ -193,6 +225,15 @@ function MainAppContent() {
                 path="/supply-locations"
                 element={
                   <CitiesSupplyPage
+                    onOpenEnquiry={handleOpenEnquiryWithProduct}
+                  />
+                }
+              />
+
+              <Route
+                path="/sitemap"
+                element={
+                  <SitemapPage
                     onOpenEnquiry={handleOpenEnquiryWithProduct}
                   />
                 }
