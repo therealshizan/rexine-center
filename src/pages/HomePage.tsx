@@ -1,0 +1,82 @@
+import React from 'react';
+import { HeroBanner } from '../components/HeroBanner';
+import { HighlightsBar } from '../components/HighlightsBar';
+import { SearchSection } from '../components/SearchSection';
+import { CollectionsSection } from '../components/CollectionsSection';
+import { CustomizerSection } from '../components/CustomizerSection';
+import { ApplicationsSection } from '../components/ApplicationsSection';
+import { MetricsBar } from '../components/MetricsBar';
+import { ProcessSection } from '../components/ProcessSection';
+import { GalleryTestimonialsBlog } from '../components/GalleryTestimonialsBlog';
+import { FAQAndBulkSection } from '../components/FAQAndBulkSection';
+import { IndiaSupplySection } from '../components/IndiaSupplySection';
+import { Product } from '../types';
+
+interface HomePageProps {
+  onOpenBookScanner: () => void;
+  onOpenEnquiry: (product?: Product | null) => void;
+  onSearchSubmit: (query: string) => void;
+  onSelectProduct: (product: Product) => void;
+  onSelectApplication: (appTitle: string) => void;
+}
+
+export const HomePage: React.FC<HomePageProps> = ({
+  onOpenBookScanner,
+  onOpenEnquiry,
+  onSearchSubmit,
+  onSelectProduct,
+  onSelectApplication,
+}) => {
+  return (
+    <div>
+      {/* 1. Hero Banner */}
+      <HeroBanner
+        onOpenBookScanner={onOpenBookScanner}
+        onOpenEnquiry={() => onOpenEnquiry(null)}
+      />
+
+      {/* 2. Highlights Bar */}
+      <HighlightsBar />
+
+      {/* 3. Search Bar */}
+      <SearchSection
+        onSearchSubmit={onSearchSubmit}
+        onOpenEnquiry={() => onOpenEnquiry(null)}
+      />
+
+      {/* 4. Rexine Collections */}
+      <CollectionsSection
+        onSelectCollection={(colId) => {
+          // handled in parent or navigate
+        }}
+      />
+
+      {/* 5. Customizer Section */}
+      <CustomizerSection
+        onOpenEnquiry={() => onOpenEnquiry(null)}
+      />
+
+      {/* 6. Applications Section */}
+      <ApplicationsSection
+        onSelectApplication={onSelectApplication}
+      />
+
+      {/* 7. Metrics Bar */}
+      <MetricsBar />
+
+      {/* 8. Process Section */}
+      <ProcessSection />
+
+      {/* 9. Gallery & Blog */}
+      <GalleryTestimonialsBlog />
+
+      {/* 10. FAQs & Bulk Quote Banner */}
+      <FAQAndBulkSection
+        onOpenEnquiry={() => onOpenEnquiry(null)}
+      />
+
+      {/* 11. India Supply Section */}
+      <IndiaSupplySection />
+    </div>
+  );
+};

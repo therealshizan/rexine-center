@@ -1,0 +1,6 @@
+{
+  "name": "Rexine Centre",
+  "description": "Premium Digital Product Catalogue & Trusted Wholesale Destination for Rexine, Leatherette, Upholstery Fabrics & Furnishing Materials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
