@@ -10,9 +10,9 @@ import { FloatingElements } from './components/FloatingElements';
 
 // Pages
 import { HomePage } from './pages/HomePage';
-import { CollectionsPage } from './pages/CollectionsPage';
 import { BooksPage } from './pages/BooksPage';
 import { BookDetailPage } from './pages/BookDetailPage';
+import { BookProductDetailPage } from './pages/BookProductDetailPage';
 import { ApplicationsPage } from './pages/ApplicationsPage';
 import { CustomizerPage } from './pages/CustomizerPage';
 import { ResourcesPage } from './pages/ResourcesPage';
@@ -136,26 +136,6 @@ function MainAppContent() {
               />
 
               <Route
-                path="/collections"
-                element={
-                  <CollectionsPage
-                    onSelectProduct={(p) => setDetailProduct(p)}
-                    onOpenEnquiry={handleOpenEnquiryWithProduct}
-                  />
-                }
-              />
-
-              <Route
-                path="/collections/:collectionId"
-                element={
-                  <CollectionsPage
-                    onSelectProduct={(p) => setDetailProduct(p)}
-                    onOpenEnquiry={handleOpenEnquiryWithProduct}
-                  />
-                }
-              />
-
-              <Route
                 path="/books"
                 element={
                   <BooksPage
@@ -165,11 +145,21 @@ function MainAppContent() {
               />
 
               <Route
-                path="/books/:bookId"
+                path="/books/:slug"
                 element={
                   <BookDetailPage
                     onSelectProduct={(p) => setDetailProduct(p)}
                     onOpenEnquiry={handleOpenEnquiryWithProduct}
+                  />
+                }
+              />
+
+              <Route
+                path="/books/:slug/:productCode"
+                element={
+                  <BookProductDetailPage
+                    onOpenEnquiry={handleOpenEnquiryWithProduct}
+                    onSelectProduct={(p) => setDetailProduct(p)}
                   />
                 }
               />

@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { X, QrCode, BookOpen, CheckCircle, ExternalLink, ArrowRight } from 'lucide-react';
+import { X, QrCode, BookOpen, CheckCircle, ExternalLink, ArrowRight, Camera, FileText, Sparkles, RefreshCw } from 'lucide-react';
 import { SAMPLE_BOOKS_DATA } from '../data/booksData';
+import { PDFViewerModal } from './PDFViewerModal';
 
 interface BookScannerModalProps {
   isOpen: boolean;
@@ -12,6 +13,47 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
   const navigate = useNavigate();
   const [selectedBook, setSelectedBook] = useState(SAMPLE_BOOKS_DATA[0]);
   const [scanned, setScanned] = useState(false);
+  const [isCameraActive, setIsCameraActive] = useState(false);
+  const [cameraError, setCameraError] = useState<string | null>(null);
+  const [showPDFModal, setShowPDFModal] = useState(false);
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const streamRef = useRef<MediaStream | null>(null);
+
+  useEffect(() => {
+    if (!isOpen) {
+      stopCamera();
+    }
+  }, [isOpen]);
+
+  const startCamera = async () => {
+    setCameraError(null);
+    try {
+      if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        const stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: 'environment' },
+        });
+        streamRef.current = stream;
+        if (videoRef.current) {
+          videoRef.current.srcObject = stream;
+        }
+        setIsCameraActive(true);
+      } else {
+        setCameraError('Camera API not supported in this browser window. Using scanner laser mode.');
+      }
+    } catch (err) {
+      console.warn('Camera access error:', err);
+      setCameraError('Camera access unavailable or declined. Using simulated laser scanner mode.');
+    }
+  };
+
+  const stopCamera = () => {
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((track) => track.stop());
+      streamRef.current = null;
+    }
+    setIsCameraActive(false);
+  };
 
   if (!isOpen) return null;
 
@@ -19,126 +61,225 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
     setSelectedBook(book);
     setScanned(true);
     setTimeout(() => {
+      stopCamera();
+      setScanned(false);
       onClose();
       navigate(`/books/${book.id}`);
-    }, 1200);
+    }, 1000);
   };
 
   const handleOpenDirectly = (bookId: string) => {
+    stopCamera();
     onClose();
     navigate(`/books/${bookId}`);
   };
 
   return (
-    <div className="fixed inset-0 z-[9000] flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-fade-in">
-      <div className="w-full max-w-2xl bg-white rounded-3xl shadow-2xl overflow-hidden border border-black/10">
-        {/* Header */}
-        <div className="p-6 bg-[#111111] text-white flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#C67C4E] flex items-center justify-center text-white">
-              <QrCode className="w-5 h-5" />
+    <>
+      <div className="fixed inset-0 z-[9000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
+        <div className="w-full max-w-2xl bg-[#111111] text-white rounded-3xl shadow-2xl overflow-hidden border border-white/15">
+          
+          {/* Header */}
+          <div className="p-5 bg-[#181818] border-b border-white/10 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-[#C67C4E] flex items-center justify-center text-white shrink-0 shadow-md">
+                <QrCode className="w-5 h-5 text-amber-200" />
+              </div>
+              <div>
+                <h3 className="font-button text-xs font-bold uppercase tracking-widest text-amber-300">
+                  PHYSICAL SAMPLE BOOK QR SCANNER
+                </h3>
+                <p className="font-sans text-xs text-gray-400">
+                  Scan physical book QR code to open all swatches & PDF catalogue
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-button text-xs font-bold uppercase tracking-widest text-white">
-                PHYSICAL SAMPLE BOOK QR SCANNER
-              </h3>
-              <p className="font-sans text-xs text-[#C67C4E]">
-                Scan or tap your physical sample book to view all 25–30 swatches
-              </p>
-            </div>
+            
+            <button
+              onClick={() => {
+                stopCamera();
+                onClose();
+              }}
+              className="p-2 text-gray-400 hover:text-white rounded-full hover:bg-white/10 transition-colors"
+            >
+              <X className="w-5 h-5" />
+            </button>
           </div>
-          <button onClick={onClose} className="p-2 text-gray-400 hover:text-white rounded-full">
-            <X className="w-5 h-5" />
-          </button>
-        </div>
 
-        {/* Content */}
-        <div className="p-6 bg-[#F8F6F2]">
-          {/* Active Book View */}
-          <div className="bg-white p-5 rounded-2xl border border-black/8 shadow-sm flex flex-col sm:flex-row items-center gap-6 mb-6">
-            <div className="relative w-28 h-28 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200">
-              <img
-                src={selectedBook.coverImage}
-                alt={selectedBook.name}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/20" />
-              <div className="absolute bottom-2 left-2 right-2 text-[9px] font-button font-bold text-white uppercase bg-black/60 backdrop-blur-sm px-1.5 py-0.5 rounded text-center">
-                {selectedBook.code}
+          {/* Content */}
+          <div className="p-6 space-y-6">
+            
+            {/* Camera Viewfinder Box */}
+            <div className="relative w-full h-56 bg-black rounded-2xl border-2 border-white/15 overflow-hidden flex flex-col items-center justify-center group">
+              
+              {isCameraActive ? (
+                <video
+                  ref={videoRef}
+                  autoPlay
+                  playsInline
+                  muted
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-950 to-[#181818] flex flex-col items-center justify-center p-4 text-center">
+                  <div className="relative w-28 h-28 border-2 border-dashed border-[#C67C4E]/60 rounded-xl flex items-center justify-center mb-2 overflow-hidden bg-black/40">
+                    {/* Animated Scanning Line */}
+                    <div className="absolute inset-x-0 h-1 bg-[#C67C4E] shadow-[0_0_15px_#C67C4E] animate-bounce z-10" />
+                    <QrCode className="w-12 h-12 text-[#C67C4E]/80" />
+                  </div>
+                  <p className="text-xs text-gray-300 font-sans max-w-xs">
+                    Point camera at <span className="text-amber-300 font-bold">{selectedBook.code}</span> QR code on back of sample binder
+                  </p>
+                </div>
+              )}
+
+              {/* Viewfinder Reticle Overlay */}
+              <div className="absolute inset-8 border-2 border-amber-400/40 rounded-xl pointer-events-none flex flex-col justify-between p-2">
+                <div className="flex justify-between">
+                  <div className="w-4 h-4 border-t-2 border-l-2 border-amber-300" />
+                  <div className="w-4 h-4 border-t-2 border-r-2 border-amber-300" />
+                </div>
+                <div className="flex justify-between">
+                  <div className="w-4 h-4 border-b-2 border-l-2 border-amber-300" />
+                  <div className="w-4 h-4 border-b-2 border-r-2 border-amber-300" />
+                </div>
+              </div>
+
+              {/* Camera Controls Overlay */}
+              <div className="absolute bottom-3 inset-x-3 flex items-center justify-between gap-2 z-20">
+                {!isCameraActive ? (
+                  <button
+                    onClick={startCamera}
+                    className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-3 py-1.5 rounded-xl text-[11px] font-button uppercase font-bold flex items-center gap-1.5 cursor-pointer border border-white/20"
+                  >
+                    <Camera className="w-3.5 h-3.5 text-amber-300" />
+                    <span>Enable Live Device Camera</span>
+                  </button>
+                ) : (
+                  <button
+                    onClick={stopCamera}
+                    className="bg-red-500/80 hover:bg-red-600 backdrop-blur-md text-white px-3 py-1.5 rounded-xl text-[11px] font-button uppercase font-bold flex items-center gap-1 cursor-pointer"
+                  >
+                    <span>Stop Camera</span>
+                  </button>
+                )}
+
+                <button
+                  onClick={() => setShowPDFModal(true)}
+                  className="bg-[#C67C4E] hover:bg-[#b06a3d] backdrop-blur-md text-white px-3.5 py-1.5 rounded-xl text-[11px] font-button uppercase font-bold flex items-center gap-1.5 cursor-pointer shadow-md"
+                >
+                  <FileText className="w-3.5 h-3.5 text-amber-200" />
+                  <span>Open PDF Catalogue</span>
+                </button>
               </div>
             </div>
 
-            <div className="flex-grow text-center sm:text-left">
-              <span className="text-[10px] uppercase font-button text-[#C67C4E] font-bold tracking-wider">
-                {selectedBook.collectionName} Collection
-              </span>
-              <h4 className="font-serif text-lg font-bold text-[#111111] mb-1">
-                {selectedBook.name}
-              </h4>
-              <p className="font-sans text-xs text-gray-500 mb-4">
-                Contains {selectedBook.totalSwatches} active physical swatches with QR lookup & RRP pricing.
+            {cameraError && (
+              <p className="text-[11px] text-amber-300/80 bg-amber-400/10 p-2 rounded-xl border border-amber-400/20 text-center font-sans">
+                {cameraError}
               </p>
+            )}
 
-              {scanned ? (
-                <div className="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 px-4 py-2 rounded-xl text-xs font-bold">
-                  <CheckCircle className="w-4 h-4 text-emerald-600" />
-                  <span>QR Code Scanned! Opening Book Page...</span>
+            {/* Active Book Item */}
+            <div className="bg-white/5 p-4 rounded-2xl border border-white/10 flex flex-col sm:flex-row items-center gap-5">
+              <div className="relative w-24 h-24 bg-gray-900 rounded-xl overflow-hidden shrink-0 border border-white/10 shadow-md">
+                <img
+                  src={selectedBook.coverImage}
+                  alt={selectedBook.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/20" />
+                <div className="absolute bottom-1 left-1 right-1 text-[9px] font-button font-bold text-amber-300 uppercase bg-black/80 px-1 py-0.5 rounded text-center truncate">
+                  {selectedBook.code}
                 </div>
-              ) : (
-                <div className="flex items-center gap-3 justify-center sm:justify-start flex-wrap">
-                  <button
-                    onClick={() => handleSimulateScan(selectedBook)}
-                    className="inline-flex items-center gap-2 bg-[#111111] hover:bg-[#C67C4E] text-white px-5 py-2.5 rounded-xl font-button text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"
-                  >
-                    <QrCode className="w-4 h-4 text-[#C67C4E]" />
-                    <span>Scan QR Camera Link</span>
-                  </button>
+              </div>
 
-                  <button
-                    onClick={() => handleOpenDirectly(selectedBook.id)}
-                    className="inline-flex items-center gap-1.5 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2.5 rounded-xl font-button text-xs font-bold uppercase tracking-wider transition-colors"
-                  >
-                    <span>View Swatches ({selectedBook.totalSwatches})</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
+              <div className="flex-grow text-center sm:text-left space-y-1">
+                <span className="text-[10px] uppercase font-button text-[#C67C4E] font-bold tracking-wider">
+                  {selectedBook.collectionName}
+                </span>
+                <h4 className="font-serif text-lg font-bold text-white">
+                  {selectedBook.name}
+                </h4>
+                <p className="font-sans text-xs text-gray-400 mb-3">
+                  Contains {selectedBook.totalSwatches} active physical swatches with specs & wholesale rates.
+                </p>
 
-          {/* Book Selection Carousel */}
-          <div className="space-y-3">
-            <h5 className="font-button text-[10px] font-bold uppercase tracking-wider text-gray-500">
-              Select Sample Book to Inspect:
-            </h5>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {SAMPLE_BOOKS_DATA.map((book) => (
-                <button
-                  key={book.id}
-                  onClick={() => handleSimulateScan(book)}
-                  className={`p-3 rounded-2xl border text-left transition-all flex items-center gap-3 ${
-                    selectedBook.id === book.id
-                      ? 'border-[#C67C4E] bg-white shadow-md ring-2 ring-[#C67C4E]/20'
-                      : 'border-black/8 bg-white/60 hover:bg-white'
-                  }`}
-                >
-                  <img
-                    src={book.coverImage}
-                    alt={book.name}
-                    className="w-10 h-10 rounded-lg object-cover shrink-0 border border-gray-200"
-                  />
-                  <div className="overflow-hidden">
-                    <p className="font-button text-[10px] font-bold text-[#111111] uppercase truncate">
-                      {book.code}
-                    </p>
-                    <p className="font-sans text-[11px] text-gray-600 truncate">{book.name}</p>
+                {scanned ? (
+                  <div className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-400 px-4 py-2 rounded-xl text-xs font-bold border border-emerald-500/30">
+                    <CheckCircle className="w-4 h-4 text-emerald-400" />
+                    <span>QR Code Scanned! Opening Digital Book...</span>
                   </div>
-                </button>
-              ))}
+                ) : (
+                  <div className="flex items-center gap-2.5 justify-center sm:justify-start flex-wrap pt-1">
+                    <button
+                      onClick={() => handleSimulateScan(selectedBook)}
+                      className="inline-flex items-center gap-2 bg-[#C67C4E] hover:bg-[#b06a3d] text-white px-5 py-2.5 rounded-xl font-button text-xs font-bold uppercase tracking-wider transition-all shadow-md cursor-pointer"
+                    >
+                      <Sparkles className="w-4 h-4 text-amber-200" />
+                      <span>Scan & View Swatches</span>
+                    </button>
+
+                    <button
+                      onClick={() => handleOpenDirectly(selectedBook.id)}
+                      className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white px-4 py-2.5 rounded-xl font-button text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer border border-white/10"
+                    >
+                      <span>Open Book ({selectedBook.totalSwatches})</span>
+                      <ArrowRight className="w-3.5 h-3.5 text-amber-300" />
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
+
+            {/* Book Selection Carousel */}
+            <div className="space-y-3">
+              <h5 className="font-button text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                Select Physical Sample Book:
+              </h5>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                {SAMPLE_BOOKS_DATA.map((book) => (
+                  <button
+                    key={book.id}
+                    onClick={() => {
+                      setSelectedBook(book);
+                      handleSimulateScan(book);
+                    }}
+                    className={`p-2.5 rounded-xl border text-left transition-all flex items-center gap-2.5 cursor-pointer ${
+                      selectedBook.id === book.id
+                        ? 'border-[#C67C4E] bg-[#C67C4E]/15 shadow-md text-white ring-1 ring-[#C67C4E]'
+                        : 'border-white/10 bg-white/5 hover:bg-white/10 text-gray-300'
+                    }`}
+                  >
+                    <img
+                      src={book.coverImage}
+                      alt={book.name}
+                      className="w-9 h-9 rounded-lg object-cover shrink-0 border border-white/10"
+                    />
+                    <div className="overflow-hidden">
+                      <p className="font-button text-[10px] font-bold text-amber-300 uppercase truncate">
+                        {book.code}
+                      </p>
+                      <p className="font-sans text-[11px] text-gray-200 truncate">{book.name}</p>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-    </div>
+
+      {/* PDF Viewer Modal */}
+      <PDFViewerModal
+        isOpen={showPDFModal}
+        onClose={() => setShowPDFModal(false)}
+        title={selectedBook.name}
+        pdfUrl={`/books/${selectedBook.id}/catalogue.pdf`}
+        code={selectedBook.code}
+        pageCount={selectedBook.totalSwatches + 4}
+      />
+    </>
   );
 };

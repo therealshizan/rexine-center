@@ -17,7 +17,7 @@ export const HERO_SLIDES = [
   {
     title: 'EXPLORE TEXTURES. ELEVATE SPACES.',
     description: 'Your trusted wholesale destination for rexine, leatherette, upholstery fabrics & furnishing materials.',
-    button: 'BROWSE COLLECTIONS',
+    button: 'BROWSE SAMPLE BOOKS',
     image: heroLeatherFolds,
     color: '#D6C3B1',
     subtitle: 'Classic Taupe Leather Fold',
@@ -118,7 +118,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
-              href="#collections"
+              href="/books"
               className="flex w-fit items-center gap-3 rounded-full bg-[#111111] hover:bg-[#C67C4E] px-8 py-4 text-xs font-button font-bold uppercase tracking-wider text-white transition-all shadow-lg hover:shadow-xl group"
             >
               <span>{HERO_SLIDES[active].button}</span>

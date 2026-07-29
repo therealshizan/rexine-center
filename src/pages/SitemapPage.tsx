@@ -52,9 +52,9 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onOpenEnquiry }) => {
       icon: Layers,
       description: 'Explore full product lines by material composition, texture, and durability class.',
       links: BRAND_COLLECTIONS.map((brand) => ({
-        name: `${brand.name} Collection (${brand.category})`,
+        name: `${brand.name} Collection (${brand.tagline})`,
         path: `/collections?category=${brand.id}`,
-        badge: brand.code,
+        badge: brand.id.toUpperCase(),
       })).concat([
         { name: 'Sofa & Upholstery Rexine', path: '/collections?category-[#111111]', badge: 'Furniture' },
         { name: 'Automotive Grade Leatherette', path: '/collections', badge: 'Auto' },

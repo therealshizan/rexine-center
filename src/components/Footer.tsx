@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-2 text-xs text-gray-300">
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#C67C4E]" />
-                <span>+91 98765 43210</span>
+                <span>+91 99309 52947</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#C67C4E]" />
@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
             {/* Chat with us WhatsApp button */}
             <div className="pt-2">
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919930952947"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] text-white px-3.5 py-2 rounded-lg font-button text-[10px] font-bold uppercase tracking-wider hover:bg-[#1eb857] transition-colors"
@@ -62,15 +62,15 @@ export const Footer: React.FC = () => {
               PRODUCTS
             </h4>
             <ul className="space-y-1.5 text-gray-400 text-[11px]">
-              <li><Link to="/collections" className="hover:text-white transition-colors">Sofa Rexine</Link></li>
-              <li><Link to="/collections" className="hover:text-white transition-colors">Automotive Rexine</Link></li>
-              <li><Link to="/collections" className="hover:text-white transition-colors">PU Leather</Link></li>
-              <li><Link to="/collections" className="hover:text-white transition-colors">PVC Leather</Link></li>
-              <li><Link to="/collections" className="hover:text-white transition-colors">Office Chair Rexine</Link></li>
-              <li><Link to="/collections" className="hover:text-white transition-colors">Hospitality Rexine</Link></li>
-              <li><Link to="/collections" className="hover:text-white transition-colors">Gym Rexine</Link></li>
-              <li><Link to="/collections" className="hover:text-white transition-colors">Fire Retardant Rexine</Link></li>
-              <li><Link to="/collections" className="hover:text-[#C67C4E] font-bold transition-colors">All Collections</Link></li>
+              <li><Link to="/applications" className="hover:text-white transition-colors">Sofa Rexine</Link></li>
+              <li><Link to="/applications" className="hover:text-white transition-colors">Automotive Rexine</Link></li>
+              <li><Link to="/applications" className="hover:text-white transition-colors">PU Leather</Link></li>
+              <li><Link to="/applications" className="hover:text-white transition-colors">PVC Leather</Link></li>
+              <li><Link to="/applications" className="hover:text-white transition-colors">Office Chair Rexine</Link></li>
+              <li><Link to="/applications" className="hover:text-white transition-colors">Hospitality Rexine</Link></li>
+              <li><Link to="/applications" className="hover:text-white transition-colors">Gym Rexine</Link></li>
+              <li><Link to="/applications" className="hover:text-white transition-colors">Fire Retardant Rexine</Link></li>
+              <li><Link to="/books" className="hover:text-[#C67C4E] font-bold transition-colors">Sample Books Catalogue</Link></li>
             </ul>
           </div>
 

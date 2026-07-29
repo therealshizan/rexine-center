@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, MessageCircle, Send, CheckCircle2, Building, Clock } from 'lucide-react';
 import { Product } from '../types';
+import { sendFormEnquiryToEmail, RECIPIENT_EMAIL } from '../utils/emailService';
 
 interface ContactPageProps {
   onOpenEnquiry: (product?: Product | null) => void;
@@ -8,6 +9,7 @@ interface ContactPageProps {
 
 export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -18,8 +20,22 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    await sendFormEnquiryToEmail({
+      formType: 'Main Contact Form',
+      name: formData.name,
+      company: formData.company,
+      phone: formData.phone,
+      email: formData.email,
+      city: formData.city,
+      requirement: formData.requirement,
+      message: formData.message,
+    });
+
+    setIsSubmitting(false);
     setFormSubmitted(true);
   };
 
@@ -59,7 +75,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
 
               <div className="space-y-4 pt-2">
                 <a
-                  href="https://wa.me/919476543210"
+                  href="https://wa.me/919930952947"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#25D366] hover:bg-emerald-600 text-white p-4 rounded-2xl flex items-center gap-4 transition-all shadow-md group"
@@ -70,22 +86,22 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                       WhatsApp Quick Chat
                     </span>
                     <span className="font-serif text-base font-bold">
-                      +91 94765 43210
+                      +91 99309 52947
                     </span>
                   </div>
                 </a>
 
                 <a
-                  href="tel:+919476543210"
+                  href="tel:+919930952947"
                   className="bg-white/10 hover:bg-white/20 text-white p-4 rounded-2xl flex items-center gap-4 transition-all border border-white/15"
                 >
                   <Phone className="w-6 h-6 text-[#C67C4E]" />
                   <div>
                     <span className="font-button text-[10px] font-bold uppercase tracking-wider block text-gray-400">
-                      Toll Free Phone
+                      Direct Factory Desk
                     </span>
                     <span className="font-serif text-base font-bold">
-                      +91 (022) 2854 9900
+                      +91 99309 52947
                     </span>
                   </div>
                 </a>
@@ -141,16 +157,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-gray-900">
-                  Enquiry Submitted Successfully!
+                  Enquiry Emailed & Submitted!
                 </h3>
-                <p className="font-sans text-sm text-gray-600 max-w-md mx-auto">
-                  Thank you for reaching out. Our technical team will review your requirement and contact you within 2 business hours.
+                <p className="font-sans text-sm text-gray-600 max-w-md mx-auto leading-relaxed">
+                  Thank you for reaching out. All form field data has been sent directly to <strong className="text-gray-900">{RECIPIENT_EMAIL}</strong>. Our technical sales desk will review your requirement and reply promptly.
                 </p>
                 <button
                   onClick={() => setFormSubmitted(false)}
-                  className="bg-[#111111] text-white px-6 py-2.5 rounded-full font-button text-xs font-bold uppercase tracking-wider mt-4"
+                  className="bg-[#111111] text-white px-6 py-2.5 rounded-full font-button text-xs font-bold uppercase tracking-wider mt-4 hover:bg-[#C67C4E] transition-colors"
                 >
-                  Send Another Message
+                  Send Another Enquiry
                 </button>
               </div>
             ) : (
@@ -196,7 +212,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                     <input
                       type="tel"
                       required
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 99309 52947"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-sans focus:outline-none focus:ring-2 focus:ring-[#C67C4E]"
@@ -263,11 +279,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                   />
                 </div>
 
+                <div className="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                  <Mail className="w-4 h-4 text-[#C67C4E]" />
+                  <span>All form field data will be sent directly to <strong>{RECIPIENT_EMAIL}</strong></span>
+                </div>
+
                 <button
                   type="submit"
-                  className="w-full bg-[#111111] hover:bg-[#C67C4E] text-white py-3.5 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md group"
+                  disabled={isSubmitting}
+                  className="w-full bg-[#111111] hover:bg-[#C67C4E] text-white py-3.5 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md group disabled:opacity-50"
                 >
-                  <span>Submit Requirement Enquiry</span>
+                  <span>{isSubmitting ? 'Sending to amaannansib005@gmail.com...' : 'Submit Requirement Enquiry'}</span>
                   <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </form>

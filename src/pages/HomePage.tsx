@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { HeroBanner } from '../components/HeroBanner';
 import { HighlightsBar } from '../components/HighlightsBar';
 import { SearchSection } from '../components/SearchSection';
-import { CollectionsSection } from '../components/CollectionsSection';
+import { BrowseBooksSection } from '../components/BrowseBooksSection';
 import { CustomizerSection } from '../components/CustomizerSection';
 import { ApplicationsSection } from '../components/ApplicationsSection';
 import { MetricsBar } from '../components/MetricsBar';
@@ -47,16 +47,8 @@ export const HomePage: React.FC<HomePageProps> = ({
         onOpenEnquiry={() => onOpenEnquiry(null)}
       />
 
-      {/* 4. Rexine Collections */}
-      <CollectionsSection
-        onSelectCollection={(colId) => {
-          if (colId === 'all') {
-            navigate('/collections');
-          } else {
-            navigate(`/collections?category=${colId}`);
-          }
-        }}
-      />
+      {/* 4. Browse Physical Sample Books */}
+      <BrowseBooksSection />
 
       {/* 5. Customizer Section */}
       <CustomizerSection

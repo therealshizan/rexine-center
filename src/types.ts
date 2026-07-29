@@ -62,11 +62,11 @@ export interface SampleBook {
   id: string;
   code: string;
   name: string;
-  collectionId: string;
-  collectionName: string;
+  collectionId?: string;
+  collectionName?: string;
   category: string;
-  year: string;
-  description: string;
+  year?: string;
+  description?: string;
   totalSwatches: number;
   coverImage: string;
   qrCodeUrl: string;

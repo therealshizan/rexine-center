@@ -11,7 +11,7 @@ export const FAQSection: React.FC = () => {
 
   const handleWhatsAppContact = () => {
     const text = encodeURIComponent('Hello Rexine Centre, I would like to get in touch regarding a wholesale order.');
-    window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+    window.open(`https://wa.me/919930952947?text=${text}`, '_blank');
   };
 
   return (
@@ -72,7 +72,7 @@ export const FAQSection: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-[10px] font-button uppercase text-gray-400 block">WhatsApp Desk</span>
-                    <span className="font-sans text-xs font-semibold text-gray-900">+91 98765 43210</span>
+                    <span className="font-sans text-xs font-semibold text-gray-900">+91 99309 52947</span>
                   </div>
                 </div>
 

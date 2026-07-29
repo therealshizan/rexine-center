@@ -23,7 +23,7 @@ export const FloatingElements: React.FC = () => {
 
   const handleWhatsAppFloating = () => {
     const text = encodeURIComponent('Hello Rexine Centre, I am browsing your online catalogue and would like to make an enquiry.');
-    window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+    window.open(`https://wa.me/919930952947?text=${text}`, '_blank');
   };
 
   return (
