@@ -80,16 +80,15 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
 
   return (
     <section className="relative h-[620px] sm:h-[700px] w-full overflow-hidden bg-[#EDE8E3] border-b border-gray-300">
-      
+
       {/* Background Images with Fade Transition */}
       {HERO_SLIDES.map((slide, index) => (
         <img
           key={index}
           src={slide.image}
           alt={slide.title}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
-            active === index ? 'opacity-100 scale-105' : 'opacity-0 scale-100'
-          } transition-transform duration-10000`}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${active === index ? 'opacity-100 scale-105' : 'opacity-0 scale-100'
+            } transition-transform duration-10000`}
           referrerPolicy="no-referrer"
         />
       ))}
@@ -103,7 +102,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
       {/* Left Content */}
       <div className="relative z-20 flex h-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex-col justify-center py-10">
         <div className="max-w-2xl sm:max-w-3xl space-y-6">
-          
+
           <span className="font-button text-[11px] font-bold tracking-[0.25em] text-[#C67C4E] uppercase block">
             PREMIUM REXINE & LEATHERETTE • {HERO_SLIDES[active].subtitle}
           </span>
@@ -144,11 +143,10 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
                 onClick={() => setActive(index)}
                 title={slide.subtitle}
                 aria-label={`Select swatch ${slide.subtitle}`}
-                className={`h-7 w-7 rounded-full border-2 transition-all duration-300 ${
-                  active === index
+                className={`h-7 w-7 rounded-full border-2 transition-all duration-300 ${active === index
                     ? 'scale-125 border-black ring-2 ring-offset-2 ring-offset-[#EDE8E3] ring-[#C67C4E] shadow-md'
                     : 'border-white/80 opacity-80 hover:opacity-100 hover:scale-110'
-                }`}
+                  }`}
                 style={{
                   background: slide.color,
                 }}
