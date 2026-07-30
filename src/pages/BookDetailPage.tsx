@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import { SITE_URL } from '../config';
 import {
   QrCode,
   BookOpen,
@@ -108,7 +109,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                 <span className="text-xs font-sans text-gray-300">Book Code: {book.code}</span>
               </div>
               <h4 className="font-serif text-sm sm:text-base font-bold text-white mt-0.5">
-                Deep Link Target: <span className="text-amber-200">rexinecentre.com/books/{book.slug}</span>
+                Deep Link Target: <span className="text-amber-200">{SITE_URL.replace('https://', '')}/books/{book.slug}/catalogue.pdf</span>
               </h4>
             </div>
           </div>

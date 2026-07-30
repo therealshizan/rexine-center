@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { X, QrCode, BookOpen, CheckCircle, ExternalLink, ArrowRight, Camera, FileText, Sparkles, RefreshCw } from 'lucide-react';
 import { SAMPLE_BOOKS_DATA } from '../data/booksData';
 import { PDFViewerModal } from './PDFViewerModal';
+import { SITE_URL } from '../config';
 
 interface BookScannerModalProps {
   isOpen: boolean;
@@ -60,11 +61,13 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
   const handleSimulateScan = (book: typeof SAMPLE_BOOKS_DATA[0]) => {
     setSelectedBook(book);
     setScanned(true);
+    // Build PDF URL using SITE_URL so it works in both dev and production
+    const pdfTarget = `${SITE_URL.replace(/\/$/, '')}/books/${book.id}/catalogue.pdf`;
     setTimeout(() => {
       stopCamera();
       setScanned(false);
       onClose();
-      navigate(`/books/${book.id}`);
+      window.open(pdfTarget, '_blank', 'noopener,noreferrer');
     }, 1000);
   };
 
@@ -76,7 +79,10 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
 
   return (
     <>
-      <div className="fixed inset-0 z-[9000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
+      <div
+        className="fixed inset-0 z-[9000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in"
+        style={{ cursor: 'auto' }}
+      >
         <div className="w-full max-w-2xl bg-[#111111] text-white rounded-3xl shadow-2xl overflow-hidden border border-white/15">
           
           {/* Header */}

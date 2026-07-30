@@ -84,19 +84,15 @@ export const Navbar: React.FC<NavbarProps> = ({
             </NavLink>
 
             <NavLink to="/books" className={navLinkStyle}>
-              Sample Books
+              Books
             </NavLink>
 
             <NavLink to="/applications" className={navLinkStyle}>
-              Products
+              Industries We Serve
             </NavLink>
 
             <NavLink to="/resources" className={navLinkStyle}>
-              Inspiration
-            </NavLink>
-
-            <NavLink to="/supply-locations" className={navLinkStyle}>
-              Locations
+              Resources
             </NavLink>
 
             <NavLink to="/about" className={navLinkStyle}>
@@ -159,19 +155,13 @@ export const Navbar: React.FC<NavbarProps> = ({
               Home
             </NavLink>
             <NavLink to="/books" onClick={() => setMobileMenuOpen(false)} className="block py-2">
-              Sample Books
-            </NavLink>
-            <NavLink to="/customizer" onClick={() => setMobileMenuOpen(false)} className="block py-2">
-              Customizer Studio
+              Books
             </NavLink>
             <NavLink to="/applications" onClick={() => setMobileMenuOpen(false)} className="block py-2">
-              Applications
+              Industries We Serve
             </NavLink>
             <NavLink to="/resources" onClick={() => setMobileMenuOpen(false)} className="block py-2">
-              Inspiration
-            </NavLink>
-            <NavLink to="/supply-locations" onClick={() => setMobileMenuOpen(false)} className="block py-2">
-              Supply Locations
+              Resources
             </NavLink>
             <NavLink to="/about" onClick={() => setMobileMenuOpen(false)} className="block py-2">
               About Us
