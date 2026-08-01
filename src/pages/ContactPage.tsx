@@ -75,7 +75,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
 
               <div className="space-y-4 pt-2">
                 <a
-                  href="https://wa.me/919930952947"
+                  href="https://wa.me/918104019890"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#25D366] hover:bg-emerald-600 text-white p-4 rounded-2xl flex items-center gap-4 transition-all shadow-md group"
@@ -86,13 +86,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                       WhatsApp Quick Chat
                     </span>
                     <span className="font-serif text-base font-bold">
-                      +91 99309 52947
+                      +91 81040 19890
                     </span>
                   </div>
                 </a>
 
                 <a
-                  href="tel:+919930952947"
+                  href="tel:+918104019890"
                   className="bg-white/10 hover:bg-white/20 text-white p-4 rounded-2xl flex items-center gap-4 transition-all border border-white/15"
                 >
                   <Phone className="w-6 h-6 text-[#C67C4E]" />
@@ -101,7 +101,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                       Direct Factory Desk
                     </span>
                     <span className="font-serif text-base font-bold">
-                      +91 99309 52947
+                      +91 81040 19890
                     </span>
                   </div>
                 </a>
@@ -117,7 +117,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                     Head Office & Experience Center
                   </h4>
                   <p className="font-sans text-xs text-gray-600 mt-1 leading-relaxed">
-                    Plot No. 125, Industrial Area, MIDC, Andheri East, Mumbai, Maharashtra 400093, India
+                    B-21-4, Kismat Nagar, Maqsood Estate, CST Road, Kurla West, Mumbai, Maharashtra 400070, India
                   </p>
                 </div>
               </div>
@@ -212,7 +212,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                     <input
                       type="tel"
                       required
-                      placeholder="+91 99309 52947"
+                      placeholder="+91 81040 19890"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-sans focus:outline-none focus:ring-2 focus:ring-[#C67C4E]"

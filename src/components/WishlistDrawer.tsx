@@ -23,7 +23,7 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
     if (wishlistProducts.length === 0) return;
     const codes = wishlistProducts.map((p) => `${p.code} (${p.name})`).join(', ');
     const text = encodeURIComponent(`Hi Rexine Centre, I am interested in wholesale quotes for the following saved items from my wishlist: ${codes}`);
-    window.open(`https://wa.me/919930952947?text=${text}`, '_blank');
+    window.open(`https://wa.me/918104019890?text=${text}`, '_blank');
   };
 
   return (

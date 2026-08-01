@@ -83,7 +83,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
     const text = encodeURIComponent(
       `Hello Rexine Centre,\nI am inquiring about Product Code: *${product.code}* (${product.name})\nFrom Book: *${book.title}* (${book.code})\nRetail RRP: ₹${product.rrp}/${product.unit}\n\nPlease share wholesale roll pricing, stock availability, and dispatch timeline.`
     );
-    return `https://wa.me/919930952947?text=${text}`;
+    return `https://wa.me/918104019890?text=${text}`;
   };
 
   const handleCopyLink = () => {

@@ -72,7 +72,7 @@ export const CitiesSupplyPage: React.FC<CitiesSupplyPageProps> = ({ onOpenEnquir
 
   const handleWhatsAppCityInquiry = (cityName: string) => {
     const text = encodeURIComponent(`Hi Rexine Centre, I need wholesale Rexine supply & sample swatch books for ${cityName}, ${activeState.stateName}. Please share catalogue & pricing.`);
-    window.open(`https://wa.me/919930952947?text=${text}`, '_blank');
+    window.open(`https://wa.me/918104019890?text=${text}`, '_blank');
   };
 
   return (
