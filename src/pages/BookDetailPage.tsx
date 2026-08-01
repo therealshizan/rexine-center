@@ -84,7 +84,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
   return (
     <div className="bg-[#F8F6F2] min-h-screen pt-6 pb-28">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Breadcrumbs */}
         <div className="flex items-center gap-2 text-xs font-button uppercase tracking-wider text-gray-500 mb-6 flex-wrap">
           <Link to="/" className="hover:text-[#C67C4E] transition-colors">Home</Link>
@@ -135,7 +135,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
         {/* 2. BOOK COVER & DETAILS HERO SECTION */}
         <div className="bg-white rounded-3xl p-6 sm:p-10 border border-gray-200 shadow-md mb-12 relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
+
             {/* Cover Image Column */}
             <div className="lg:col-span-4 relative group cursor-pointer" onClick={() => setShowQRModal(true)}>
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gray-900 border border-gray-200 shadow-xl">
@@ -223,13 +223,13 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                   <span>SHOW BOOK QR CODE</span>
                 </button>
 
-                <button
+                {/* <button
                   onClick={() => setShowPDFModal(true)}
                   className="bg-[#C67C4E] hover:bg-[#b06a3d] text-white px-7 py-3.5 rounded-full font-button text-xs font-bold uppercase tracking-wider flex items-center gap-2.5 transition-all shadow-md cursor-pointer"
                 >
                   <FileText className="w-4 h-4 text-amber-200" />
                   <span>VIEW CATALOGUE PDF</span>
-                </button>
+                </button> */}
 
                 <button
                   onClick={() => onOpenEnquiry(null)}
@@ -294,9 +294,8 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                 return (
                   <div
                     key={product.code}
-                    className={`bg-white rounded-2xl overflow-hidden border transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-xl ${
-                      isSelected ? 'border-[#C67C4E] ring-2 ring-[#C67C4E]/20' : 'border-gray-200'
-                    }`}
+                    className={`bg-white rounded-2xl overflow-hidden border transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-xl ${isSelected ? 'border-[#C67C4E] ring-2 ring-[#C67C4E]/20' : 'border-gray-200'
+                      }`}
                   >
                     <div>
                       {/* Swatch Image */}

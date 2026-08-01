@@ -120,19 +120,19 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Search className="w-4 h-4" />
           </button>
 
-          {/* Wishlist Icon Button */}
-          <button
-            onClick={onOpenWishlist}
-            className="p-2 text-gray-700 hover:text-black hover:bg-black/5 rounded-full transition-all relative"
-            aria-label="Saved Wishlist"
-          >
-            <Heart className="w-4 h-4" />
-            {wishlistCount > 0 && (
-              <span className="absolute top-1 right-1 bg-[#C67C4E] text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
-                {wishlistCount}
-              </span>
-            )}
-          </button>
+            {/* Wishlist Icon Button */}
+            {/* <button
+              onClick={onOpenWishlist}
+              className="p-2 text-gray-700 hover:text-black hover:bg-black/5 rounded-full transition-all relative"
+              aria-label="Saved Wishlist"
+            >
+              <Heart className="w-4 h-4" />
+              {wishlistCount > 0 && (
+                <span className="absolute top-1 right-1 bg-[#C67C4E] text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                  {wishlistCount}
+                </span>
+              )}
+            </button> */}
 
           {/* Main CTA Button: ENQUIRE NOW */}
           <button

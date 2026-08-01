@@ -48,9 +48,20 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
 
   return (
     <>
-      <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-        <div className="w-full max-w-md bg-[#111111] text-white rounded-3xl shadow-2xl overflow-hidden border border-white/15 relative">
-          
+      {/* Backdrop — cursor:auto keeps cursor visible over the modal */}
+      <div
+        className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in"
+        style={{ cursor: 'auto' }}
+        onMouseDown={(e) => { if (e.target === e.currentTarget) onClose(); }}
+        role="dialog"
+        aria-modal="true"
+        aria-label={`QR Code for ${book.title}`}
+      >
+        <div
+          className="w-full max-w-md bg-[#111111] text-white rounded-3xl shadow-2xl overflow-hidden border border-white/15 relative"
+          style={{ cursor: 'auto' }}
+        >
+
           {/* Header */}
           <div className="p-5 border-b border-white/10 flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -77,7 +88,7 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
 
           {/* Content Body */}
           <div className="p-6 space-y-5 text-center">
-            
+
             <div className="space-y-1">
               <span className="text-[10px] font-button font-bold text-[#C67C4E] uppercase tracking-widest bg-[#C67C4E]/20 px-2.5 py-0.5 rounded border border-[#C67C4E]/30 inline-block">
                 {book.category || '100% Polyester Upholstery'}
@@ -86,13 +97,13 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
                 {book.title}
               </h2>
               <p className="text-xs text-gray-400 font-sans">
-                Point any smartphone camera at QR code to open all {book.designCount || 35}+ swatches & PDF
+                Scan QR code to open the PDF catalogue directly ({book.designCount || 35}+ swatches)
               </p>
             </div>
 
             {/* Genuine Scannable QR Code Image */}
             <div className="relative mx-auto w-64 h-64 bg-white p-3 rounded-2xl shadow-2xl border-4 border-[#C67C4E]/50 flex flex-col items-center justify-center group overflow-hidden">
-              
+
               {/* Animated Laser Scanning Line */}
               {scanning && (
                 <div className="absolute inset-x-0 h-1 bg-[#C67C4E] shadow-[0_0_20px_#C67C4E] z-20 animate-bounce" />
