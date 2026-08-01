@@ -33,7 +33,7 @@ const INDUSTRY_DETAILS = [
     title: 'Office Chairs & Executive Seating',
     tagline: 'Ergonomic, breathable, long-wearing commercial seating materials.',
     icon: Building,
-    image: 'https://images.unsplash.com/photo-1580481072645-022f9a6d1275?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop',
     keySpecs: ['Satin Smooth Nappa Finish', 'Sweat & Friction Resistant', 'Flame Retardant (BS 5852)', 'Easy Wipe Surface'],
     suitableFor: ['Executive Task Chairs', 'Conference Room Chairs', 'Acoustic Wall Panels', 'Lobby Seating'],
     recommendedSeries: 'Nappa Finish 1.2mm'
@@ -167,11 +167,15 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onOpenEnquir
             </div>
           </div>
 
-          <div className="lg:col-span-6 relative rounded-2xl overflow-hidden h-[380px] shadow-2xl">
+          <div className="lg:col-span-6 relative rounded-2xl overflow-hidden h-[380px] shadow-2xl bg-gray-900">
             <img
               src={selectedApp.image}
               alt={selectedApp.title}
               className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                e.currentTarget.src = 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800&auto=format&fit=crop';
+              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">

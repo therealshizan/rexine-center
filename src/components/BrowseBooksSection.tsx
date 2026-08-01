@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { BookOpen, QrCode, ArrowRight, Layers } from 'lucide-react';
 import { MOCK_BOOKS, Book } from '../data/mockBooks';
 import { BookQRCodeModal } from './BookQRCodeModal';
+import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.jpg';
 
 export const BrowseBooksSection: React.FC = () => {
   const navigate = useNavigate();
@@ -54,10 +55,9 @@ export const BrowseBooksSection: React.FC = () => {
                   <img
                     src={book.coverImage}
                     alt={book.title}
+                    referrerPolicy="no-referrer"
                     onError={(e) => {
-                      if (book.fallbackCover) {
-                        e.currentTarget.src = book.fallbackCover;
-                      }
+                      e.currentTarget.src = book.fallbackCover || heroLeatherRolls;
                     }}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
                   />
