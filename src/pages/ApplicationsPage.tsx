@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { APPLICATIONS } from '../data/mockData';
 import { ArrowRight, Check, ShieldCheck, Flame, Sun, Droplets, Sparkles, Building, Car, Sofa, Wrench } from 'lucide-react';
 import { Product } from '../types';
+import officeUse from '../assets/images/office-use.png';
 
 interface ApplicationsPageProps {
   onOpenEnquiry: (product?: Product | null) => void;
@@ -33,7 +34,7 @@ const INDUSTRY_DETAILS = [
     title: 'Office Chairs & Executive Seating',
     tagline: 'Ergonomic, breathable, long-wearing commercial seating materials.',
     icon: Building,
-    image: 'https://images.unsplash.com/photo-1580481072645-022f9a6d1275?q=80&w=800&auto=format&fit=crop',
+    image: officeUse,
     keySpecs: ['Satin Smooth Nappa Finish', 'Sweat & Friction Resistant', 'Flame Retardant (BS 5852)', 'Easy Wipe Surface'],
     suitableFor: ['Executive Task Chairs', 'Conference Room Chairs', 'Acoustic Wall Panels', 'Lobby Seating'],
     recommendedSeries: 'Nappa Finish 1.2mm'

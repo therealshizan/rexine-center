@@ -4,6 +4,7 @@ import { BLOG_POSTS, TESTIMONIAL_FEATURED } from '../data/mockData';
 import aboutInteriorDining from '../assets/images/about_interior_dining_1785154208545.jpg';
 import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
 import chairLoungeContact from '../assets/images/chair_lounge_contact_1785154236762.jpg';
+import officeUse from '../assets/images/office-use.png';
 
 const TESTIMONIALS = [
   {
@@ -46,7 +47,7 @@ export const GalleryTestimonialsBlog: React.FC = () => {
     'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=400&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=400&auto=format&fit=crop',
     leatherSwatchesStacked,
-    'https://images.unsplash.com/photo-1580481072645-022f9a6d1275?q=80&w=400&auto=format&fit=crop'
+    officeUse
   ];
 
   return (

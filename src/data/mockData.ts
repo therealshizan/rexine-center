@@ -6,6 +6,7 @@ import aboutInteriorDining from '../assets/images/about_interior_dining_17851542
 import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
 import chairLoungeContact from '../assets/images/chair_lounge_contact_1785154236762.jpg';
 import heroLeatherFolds from '../assets/images/hero_leather_folds_1785161428952.jpg';
+import officeUse from '../assets/images/office-use.png';
 import rexineCognacNappa from '../assets/images/rexine_cognac_nappa_1785227277160.jpg';
 import rexineBurgundyWine from '../assets/images/rexine_burgundy_wine_1785227406807.jpg';
 import rexineSlateCharcoal from '../assets/images/rexine_slate_charcoal_1785227428841.jpg';
@@ -168,7 +169,7 @@ export const APPLICATIONS = [
   {
     id: 'office',
     title: 'Office',
-    image: 'https://images.unsplash.com/photo-1580481072645-022f9a6d1275?q=80&w=800&auto=format&fit=crop',
+    image: officeUse,
     description: 'Ergonomic breathable upholstery for executive office chairs & pods.'
   },
   {
