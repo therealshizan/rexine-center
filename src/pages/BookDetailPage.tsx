@@ -74,6 +74,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
     );
 
     window.open(`https://wa.me/918104019890?text=${text}`, '_blank');
+  };
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(window.location.href);
@@ -413,3 +414,4 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
     </div>
   );
 };
+export default BookDetailPage;

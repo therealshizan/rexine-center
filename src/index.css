@@ -112,3 +112,18 @@ body {
     cursor: none;
   }
 }
+
+/* Marquee Animation for Our Clients */
+@keyframes client-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-client-marquee {
+  animation: client-marquee 30s linear infinite;
+}
+

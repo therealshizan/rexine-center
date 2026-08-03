@@ -2,6 +2,8 @@ import React from 'react';
 import { aboutInteriorDining, heroLeatherRolls, leatherSwatchesStacked } from '../data/mockData';
 import { ShieldCheck, Award, Factory, Users, MapPin, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Product } from '../types';
+import OurClients from '../components/OurClients';
+
 
 interface AboutPageProps {
   onOpenEnquiry: (product?: Product | null) => void;
@@ -62,6 +64,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenEnquiry }) => {
               </div>
             </div>
           </div>
+      <OurClients />
         </div>
 
         {/* Our Core Values & Certification Standards */}
