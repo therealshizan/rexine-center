@@ -29,35 +29,36 @@ export const FAQAndBulkSection: React.FC<FAQAndBulkSectionProps> = ({ onOpenEnqu
             </h2>
 
             {/* 2-Column Grid of FAQ accordions */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {FAQS.map((faq) => {
-                const isOpen = openFaq === faq.id;
-                return (
-                  <div
-                    key={faq.id}
-                    className="bg-white rounded-xl border border-black/8 p-4 transition-all shadow-sm"
-                  >
-                    <button
-                      onClick={() => toggleFaq(faq.id)}
-                      className="w-full flex items-center justify-between text-left gap-3"
-                    >
-                      <span className="font-serif text-xs font-bold text-[#111111]">
-                        {faq.question}
-                      </span>
-                      <span className="p-1 rounded-full bg-gray-100 text-gray-600 shrink-0">
-                        {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
-                      </span>
-                    </button>
+            {/* 2-Column Grid of FAQ accordions */}
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+  {FAQS.map((faq) => {
+    const isOpen = openFaq === faq.id;
+    return (
+      <div
+        key={faq.id}
+        className="bg-white rounded-xl border border-black/8 p-4 transition-all shadow-sm"
+      >
+        <button
+          onClick={() => toggleFaq(faq.id)}
+          className="w-full flex items-center justify-between text-left gap-3"
+        >
+          <span className="font-serif text-xs font-bold text-[#111111]">
+            {faq.question}
+          </span>
+          <span className="p-1 rounded-full bg-gray-100 text-gray-600 shrink-0">
+            {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
+          </span>
+        </button>
 
-                    {isOpen && (
-                      <p className="font-sans text-[11px] text-gray-500 mt-2.5 pt-2.5 border-t border-gray-100 leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+        {isOpen && (
+          <p className="font-sans text-[11px] text-gray-500 mt-2.5 pt-2.5 border-t border-gray-100 leading-relaxed">
+            {faq.answer}
+          </p>
+        )}
+      </div>
+    );
+  })}
+</div>
           </div>
 
           {/* Right: NEED BULK QUANTITY? (4 cols) */}

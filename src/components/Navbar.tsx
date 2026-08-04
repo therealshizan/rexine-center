@@ -7,14 +7,14 @@ interface NavbarProps {
   onOpenSearch: () => void;
   onOpenWishlist: () => void;
   onOpenEnquiry: () => void;
-  wishlistCount: number;
+  // wishlistCount: number;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   onOpenSearch,
   onOpenWishlist,
   onOpenEnquiry,
-  wishlistCount,
+  // wishlistCount,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -116,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
 
             {/* Wishlist Icon Button */}
-            <button
+            {/* <button
               onClick={onOpenWishlist}
               className="p-2 text-gray-700 hover:text-black hover:bg-black/5 rounded-full transition-all relative"
               aria-label="Saved Wishlist"
@@ -127,7 +127,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   {wishlistCount}
                 </span>
               )}
-            </button>
+            </button> */}
 
             {/* Main CTA Button: ENQUIRE NOW */}
             <button

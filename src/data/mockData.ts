@@ -189,6 +189,18 @@ export const APPLICATIONS = [
     title: 'Healthcare',
     image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop',
     description: 'Antimicrobial and easy-disinfectant vinyl for medical beds & clinics.'
+  },
+  {
+    id: 'marine',
+    title: 'Marine',
+    image: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=800&auto=format&fit=crop',
+    description: 'Saltwater and mildew resistant synthetic leather for luxury yachts.'
+  },
+  {
+    id: 'healthcare',
+    title: 'Healthcare',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop',
+    description: 'Antimicrobial and easy-disinfectant vinyl for medical beds & clinics.'
   }
 ];
 

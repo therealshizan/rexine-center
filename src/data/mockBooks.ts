@@ -380,33 +380,33 @@ export const MOCK_BOOKS: Book[] = [
       890
     ),
   },
-  {
-    slug: 'signature-diamond-quilted',
-    title: 'Signature - Diamond Quilted & Embossed',
-    code: 'SG-BK-QUILT',
-    category: 'Decorative Materials',
-    year: '2026 Edition',
-    description: 'Physical swatch book with 27 padded diamond stitched and metallic embossed synthetic hides for luxury headboards and decorative wall panels.',
-    coverImage: '/books/signature-diamond-quilted/cover.webp',
-    fallbackCover: rexineEmeraldGreen,
-    pdfPath: '/books/signature-diamond-quilted/catalogue.pdf',
-    designCount: 27,
-    specs: {
-      thickness: '1.4 mm',
-      width: '54 inches (137 cm)',
-      backing: '10mm Foam Padded Backing',
-      finish: 'Stitched Diamond & Metallic Gloss',
-      targetUse: 'Headboards, Wall Panels & Accents',
-    },
-    products: generateMockProducts(
-      'signature-diamond-quilted',
-      'SG-BK-QUILT',
-      'Signature Diamond Quilted',
-      'Decorative Materials',
-      27,
-      1480
-    ),
-  },
+  // {
+  //   slug: 'signature-diamond-quilted',
+  //   title: 'Signature - Diamond Quilted & Embossed',
+  //   code: 'SG-BK-QUILT',
+  //   category: 'Decorative Materials',
+  //   year: '2026 Edition',
+  //   description: 'Physical swatch book with 27 padded diamond stitched and metallic embossed synthetic hides for luxury headboards and decorative wall panels.',
+  //   coverImage: '/books/signature-diamond-quilted/cover.webp',
+  //   fallbackCover: rexineEmeraldGreen,
+  //   pdfPath: '/books/signature-diamond-quilted/catalogue.pdf',
+  //   designCount: 27,
+  //   specs: {
+  //     thickness: '1.4 mm',
+  //     width: '54 inches (137 cm)',
+  //     backing: '10mm Foam Padded Backing',
+  //     finish: 'Stitched Diamond & Metallic Gloss',
+  //     targetUse: 'Headboards, Wall Panels & Accents',
+  //   },
+  //   products: generateMockProducts(
+  //     'signature-diamond-quilted',
+  //     'SG-BK-QUILT',
+  //     'Signature Diamond Quilted',
+  //     'Decorative Materials',
+  //     27,
+  //     1480
+  //   ),
+  // },
 ];
 
 // Utility: get book by slug or ID/code

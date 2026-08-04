@@ -7,6 +7,7 @@ import chairLoungeContact from '../assets/images/chair_lounge_contact_1785154236
 import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.jpg';
 import heroLeatherFolds from '../assets/images/hero_leather_folds_1785161428952.jpg';
 import officeUse from '../assets/images/office-use.png';
+import { Link } from 'react-router-dom';
 
 const TESTIMONIALS = [
   {
@@ -85,14 +86,11 @@ export const GalleryTestimonialsBlog: React.FC = () => {
                 ))}
               </div>
             </div>
-
-            <a
-              href="#gallery"
-              className="font-button text-xs font-bold text-gray-700 hover:text-[#C67C4E] uppercase tracking-wider flex items-center gap-1.5 transition-colors"
-            >
+          <Link to="/applications" className="font-button text-xs font-bold text-gray-700 hover:text-[#C67C4E] uppercase tracking-wider flex items-center gap-1.5 transition-colors">
+              
               <span>View full gallery</span>
               <ArrowRight className="w-4 h-4" />
-            </a>
+          </Link>
           </div>
 
           {/* Column 2: CLIENT TESTIMONIALS (4 cols) */}
@@ -210,13 +208,11 @@ export const GalleryTestimonialsBlog: React.FC = () => {
               </div>
             </div>
 
-            <a
-              href="#blog"
-              className="font-button text-xs font-bold text-gray-700 hover:text-[#C67C4E] uppercase tracking-wider flex items-center gap-1.5 transition-colors"
-            >
+          <Link to="/resources" className="font-button text-xs font-bold text-gray-700 hover:text-[#C67C4E] uppercase tracking-wider flex items-center gap-1.5 transition-colors">
+              
               <span>Explore all articles</span>
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
 
         </div>

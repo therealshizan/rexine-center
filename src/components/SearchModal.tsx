@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, Search, ArrowRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { X, Search } from 'lucide-react';
 import { PRODUCTS, SAMPLE_BOOKS } from '../data/mockData';
 import { Product } from '../types';
 
@@ -17,6 +17,11 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   initialQuery = '',
 }) => {
   const [searchQuery, setSearchQuery] = useState(initialQuery);
+
+  // Sync internal state when initialQuery changes (e.g. clicking a popular tag)
+  useEffect(() => {
+    setSearchQuery(initialQuery);
+  }, [initialQuery]);
 
   if (!isOpen) return null;
 
@@ -36,7 +41,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   );
 
   return (
-    <div className="fixed inset-0 z-[9000] flex flex-col bg-white/98 backdrop-blur-2xl p-6 md:p-12 overflow-y-auto animate-fade-in">
+    <div data-lenis-prevent className="fixed inset-0 z-[9000] flex flex-col bg-white/98 backdrop-blur-2xl p-6 md:p-12 overflow-y-auto animate-fade-in">
       {/* Header */}
       <div className="max-w-4xl mx-auto w-full flex items-center justify-between mb-8">
         <div className="flex items-center gap-2">

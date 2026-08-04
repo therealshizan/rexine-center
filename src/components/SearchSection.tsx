@@ -6,7 +6,7 @@ interface SearchSectionProps {
   onOpenEnquiry: () => void;
 }
 
-export const SearchSection: React.FC = ({ onSearchSubmit, onOpenEnquiry }) => {
+export const SearchSection: React.FC<SearchSectionProps> = ({ onSearchSubmit, onOpenEnquiry }) => {
   const [productQuery, setProductQuery] = useState('');
   const [bookQuery, setBookQuery] = useState('');
 
@@ -22,6 +22,18 @@ export const SearchSection: React.FC = ({ onSearchSubmit, onOpenEnquiry }) => {
     if (bookQuery.trim()) {
       onSearchSubmit(bookQuery);
     }
+  };
+
+  // Handler for product tags
+  const handleProductTagClick = (tag: string) => {
+    setProductQuery(tag);
+    onSearchSubmit(tag);
+  };
+
+  // Handler for book tags
+  const handleBookTagClick = (tag: string) => {
+    setBookQuery(tag);
+    onSearchSubmit(tag);
   };
 
   return (
@@ -58,7 +70,8 @@ export const SearchSection: React.FC = ({ onSearchSubmit, onOpenEnquiry }) => {
               {['ML-102', 'RS-204', 'VG-S30', 'Milano', 'Rustic'].map((tag) => (
                 <button
                   key={tag}
-                  onClick={() => onSearchSubmit(tag)}
+                  type="button"
+                  onClick={() => handleProductTagClick(tag)}
                   className="bg-[#EDE8E3] hover:bg-gray-300 text-gray-800 px-2 py-0.5 rounded transition-colors"
                 >
                   {tag}
@@ -96,7 +109,8 @@ export const SearchSection: React.FC = ({ onSearchSubmit, onOpenEnquiry }) => {
               {['Milano', 'Supreme', 'Royal', 'Elite', 'Signature'].map((tag) => (
                 <button
                   key={tag}
-                  onClick={() => onSearchSubmit(tag)}
+                  type="button"
+                  onClick={() => handleBookTagClick(tag)}
                   className="bg-[#EDE8E3] hover:bg-gray-300 text-gray-800 px-2 py-0.5 rounded transition-colors"
                 >
                   {tag}
