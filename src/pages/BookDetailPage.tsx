@@ -405,7 +405,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
           isOpen={showPDFModal}
           onClose={() => setShowPDFModal(false)}
           title={book.title}
-          pdfUrl={book.pdfPath || '/books/cinefab-651/catalogue.pdf'}
+          pdfUrl={book.pdfPath}
           code={book.code}
           pageCount={book.designCount ? book.designCount + 4 : 39}
         />
