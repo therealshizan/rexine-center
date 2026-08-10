@@ -72,7 +72,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
       `Hello Rexine Centre,\nI scanned Physical Sample Book: *${book.title}* (${book.code})\n\nI selected ${selectedSwatches.length} design swatches for enquiry:\n${swatchListText}\n\nPlease share wholesale roll pricing, stock availability, and dispatch timeline.`
     );
 
-    window.open(`https://wa.me/919930952947?text=${text}`, '_blank');
+    window.open(`https://wa.me/918104019890?text=${text}`, '_blank');
   };
 
   const handleCopyLink = () => {
@@ -369,7 +369,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                       </button>
 
                       <a
-                        href={`https://wa.me/919930952947?text=${encodeURIComponent(`Hello Rexine Centre,\nI scanned Physical Sample Book: *${book.title}* (${book.code})\n\nInquiring about Design Swatch: *${product.code}* (${product.shadeName || product.name})\nRetail RRP: ₹${product.rrp}/${product.unit}\n\nPlease share wholesale roll price and availability.`)}`}
+                        href={`https://wa.me/918104019890?text=${encodeURIComponent(`Hello Rexine Centre,\nI scanned Physical Sample Book: *${book.title}* (${book.code})\n\nInquiring about Design Swatch: *${product.code}* (${product.shadeName || product.name})\nRetail RRP: ₹${product.rrp}/${product.unit}\n\nPlease share wholesale roll price and availability.`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-[#25D366] hover:bg-[#1ebd59] text-white p-2 rounded-xl transition-all shadow-xs"
@@ -403,7 +403,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
           isOpen={showPDFModal}
           onClose={() => setShowPDFModal(false)}
           title={book.title}
-          pdfUrl={book.pdfPath || '/books/cinefab-651/catalogue.pdf'}
+          pdfUrl={book.pdfPath}
           code={book.code}
           pageCount={book.designCount ? book.designCount + 4 : 39}
         />
@@ -412,3 +412,4 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
     </div>
   );
 };
+export default BookDetailPage;

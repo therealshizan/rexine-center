@@ -5,16 +5,16 @@ import { Product } from '../types';
 interface ProductDetailModalProps {
   product: Product | null;
   onClose: () => void;
-  isWishlisted: boolean;
-  onToggleWishlist: (productId: string) => void;
+  // isWishlisted: boolean;
+  // onToggleWishlist: (productId: string) => void;
   onOpenEnquiry: (product: Product) => void;
 }
 
 export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
   product,
   onClose,
-  isWishlisted,
-  onToggleWishlist,
+  // isWishlisted,
+  // onToggleWishlist,
   onOpenEnquiry,
 }) => {
   if (!product) return null;
@@ -22,7 +22,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
   const [selectedColor, setSelectedColor] = useState(product.colors[0] || { name: 'Default', hex: '#111111' });
 
   return (
-    <div className="fixed inset-0 z-[9000] flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-fade-in">
+    <div data-lenis-prevent className="fixed inset-0 z-[9000] flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-fade-in">
       <div className="w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden border border-black/10 max-h-[90vh] flex flex-col md:flex-row">
         {/* Left Visual Column */}
         <div className="w-full md:w-1/2 bg-[#111111] relative p-6 flex flex-col justify-between text-white">
@@ -142,7 +142,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
           {/* Bottom Actions */}
           <div className="flex items-center gap-3 pt-4 border-t border-black/8">
-            <button
+            {/* <button
               onClick={() => onToggleWishlist(product.id)}
               className={`p-3 rounded-xl border transition-all ${
                 isWishlisted
@@ -152,7 +152,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               data-cursor="Wishlist"
             >
               <Heart className={`w-5 h-5 ${isWishlisted ? 'fill-current' : ''}`} />
-            </button>
+            </button> */}
 
             <button
               onClick={() => {

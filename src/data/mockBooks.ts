@@ -191,9 +191,9 @@ const generateCinefabProducts = (): BookProduct[] => {
   ];
 
   return cinefabShades.map((s, idx) => {
-    const code = `CINEFAB-651-${s.sr}`;
+    const code = `651-${s.sr}`;
     const fallback = FALLBACK_IMAGES[idx % FALLBACK_IMAGES.length];
-    const imagePath = `/books/cinefab-651/products/${code}.webp`;
+    const imagePath = `/books/cinefab-651/products/${code}.png`;
 
     return {
       code,
@@ -205,7 +205,7 @@ const generateCinefabProducts = (): BookProduct[] => {
       description: `Official Rexine Centre CINEFAB 651 swatch SR.NO: ${s.sr} (${s.name}). 100% Polyester, 140 CMS width, 380 GSM weight, and 50,000 Martindale Rubs. Premium durability for luxury sofas, chairs, and home upholstery.`,
       image: imagePath,
       fallbackImage: fallback,
-      gallery: [imagePath, fallback],
+      gallery: [imagePath],
       colors: [
         { name: s.name, hex: s.hex },
         { name: 'Base Weave', hex: '#EAEAEA' },
@@ -232,8 +232,8 @@ export const MOCK_BOOKS: Book[] = [
     category: '100% Polyester Upholstery',
     year: '2026 Master Edition',
     description: 'Official Rexine Centre CINEFAB-651 sample book featuring 35 premium 100% Polyester upholstery swatches (380 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.',
-    coverImage: '/books/cinefab-651/cover.webp',
-    fallbackCover: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800',
+    coverImage: '/books/cinefab-651/cover.png',
+    fallbackCover: '/books/cinefab-651/cover.png',
     pdfPath: '/books/cinefab-651/catalogue.pdf',
     designCount: 35,
     specs: {
@@ -380,33 +380,33 @@ export const MOCK_BOOKS: Book[] = [
       890
     ),
   },
-  {
-    slug: 'signature-diamond-quilted',
-    title: 'Signature - Diamond Quilted & Embossed',
-    code: 'SG-BK-QUILT',
-    category: 'Decorative Materials',
-    year: '2026 Edition',
-    description: 'Physical swatch book with 27 padded diamond stitched and metallic embossed synthetic hides for luxury headboards and decorative wall panels.',
-    coverImage: '/books/signature-diamond-quilted/cover.webp',
-    fallbackCover: rexineEmeraldGreen,
-    pdfPath: '/books/signature-diamond-quilted/catalogue.pdf',
-    designCount: 27,
-    specs: {
-      thickness: '1.4 mm',
-      width: '54 inches (137 cm)',
-      backing: '10mm Foam Padded Backing',
-      finish: 'Stitched Diamond & Metallic Gloss',
-      targetUse: 'Headboards, Wall Panels & Accents',
-    },
-    products: generateMockProducts(
-      'signature-diamond-quilted',
-      'SG-BK-QUILT',
-      'Signature Diamond Quilted',
-      'Decorative Materials',
-      27,
-      1480
-    ),
-  },
+  // {
+  //   slug: 'signature-diamond-quilted',
+  //   title: 'Signature - Diamond Quilted & Embossed',
+  //   code: 'SG-BK-QUILT',
+  //   category: 'Decorative Materials',
+  //   year: '2026 Edition',
+  //   description: 'Physical swatch book with 27 padded diamond stitched and metallic embossed synthetic hides for luxury headboards and decorative wall panels.',
+  //   coverImage: '/books/signature-diamond-quilted/cover.webp',
+  //   fallbackCover: rexineEmeraldGreen,
+  //   pdfPath: '/books/signature-diamond-quilted/catalogue.pdf',
+  //   designCount: 27,
+  //   specs: {
+  //     thickness: '1.4 mm',
+  //     width: '54 inches (137 cm)',
+  //     backing: '10mm Foam Padded Backing',
+  //     finish: 'Stitched Diamond & Metallic Gloss',
+  //     targetUse: 'Headboards, Wall Panels & Accents',
+  //   },
+  //   products: generateMockProducts(
+  //     'signature-diamond-quilted',
+  //     'SG-BK-QUILT',
+  //     'Signature Diamond Quilted',
+  //     'Decorative Materials',
+  //     27,
+  //     1480
+  //   ),
+  // },
 ];
 
 // Utility: get book by slug or ID/code

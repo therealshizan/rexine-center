@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { HeroBanner } from '../components/HeroBanner';
+import OurClients from '../components/OurClients';
 import { HighlightsBar } from '../components/HighlightsBar';
 import { SearchSection } from '../components/SearchSection';
 import { BrowseBooksSection } from '../components/BrowseBooksSection';
@@ -37,6 +38,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         onOpenBookScanner={onOpenBookScanner}
         onOpenEnquiry={() => onOpenEnquiry(null)}
       />
+      <OurClients />
 
       {/* 2. Highlights Bar */}
       <HighlightsBar />

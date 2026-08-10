@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Lenis from 'lenis';
+import { setLenis } from "./lib/lenis";
 
 import { CustomCursor } from './components/CustomCursor';
 import { Preloader } from './components/Preloader';
@@ -66,7 +67,7 @@ function MainAppContent() {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
     });
-
+    setLenis(lenis)
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -114,7 +115,7 @@ function MainAppContent() {
             onOpenSearch={() => setSearchOpen(true)}
             onOpenWishlist={() => setWishlistOpen(true)}
             onOpenEnquiry={() => handleOpenEnquiryWithProduct(null)}
-            wishlistCount={wishlistIds.length}
+            // wishlistCount={wishlistIds.length}
           />
 
           {/* 2. Dynamic Page Routes */}
@@ -153,16 +154,18 @@ function MainAppContent() {
                   />
                 }
               />
-
               <Route
                 path="/books/:slug/:productCode"
                 element={
                   <BookProductDetailPage
+                    // isWishlisted={detailProduct ? wishlistIds.includes(detailProduct.id) : false}
+                    // onToggleWishlist={handleToggleWishlist}
                     onOpenEnquiry={handleOpenEnquiryWithProduct}
                     onSelectProduct={(p) => setDetailProduct(p)}
                   />
                 }
-              />
+              /> 
+
 
               <Route
                 path="/applications"
@@ -254,13 +257,13 @@ function MainAppContent() {
       )}
 
       {/* Modals & Drawers */}
-      <WishlistDrawer
+      {/* <WishlistDrawer
         isOpen={wishlistOpen}
         onClose={() => setWishlistOpen(false)}
         wishlistProducts={wishlistProducts}
         onRemoveFromWishlist={handleToggleWishlist}
         onOpenEnquiry={handleOpenEnquiryWithProduct}
-      />
+      /> */}
 
       <QuickEnquiryModal
         isOpen={enquiryOpen}
@@ -271,8 +274,8 @@ function MainAppContent() {
       <ProductDetailModal
         product={detailProduct}
         onClose={() => setDetailProduct(null)}
-        isWishlisted={detailProduct ? wishlistIds.includes(detailProduct.id) : false}
-        onToggleWishlist={handleToggleWishlist}
+        // isWishlisted={detailProduct ? wishlistIds.includes(detailProduct.id) : false}
+        // onToggleWishlist={handleToggleWishlist}
         onOpenEnquiry={handleOpenEnquiryWithProduct}
       />
 

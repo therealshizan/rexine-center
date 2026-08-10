@@ -272,7 +272,7 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
                   </button>
 
                   <a
-                    href={`https://wa.me/919930952947?text=${encodeURIComponent(`Hello Rexine Centre,\nI would like to request physical sample book: *${book.name}* (${book.code}).\nPlease send wholesale dealer terms and dispatch timeline.`)}`}
+                    href={`https://wa.me/918104019890?text=${encodeURIComponent(`Hello Rexine Centre,\nI would like to request physical sample book: *${book.name}* (${book.code}).\nPlease send wholesale dealer terms and dispatch timeline.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#25D366] hover:bg-[#1ebd59] text-white p-3 rounded-xl transition-all shadow-sm"

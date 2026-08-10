@@ -57,7 +57,7 @@ export const QuickEnquiryModal: React.FC<QuickEnquiryModalProps> = ({
     );
 
     setTimeout(() => {
-      window.open(`https://wa.me/919930952947?text=${text}`, '_blank');
+      window.open(`https://wa.me/918104019890?text=${text}`, '_blank');
       setSubmitted(false);
       onClose();
     }, 2000);
@@ -124,7 +124,7 @@ export const QuickEnquiryModal: React.FC<QuickEnquiryModalProps> = ({
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+91 99309 52947"
+                    placeholder="+91 81040 19890"
                     className="w-full bg-white border border-gray-300 rounded-lg px-3.5 py-2.5 text-xs text-gray-800 focus:outline-none focus:border-[#C67C4E]"
                   />
                 </div>

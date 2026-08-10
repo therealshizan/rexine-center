@@ -5,6 +5,7 @@ import aboutInteriorDining from '../assets/images/about_interior_dining_17851542
 import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
 import chairLoungeContact from '../assets/images/chair_lounge_contact_1785154236762.jpg';
 import heroLeatherFolds from '../assets/images/hero_leather_folds_1785161428952.jpg';
+import officeUse from '../assets/images/office-use.png';
 import rexineCognacNappa from '../assets/images/rexine_cognac_nappa_1785227277160.jpg';
 import rexineBurgundyWine from '../assets/images/rexine_burgundy_wine_1785227406807.jpg';
 import rexineSlateCharcoal from '../assets/images/rexine_slate_charcoal_1785227428841.jpg';
@@ -167,7 +168,7 @@ export const APPLICATIONS = [
   {
     id: 'office',
     title: 'Office',
-    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop',
+    image: officeUse,
     description: 'Ergonomic breathable upholstery for executive office chairs & pods.'
   },
   {
@@ -175,6 +176,18 @@ export const APPLICATIONS = [
     title: 'Hospitality',
     image: aboutInteriorDining,
     description: 'Commercial fire-retardant hides for hotel lobbies, bars & restaurants.'
+  },
+  {
+    id: 'marine',
+    title: 'Marine',
+    image: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=800&auto=format&fit=crop',
+    description: 'Saltwater and mildew resistant synthetic leather for luxury yachts.'
+  },
+  {
+    id: 'healthcare',
+    title: 'Healthcare',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop',
+    description: 'Antimicrobial and easy-disinfectant vinyl for medical beds & clinics.'
   },
   {
     id: 'marine',

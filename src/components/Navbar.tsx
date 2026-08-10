@@ -7,14 +7,14 @@ interface NavbarProps {
   onOpenSearch: () => void;
   onOpenWishlist: () => void;
   onOpenEnquiry: () => void;
-  wishlistCount: number;
+  // wishlistCount: number;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   onOpenSearch,
   onOpenWishlist,
   onOpenEnquiry,
-  wishlistCount,
+  // wishlistCount,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -32,13 +32,13 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Left Info: Contact & Express Dispatch Notice */}
           <div className="flex items-center gap-4 text-gray-300">
             <a
-              href="https://wa.me/919930952947?text=Hi%20Rexine%20Centre%2C%20I%20need%20wholesale%20catalogue%20and%20pricing."
+              href="https://wa.me/918104019890?text=Hi%20Rexine%20Centre%2C%20I%20need%20wholesale%20catalogue%20and%20pricing."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 hover:text-white transition-colors"
             >
               <Phone className="w-3 h-3 text-[#C67C4E]" />
-              <span className="font-bold text-white">+91 99309 52947</span>
+              <span className="font-bold text-white">+91 81040 19890</span>
             </a>
 
             <span className="hidden md:inline text-gray-600">|</span>

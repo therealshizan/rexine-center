@@ -5,6 +5,10 @@ import { BLOG_POSTS, TESTIMONIAL_FEATURED } from '../data/mockData';
 import aboutInteriorDining from '../assets/images/about_interior_dining_1785154208545.jpg';
 import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
 import chairLoungeContact from '../assets/images/chair_lounge_contact_1785154236762.jpg';
+import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.jpg';
+import heroLeatherFolds from '../assets/images/hero_leather_folds_1785161428952.jpg';
+import officeUse from '../assets/images/office-use.png';
+import { Link } from 'react-router-dom';
 
 export const GalleryTestimonialsBlog: React.FC = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -12,10 +16,10 @@ export const GalleryTestimonialsBlog: React.FC = () => {
   const GALLERY_IMAGES = [
     chairLoungeContact,
     aboutInteriorDining,
-    'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=400&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=400&auto=format&fit=crop',
+    heroLeatherRolls,
+    heroLeatherFolds,
     leatherSwatchesStacked,
-    'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=400&auto=format&fit=crop'
+    officeUse
   ];
 
   return (
@@ -54,14 +58,11 @@ export const GalleryTestimonialsBlog: React.FC = () => {
                 ))}
               </div>
             </div>
-
-            <Link
-              to="/applications"
-              className="font-button text-xs font-bold text-gray-700 hover:text-[#C67C4E] uppercase tracking-wider flex items-center gap-1.5 transition-colors"
-            >
+          <Link to="/applications" className="font-button text-xs font-bold text-gray-700 hover:text-[#C67C4E] uppercase tracking-wider flex items-center gap-1.5 transition-colors">
+              
               <span>View full gallery</span>
               <ArrowRight className="w-4 h-4" />
-            </Link>
+          </Link>
           </div>
 
           {/* Column 2: CLIENT TESTIMONIALS (4 cols) */}
@@ -138,13 +139,11 @@ export const GalleryTestimonialsBlog: React.FC = () => {
               </div>
             </div>
 
-            <a
-              href="#blog"
-              className="font-button text-xs font-bold text-gray-700 hover:text-[#C67C4E] uppercase tracking-wider flex items-center gap-1.5 transition-colors"
-            >
+          <Link to="/resources" className="font-button text-xs font-bold text-gray-700 hover:text-[#C67C4E] uppercase tracking-wider flex items-center gap-1.5 transition-colors">
+              
               <span>Explore all articles</span>
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
 
         </div>

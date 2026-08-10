@@ -60,6 +60,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
   const handleSimulateScan = (book: typeof SAMPLE_BOOKS_DATA[0]) => {
     setSelectedBook(book);
     setScanned(true);
+    const pdfTarget = `${SITE_URL.replace(/\/$/, '')}/books/${book.id}/catalogue.pdf`;
     setTimeout(() => {
       stopCamera();
       setScanned(false);
@@ -76,11 +77,18 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
 
   return (
     <>
-      <div className="fixed inset-0 z-[9000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
-        <div className="w-full max-w-2xl bg-[#111111] text-white rounded-3xl shadow-2xl overflow-hidden border border-white/15">
-          
+      <div
+        className="fixed inset-0 z-[9000] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
+        onClick={() => {
+          stopCamera();
+          onClose();
+        }}
+      ><div
+  onClick={(e) => e.stopPropagation()}
+  className="relative w-full max-w-2xl max-h-[90vh] bg-[#111111] text-white rounded-3xl shadow-2xl border border-white/15 overflow-hidden flex flex-col"
+> 
           {/* Header */}
-          <div className="p-5 bg-[#181818] border-b border-white/10 flex items-center justify-between">
+          <div className="p-5 bg-[#181818] border-b border-white/10 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl bg-[#C67C4E] flex items-center justify-center text-white shrink-0 shadow-md">
                 <QrCode className="w-5 h-5 text-amber-200" />
@@ -100,57 +108,56 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
                 stopCamera();
                 onClose();
               }}
-              className="p-2 text-gray-400 hover:text-white rounded-full hover:bg-white/10 transition-colors"
+              className="p-2 text-gray-400 hover:text-white rounded-full hover:bg-white/10 transition-colors cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
           </div>
 
-          {/* Content */}
-          <div className="p-6 space-y-6">
-            
+          {/* Scrollable Content Container */}
+          <div data-lenis-prevent className="p-6 space-y-6 overflow-y-auto flex-grow">  
             {/* Camera Viewfinder Box */}
-            <div className="relative w-full h-56 bg-black rounded-2xl border-2 border-white/15 overflow-hidden flex flex-col items-center justify-center group">
-              
-              {isCameraActive ? (
-                <video
-                  ref={videoRef}
-                  autoPlay
-                  playsInline
-                  muted
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-950 to-[#181818] flex flex-col items-center justify-center p-4 text-center">
-                  <div className="relative w-28 h-28 border-2 border-dashed border-[#C67C4E]/60 rounded-xl flex items-center justify-center mb-2 overflow-hidden bg-black/40">
-                    {/* Animated Scanning Line */}
-                    <div className="absolute inset-x-0 h-1 bg-[#C67C4E] shadow-[0_0_15px_#C67C4E] animate-bounce z-10" />
-                    <QrCode className="w-12 h-12 text-[#C67C4E]/80" />
+            <div className="space-y-3">
+              <div className="relative w-full h-48 sm:h-56 bg-black rounded-2xl border-2 border-white/15 overflow-hidden flex flex-col items-center justify-center">
+                {isCameraActive ? (
+                  <video
+                    ref={videoRef}
+                    autoPlay
+                    playsInline
+                    muted
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-950 to-[#181818] flex flex-col items-center justify-center p-4 text-center">
+                    <div className="relative w-24 h-24 border-2 border-dashed border-[#C67C4E]/60 rounded-xl flex items-center justify-center mb-2 overflow-hidden bg-black/40">
+                      <div className="absolute inset-x-0 h-1 bg-[#C67C4E] shadow-[0_0_15px_#C67C4E] animate-bounce z-10" />
+                      <QrCode className="w-10 h-10 text-[#C67C4E]/80" />
+                    </div>
+                    <p className="text-xs text-gray-300 font-sans max-w-xs">
+                      Point camera at <span className="text-amber-300 font-bold">{selectedBook.code}</span> QR code on back of sample binder
+                    </p>
                   </div>
-                  <p className="text-xs text-gray-300 font-sans max-w-xs">
-                    Point camera at <span className="text-amber-300 font-bold">{selectedBook.code}</span> QR code on back of sample binder
-                  </p>
-                </div>
-              )}
+                )}
 
-              {/* Viewfinder Reticle Overlay */}
-              <div className="absolute inset-8 border-2 border-amber-400/40 rounded-xl pointer-events-none flex flex-col justify-between p-2">
-                <div className="flex justify-between">
-                  <div className="w-4 h-4 border-t-2 border-l-2 border-amber-300" />
-                  <div className="w-4 h-4 border-t-2 border-r-2 border-amber-300" />
-                </div>
-                <div className="flex justify-between">
-                  <div className="w-4 h-4 border-b-2 border-l-2 border-amber-300" />
-                  <div className="w-4 h-4 border-b-2 border-r-2 border-amber-300" />
+                {/* Viewfinder Reticle Overlay */}
+                <div className="absolute inset-6 sm:inset-8 border-2 border-amber-400/30 rounded-xl pointer-events-none flex flex-col justify-between p-2">
+                  <div className="flex justify-between">
+                    <div className="w-4 h-4 border-t-2 border-l-2 border-amber-300" />
+                    <div className="w-4 h-4 border-t-2 border-r-2 border-amber-300" />
+                  </div>
+                  <div className="flex justify-between">
+                    <div className="w-4 h-4 border-b-2 border-l-2 border-amber-300" />
+                    <div className="w-4 h-4 border-b-2 border-r-2 border-amber-300" />
+                  </div>
                 </div>
               </div>
 
-              {/* Camera Controls Overlay */}
-              <div className="absolute bottom-3 inset-x-3 flex items-center justify-between gap-2 z-20">
+              {/* Camera Action Controls (Moved out of video overlay to prevent hiding scanner) */}
+              <div className="flex items-center justify-between gap-2 flex-wrap">
                 {!isCameraActive ? (
                   <button
                     onClick={startCamera}
-                    className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-3 py-1.5 rounded-xl text-[11px] font-button uppercase font-bold flex items-center gap-1.5 cursor-pointer border border-white/20"
+                    className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-3.5 py-2 rounded-xl text-[11px] font-button uppercase font-bold flex items-center gap-1.5 cursor-pointer border border-white/20 transition-all"
                   >
                     <Camera className="w-3.5 h-3.5 text-amber-300" />
                     <span>Enable Live Device Camera</span>
@@ -158,7 +165,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
                 ) : (
                   <button
                     onClick={stopCamera}
-                    className="bg-red-500/80 hover:bg-red-600 backdrop-blur-md text-white px-3 py-1.5 rounded-xl text-[11px] font-button uppercase font-bold flex items-center gap-1 cursor-pointer"
+                    className="bg-red-500/80 hover:bg-red-600 backdrop-blur-md text-white px-3.5 py-2 rounded-xl text-[11px] font-button uppercase font-bold flex items-center gap-1 cursor-pointer transition-all"
                   >
                     <span>Stop Camera</span>
                   </button>
@@ -166,7 +173,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
 
                 <button
                   onClick={() => setShowPDFModal(true)}
-                  className="bg-[#C67C4E] hover:bg-[#b06a3d] backdrop-blur-md text-white px-3.5 py-1.5 rounded-xl text-[11px] font-button uppercase font-bold flex items-center gap-1.5 cursor-pointer shadow-md"
+                  className="bg-[#C67C4E] hover:bg-[#b06a3d] backdrop-blur-md text-white px-4 py-2 rounded-xl text-[11px] font-button uppercase font-bold flex items-center gap-1.5 cursor-pointer shadow-md transition-all"
                 >
                   <FileText className="w-3.5 h-3.5 text-amber-200" />
                   <span>Open PDF Catalogue</span>
@@ -175,7 +182,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
             </div>
 
             {cameraError && (
-              <p className="text-[11px] text-amber-300/80 bg-amber-400/10 p-2 rounded-xl border border-amber-400/20 text-center font-sans">
+              <p className="text-[11px] text-amber-300/80 bg-amber-400/10 p-2.5 rounded-xl border border-amber-400/20 text-center font-sans">
                 {cameraError}
               </p>
             )}

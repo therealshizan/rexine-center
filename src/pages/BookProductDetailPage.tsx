@@ -8,23 +8,25 @@ import {
   Share2,
   Send,
   ArrowLeft,
-  CheckCircle2,
-  Info,
   BookOpen,
   Layers,
-  Sparkles,
+  Heart,
 } from 'lucide-react';
-import { getBookProduct, getRelatedProducts, BookProduct } from '../data/mockBooks';
+import { getBookProduct, getRelatedProducts } from '../data/mockBooks';
 import { Product } from '../types';
 import { BookQRCodeModal } from '../components/BookQRCodeModal';
 
 interface BookProductDetailPageProps {
   onOpenEnquiry: (product?: Product | null) => void;
   onSelectProduct?: (product: Product) => void;
+  // isWishlisted: boolean;
+  // onToggleWishlist: (productId: string) => void;
 }
 
 export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
   onOpenEnquiry,
+  // isWishlisted,
+  // onToggleWishlist,
 }) => {
   const { slug, productCode } = useParams<{ slug: string; productCode: string }>();
   const navigate = useNavigate();
@@ -60,7 +62,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
 
   const activeMainImage = selectedImage || product.image;
 
-  // Convert BookProduct to standard Product type for QuickEnquiryModal
+  // Convert BookProduct to standard Product type for QuickEnquiryModal & Wishlist
   const standardProduct: Product = {
     id: `${book.slug}-${product.code}`,
     code: product.code,
@@ -83,7 +85,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
     const text = encodeURIComponent(
       `Hello Rexine Centre,\nI am inquiring about Product Code: *${product.code}* (${product.name})\nFrom Book: *${book.title}* (${book.code})\nRetail RRP: ₹${product.rrp}/${product.unit}\n\nPlease share wholesale roll pricing, stock availability, and dispatch timeline.`
     );
-    return `https://wa.me/919930952947?text=${text}`;
+    return `https://wa.me/918104019890?text=${text}`;
   };
 
   const handleCopyLink = () => {
@@ -286,8 +288,8 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
                 </div>
               </div>
 
-              {/* Pre-filled WhatsApp & Enquiry Buttons */}
-              <div className="grid grid-cols-2 gap-3 pt-2">
+              {/* Action Buttons with Wishlist */}
+              <div className="space-y-3 pt-2">
                 <a
                   href={getWhatsAppProductUrl()}
                   target="_blank"
@@ -298,13 +300,28 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
                   <span>WHATSAPP ENQUIRY</span>
                 </a>
 
-                <button
-                  onClick={() => onOpenEnquiry(standardProduct)}
-                  className="bg-[#111111] hover:bg-[#C67C4E] text-white py-4 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md text-center"
-                >
-                  <Send className="w-4 h-4 text-amber-300 flex-shrink-0" />
-                  <span>REQUEST QUOTE</span>
-                </button>
+                <div className="flex items-center gap-3">
+                  {/* <button
+                    onClick={() => onToggleWishlist(standardProduct.id)}
+                    className={`p-3.5 rounded-xl border transition-all flex items-center justify-center shrink-0 ${
+                      isWishlisted
+                        ? 'bg-[#C67C4E] text-white border-[#C67C4E]'
+                        : 'bg-white text-gray-700 border-gray-300 hover:border-[#C67C4E]'
+                    }`}
+                    data-cursor="Wishlist"
+                    title={isWishlisted ? 'Remove from Wishlist' : 'Add to Wishlist'}
+                  >
+                    <Heart className={`w-5 h-5 ${isWishlisted ? 'fill-current' : ''}`} />
+                  </button> */}
+
+                  <button
+                    onClick={() => onOpenEnquiry(standardProduct)}
+                    className="w-full bg-[#111111] hover:bg-[#C67C4E] text-white py-3.5 px-4 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md"
+                  >
+                    <Send className="w-4 h-4 text-amber-300" />
+                    <span>REQUEST FORM QUOTE & SAMPLE ROLL</span>
+                  </button>
+                </div>
               </div>
 
             </div>
