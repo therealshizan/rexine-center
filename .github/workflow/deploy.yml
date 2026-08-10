@@ -1,0 +1,44 @@
+name: Deploy React Vite Website
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Download repository code
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      # 2. Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Build React/Vite application
+      - name: Build application
+        run: npm run build
+
+      # 5. Deploy dist folder to Hostinger
+      - name: Deploy to Hostinger
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+        with:
+          username: ${{ secrets.SFTP_USERNAME }}
+          server: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          local_path: './dist/*'
+          remote_path: '/public_html/'
+          delete_remote_files: false
