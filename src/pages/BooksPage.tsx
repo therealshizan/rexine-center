@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.jpg';
 import {
   QrCode,
   BookOpen,
@@ -53,8 +54,6 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
         {/* Breadcrumbs */}
         <div className="flex items-center gap-2 text-xs font-button uppercase tracking-wider text-gray-500 mb-6">
           <Link to="/" className="hover:text-[#C67C4E] transition-colors">Home</Link>
-          <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
-          <Link to="/collections" className="hover:text-[#C67C4E] transition-colors">Collections</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
           <span className="text-[#C67C4E] font-bold">Physical Sample Books Index</span>
         </div>
@@ -113,6 +112,9 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
                     alt={book.name}
                     className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      e.currentTarget.src = heroLeatherRolls;
+                    }}
                   />
                   <span className="absolute top-2 right-2 bg-[#C67C4E] text-white text-[9px] font-button font-bold uppercase px-1.5 py-0.5 rounded">
                     QR Code
@@ -194,6 +196,9 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
                       alt={book.name}
                       className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        e.currentTarget.src = heroLeatherRolls;
+                      }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 

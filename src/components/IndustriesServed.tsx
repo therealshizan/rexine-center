@@ -59,6 +59,9 @@ export const IndustriesServed: React.FC<IndustriesServedProps> = ({ onSelectIndu
                   alt={industry.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800&auto=format&fit=crop';
+                  }}
                 />
 
                 {/* Gradient */}

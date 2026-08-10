@@ -1,5 +1,4 @@
 import { Product, CategoryItem, SampleBook, IndustryItem, Testimonial, FAQItem, FeaturedCollection } from '../types';
-import { siteUrl } from '../config';
 
 import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.jpg';
 import aboutInteriorDining from '../assets/images/about_interior_dining_1785154208545.jpg';
@@ -98,14 +97,14 @@ export const INDUSTRIES: IndustryItem[] = [
   { id: 'ind5', title: 'Hospitality', image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800&auto=format&fit=crop', iconName: 'Building2', description: 'Flame retardant materials' },
   { id: 'ind6', title: 'Retail & Dealers', image: leatherSwatchesStacked, iconName: 'ShoppingBag', description: 'Wholesale rolls & swatch books' },
   { id: 'ind7', title: 'Architects', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop', iconName: 'Building', description: 'Commercial specification guidance' },
-  { id: 'ind8', title: 'Upholstery Shops', image: 'https://images.unsplash.com/photo-1580481072645-022f9a6d1275?q=80&w=800&auto=format&fit=crop', iconName: 'Wrench', description: 'Ready stock fast dispatch' }
+  { id: 'ind8', title: 'Upholstery Shops', image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop', iconName: 'Wrench', description: 'Ready stock fast dispatch' }
 ];
 
 export const SAMPLE_BOOKS: SampleBook[] = [
-  { id: 'b1', name: 'Milano Master Collection 2024', code: 'BK-MILANO-24', category: 'Luxury Leatherette', totalSwatches: 48, coverImage: heroLeatherRolls, qrCodeUrl: siteUrl('/book/milano') },
-  { id: 'b2', name: 'Supreme Auto-Grade Leatherette', code: 'BK-AUTO-GRADE', category: 'Automotive Grade', totalSwatches: 32, coverImage: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop', qrCodeUrl: siteUrl('/book/supreme') },
-  { id: 'b3', name: 'Royal Sofa Fabrics Swatch Edition', code: 'BK-ROYAL-SOFA', category: 'Upholstery Fabrics', totalSwatches: 64, coverImage: aboutInteriorDining, qrCodeUrl: siteUrl('/book/royal') },
-  { id: 'b4', name: 'Elite Commercial PVC Hides', code: 'BK-ELITE-PVC', category: 'Heavy Duty Commercial', totalSwatches: 40, coverImage: leatherSwatchesStacked, qrCodeUrl: siteUrl('/book/elite') }
+  { id: 'b1', name: 'Milano Master Collection 2024', code: 'BK-MILANO-24', category: 'Luxury Leatherette', totalSwatches: 48, coverImage: heroLeatherRolls, qrCodeUrl: 'https://rexinecentre.com/book/milano' },
+  { id: 'b2', name: 'Supreme Auto-Grade Leatherette', code: 'BK-AUTO-GRADE', category: 'Automotive Grade', totalSwatches: 32, coverImage: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop', qrCodeUrl: 'https://rexinecentre.com/book/supreme' },
+  { id: 'b3', name: 'Royal Sofa Fabrics Swatch Edition', code: 'BK-ROYAL-SOFA', category: 'Upholstery Fabrics', totalSwatches: 64, coverImage: aboutInteriorDining, qrCodeUrl: 'https://rexinecentre.com/book/royal' },
+  { id: 'b4', name: 'Elite Commercial PVC Hides', code: 'BK-ELITE-PVC', category: 'Heavy Duty Commercial', totalSwatches: 40, coverImage: leatherSwatchesStacked, qrCodeUrl: 'https://rexinecentre.com/book/elite' }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

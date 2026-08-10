@@ -97,7 +97,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
   return (
     <div className="bg-[#F8F6F2] min-h-screen pt-6 pb-28">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Breadcrumbs */}
         <div className="flex items-center gap-2 text-xs font-button uppercase tracking-wider text-gray-500 mb-6 flex-wrap">
           <Link to="/" className="hover:text-[#C67C4E] transition-colors">Home</Link>
@@ -143,7 +143,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
         {/* Main Product Layout */}
         <div className="bg-white rounded-3xl p-6 sm:p-10 border border-gray-200 shadow-md mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-            
+
             {/* Gallery Column (Left) */}
             <div className="lg:col-span-6 space-y-4">
               <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-gray-100 border border-gray-200 shadow-lg group">
@@ -176,9 +176,8 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
               <div className="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
                 <button
                   onClick={() => setSelectedImage(product.image)}
-                  className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-all shrink-0 ${
-                    activeMainImage === product.image ? 'border-[#C67C4E] shadow-md' : 'border-gray-200 opacity-70 hover:opacity-100'
-                  }`}
+                  className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-all shrink-0 ${activeMainImage === product.image ? 'border-[#C67C4E] shadow-md' : 'border-gray-200 opacity-70 hover:opacity-100'
+                    }`}
                 >
                   <img
                     src={product.image}
@@ -193,9 +192,8 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
                 {product.fallbackImage && product.fallbackImage !== product.image && (
                   <button
                     onClick={() => setSelectedImage(product.fallbackImage!)}
-                    className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-all shrink-0 ${
-                      activeMainImage === product.fallbackImage ? 'border-[#C67C4E] shadow-md' : 'border-gray-200 opacity-70 hover:opacity-100'
-                    }`}
+                    className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-all shrink-0 ${activeMainImage === product.fallbackImage ? 'border-[#C67C4E] shadow-md' : 'border-gray-200 opacity-70 hover:opacity-100'
+                      }`}
                   >
                     <img
                       src={product.fallbackImage}
@@ -296,10 +294,10 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
                   href={getWhatsAppProductUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#25D366] hover:bg-[#1ebd59] text-white py-4 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md group"
+                  className="bg-[#25D366] hover:bg-[#1ebd59] text-white py-4 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md group text-center"
                 >
-                  <MessageCircle className="w-4 h-4 fill-current group-hover:scale-110 transition-transform" />
-                  <span>PRE-FILLED WHATSAPP ENQUIRY FOR {product.code}</span>
+                  <MessageCircle className="w-4 h-4 fill-current group-hover:scale-110 transition-transform flex-shrink-0" />
+                  <span>WHATSAPP ENQUIRY</span>
                 </a>
 
                 <div className="flex items-center gap-3">

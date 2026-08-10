@@ -1,6 +1,5 @@
 import { SampleBook, Product, BrandCollection } from '../types';
 import { MOCK_BOOKS, Book, BookProduct } from './mockBooks';
-import { siteUrl } from '../config';
 import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.jpg';
 import aboutInteriorDining from '../assets/images/about_interior_dining_1785154208545.jpg';
 import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
@@ -78,12 +77,8 @@ const mapBookToSampleBook = (b: Book): SampleBook => ({
   year: b.year || '2026 Edition',
   description: b.description,
   totalSwatches: b.designCount,
-  // Prefer fallbackCover when coverImage is a local placeholder path not yet uploaded
-  coverImage: (b.coverImage && !b.coverImage.startsWith('/books/'))
-    ? b.coverImage
-    : (b.fallbackCover || rexineBurgundyWine),
-  // QR code points directly to the PDF catalogue, not the book page
-  qrCodeUrl: siteUrl(b.pdfPath),
+  coverImage: b.coverImage || b.fallbackCover || rexineBurgundyWine,
+  qrCodeUrl: `https://rexinecentre.com/books/${b.slug}`,
   specs: b.specs,
 });
 

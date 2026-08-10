@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, MessageCircle, ArrowUp } from 'lucide-react';
-import logoWhite from '../assets/rexine-logo-white.png';
+import { RexineLogo } from './RexineLogo';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -11,15 +11,15 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#111111] text-white pt-14 pb-8 border-t border-white/10 text-xs font-sans">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-
+        
         {/* Top Footer Columns Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8">
-
+          
           {/* Column 1: Brand Info (2 cols width on lg) */}
           <div className="col-span-2 lg:col-span-2 space-y-4">
             <div>
               <Link to="/" className="inline-block py-1">
-                <img src={logoWhite} alt="Rexine Centre" className="h-24" />
+                <RexineLogo variant="light" className="h-9" />
               </Link>
             </div>
 
