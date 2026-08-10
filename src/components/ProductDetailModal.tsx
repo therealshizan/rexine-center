@@ -84,7 +84,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               Category: <span className="font-semibold text-gray-800">{product.category}</span>
             </p>
 
-            <div className="bg-white p-3 rounded-xl border border-black/8 mb-6 flex items-center justify-between">
+            {/* <div className="bg-white p-3 rounded-xl border border-black/8 mb-6 flex items-center justify-between">
               <div>
                 <span className="text-[10px] uppercase font-button text-gray-400 block">Retail Rate (RRP)</span>
                 <span className="font-serif text-xl font-bold text-[#111111]">
@@ -94,14 +94,14 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               <span className="text-[10px] font-button font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
                 Wholesale Tiers Available
               </span>
-            </div>
+            </div> */}
 
             <p className="font-sans text-xs text-gray-600 leading-relaxed mb-6">
               {product.description}
             </p>
 
             {/* Color Selector */}
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <label className="block text-[10px] font-button font-bold uppercase tracking-wider text-gray-700 mb-2">
                 Available Swatch Shades ({product.colors.length})
               </label>
@@ -121,13 +121,13 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   </button>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Tech Specs Table */}
             <div className="bg-white rounded-xl border border-black/8 p-4 mb-6">
               <h4 className="font-button text-[10px] font-bold uppercase tracking-wider text-[#111111] mb-2 flex items-center gap-1.5">
                 <Layers className="w-3.5 h-3.5 text-[#C67C4E]" />
-                Technical Specifications
+                cal Specifications
               </h4>
               <div className="grid grid-cols-2 gap-y-2 gap-x-4 text-[11px] font-sans">
                 <div><span className="text-gray-400">Thickness:</span> <span className="font-semibold text-gray-800">{product.specs.thickness}</span></div>
@@ -163,7 +163,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               data-cursor="WhatsApp"
             >
               <MessageCircle className="w-4 h-4 fill-current group-hover:scale-110 transition-transform" />
-              <span>ENQUIRE WHOTSAPP QUOTE</span>
+              <span>ENQUIRE WHATSAPP QUOTE</span>
             </button>
           </div>
         </div>

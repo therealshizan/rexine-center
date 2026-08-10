@@ -65,7 +65,7 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
     <>
       {/* Backdrop — cursor:auto keeps cursor visible over the modal */}
       <div
-        className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in"
+        className="fixed inset-0 z-[99] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in"
         style={{ cursor: 'auto' }}
         onMouseDown={(e) => { if (e.target === e.currentTarget) onClose(); }}
         role="dialog"

@@ -139,7 +139,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
             
             {/* Cover Image Column */}
             <div className="lg:col-span-4 relative group cursor-pointer" onClick={() => setShowQRModal(true)}>
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gray-900 border border-gray-200 shadow-xl">
+              <div className="relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl overflow-hidden bg-gray-900 border border-gray-200 shadow-xl w-full">
                 <img
                   src={book.coverImage}
                   alt={book.title}
@@ -186,31 +186,67 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                 </p>
               </div>
 
+              {/* Wholesale Price + Description Container - Properly Aligned */}
+              <div className="bg-[#111111] p-5 rounded-2xl border border-[#111111] shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  
+                  {/* Price */}
+                  <div>
+                    <span className="text-[10px] font-button font-bold uppercase tracking-wider text-gray-400 block mb-1">
+                      Wholesale Price
+                    </span>
+                    <div className="flex items-baseline gap-1.5">
+                      <span className="font-serif text-3xl sm:text-4xl font-bold text-white leading-none">
+                        ₹1500
+                      </span>
+                      <span className="text-xs text-gray-400 font-sans">
+                        / meter
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* RRP + Savings */}
+                  <div className="flex items-center gap-3 sm:text-right pt-2 sm:pt-0 border-t sm:border-t-0 border-white/10">
+                    <div>
+                      <span className="text-xs text-gray-400 font-sans block">
+                        RRP ₹1880 /meter
+                      </span>
+                      <span className="text-sm font-bold text-emerald-400">
+                        Save ₹380
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
               {/* Physical Book Specifications */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-[#F8F6F2] p-4 rounded-2xl border border-gray-200">
-                <div className="space-y-0.5">
-                  <span className="text-[10px] font-button font-bold text-gray-400 uppercase tracking-wider block">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 bg-[#F8F6F2] p-4 rounded-2xl border border-gray-200">
+                <div className="min-w-0">
+                  <span className="text-[9px] font-button font-bold text-gray-400 uppercase tracking-wider block mb-1">
                     Thickness
                   </span>
-                  <span className="text-xs font-bold text-gray-900">{book.specs?.thickness || '1.2 mm'}</span>
+                  <span className="text-xs font-bold text-gray-900">
+                    {book.specs?.thickness || '1.2 mm'}
+                  </span>
                 </div>
-                <div className="space-y-0.5">
-                  <span className="text-[10px] font-button font-bold text-gray-400 uppercase tracking-wider block">
+
+                <div className="min-w-0">
+                  <span className="text-[9px] font-button font-bold text-gray-400 uppercase tracking-wider block mb-1">
                     Roll Width
                   </span>
-                  <span className="text-xs font-bold text-gray-900">{book.specs?.width || '54 inches'}</span>
+                  <span className="text-xs font-bold text-gray-900 leading-relaxed">
+                    {book.specs?.width || '140 CMS (54 Inches)'}
+                  </span>
                 </div>
-                <div className="space-y-0.5">
-                  <span className="text-[10px] font-button font-bold text-gray-400 uppercase tracking-wider block">
+
+                <div className="col-span-2 min-w-0">
+                  <span className="text-[9px] font-button font-bold text-gray-400 uppercase tracking-wider block mb-1">
                     Backing Type
                   </span>
-                  <span className="text-xs font-bold text-gray-900">{book.specs?.backing || 'Cotton Fleece'}</span>
-                </div>
-                <div className="space-y-0.5">
-                  <span className="text-[10px] font-button font-bold text-gray-400 uppercase tracking-wider block">
-                    Recommended Use
+                  <span className="text-xs font-bold text-gray-900 leading-relaxed">
+                    {book.specs?.backing || '100% Polyester Backing'}
                   </span>
-                  <span className="text-xs font-bold text-[#C67C4E]">{book.specs?.targetUse || 'Upholstery'}</span>
                 </div>
               </div>
 
@@ -238,13 +274,6 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                 >
                   <span>Request Physical Sample Book</span>
                 </button>
-              </div>
-
-              <div className="p-3.5 bg-amber-50 rounded-2xl border border-amber-200/80 flex items-start gap-2.5">
-                <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
-                <div className="text-xs text-amber-900 font-sans leading-relaxed">
-                  <strong>Retail Prices Listed:</strong> Prices shown per swatch represent Retail RRP. Click any swatch to view technical specs and request wholesale roll quotes.
-                </div>
               </div>
 
             </div>
@@ -300,9 +329,9 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                     }`}
                   >
                     <div>
-                      {/* Swatch Image */}
+                      {/* Swatch Image - Fixed consistent aspect ratio across mobile/desktop */}
                       <div
-                        className="relative aspect-4/3 bg-gray-100 overflow-hidden cursor-pointer"
+                        className="relative aspect-[4/3] w-full bg-gray-100 overflow-hidden cursor-pointer"
                         onClick={() => navigate(`/books/${book.slug}/${product.code}`)}
                       >
                         <img
@@ -311,9 +340,8 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                           onError={(e) => {
                             if (product.fallbackImage) e.currentTarget.src = product.fallbackImage;
                           }}
-                          className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
 
                         {/* Code Badge */}
                         <div className="absolute top-3 left-3 bg-[#111111]/90 text-amber-300 text-[10px] font-button font-bold uppercase px-2.5 py-1 rounded-md border border-amber-300/30">
@@ -335,24 +363,13 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                             <Square className="w-4 h-4 text-white/80" />
                           )}
                         </button>
-
-                        <div className="absolute bottom-3 left-3 right-3 text-white">
-                          <span className="text-[10px] font-button uppercase text-gray-300 block font-semibold">
-                            {product.shadeName || product.name}
-                          </span>
-                        </div>
                       </div>
 
                       {/* Content & Specifications */}
                       <div className="p-4 space-y-2">
-                        <div className="flex items-baseline justify-between">
-                          <span className="text-[10px] font-button font-bold text-gray-400 uppercase tracking-wider">
-                            Retail RRP
-                          </span>
-                          <span className="font-serif text-lg font-bold text-[#111111]">
-                            ₹{product.rrp} <span className="text-[10px] font-sans font-normal text-gray-500">/{product.unit}</span>
-                          </span>
-                        </div>
+                        <span className="text-[11px] font-button uppercase text-gray-700 block font-semibold">
+                          {product.shadeName || product.name}
+                        </span>
 
                         <p className="text-[11px] text-gray-600 font-sans line-clamp-2">
                           {product.description}

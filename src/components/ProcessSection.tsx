@@ -18,13 +18,13 @@ export const ProcessSection: React.FC = () => {
             </h2>
           </div>
 
-          <a
+          {/* <a
             href="#process"
             className="font-button text-xs font-bold text-gray-700 hover:text-[#C67C4E] uppercase tracking-wider flex items-center gap-1.5 transition-colors"
           >
             <span>View full process</span>
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </a> */}
         </div>
 
         {/* 5 Steps horizontal workflow */}
@@ -37,9 +37,9 @@ export const ProcessSection: React.FC = () => {
                   {step.step}
                 </span>
 
-                {idx < PROCESS_STEPS.length - 1 && (
+                {/* {idx < PROCESS_STEPS.length - 1 && (
                   <ArrowRight className="hidden lg:block w-4 h-4 text-gray-300 absolute -right-3 top-8 z-10" />
-                )}
+                )} */}
               </div>
 
               <div>

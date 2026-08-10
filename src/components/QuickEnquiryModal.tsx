@@ -181,13 +181,13 @@ export const QuickEnquiryModal: React.FC<QuickEnquiryModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
-      onClick={onClose}
-    >
+  className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 overflow-y-auto"
+  onClick={onClose}
+>
       <div
-        className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
+    className="relative w-full max-w-lg my-auto bg-white rounded-2xl shadow-2xl overflow-hidden"
+    onClick={(e) => e.stopPropagation()}
+  >
         {/* Header */}
         <div className="bg-[#111111] text-white px-6 py-5 rounded-t-2xl">
           <div className="flex items-start justify-between gap-4">
@@ -221,8 +221,7 @@ export const QuickEnquiryModal: React.FC<QuickEnquiryModalProps> = ({
         </div>
 
         {/* Body */}
-        <div className="p-6 bg-[#F8F6F2]">
-          {submitted ? (
+<div className="p-6 bg-[#F8F6F2] max-h-[calc(90vh-120px)] overflow-y-auto">          {submitted ? (
             <div className="py-10 text-center space-y-3">
               <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-2 animate-bounce">
                 <CheckCircle2 className="w-8 h-8" />

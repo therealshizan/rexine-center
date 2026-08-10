@@ -105,7 +105,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         </div>
 
         {/* Books Results */}
-        <div>
+        {/* <div>
           <h4 className="font-button text-xs font-bold uppercase tracking-widest text-[#C67C4E] mb-4">
             Matching Physical Sample Books ({filteredBooks.length})
           </h4>
@@ -128,7 +128,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
               ))}
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

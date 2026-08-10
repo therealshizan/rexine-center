@@ -79,7 +79,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
   return (
     <>
       <div
-        className="fixed inset-0 z-[9000] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
+        className="fixed inset-0 z-[999] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
         onClick={() => {
           stopCamera();
           onClose();

@@ -20,8 +20,55 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
     message: '',
   });
 
+  const [errors, setErrors] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    city: '',
+  });
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { name: '', phone: '', email: '', city: '' };
+
+if (!formData.name.trim()) {
+      newErrors.name = 'Name is required.';
+    } else if (formData.name.trim().length < 4) {
+      newErrors.name = 'Name must be at least 4 characters.';
+    } else if (!/^[A-Za-zÀ-ÖØ-öø-ÿ\s.'-]+$/.test(formData.name.trim())) {
+      newErrors.name = 'Please enter a valid name.';
+    }
+    const phoneRegex = /^[+]?[\d\s-]{10,15}$/;
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'Phone number is required';
+      isValid = false;
+    } else if (!phoneRegex.test(formData.phone.trim())) {
+      newErrors.phone = 'Please enter a valid phone number';
+      isValid = false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email address is required';
+      isValid = false;
+    } else if (!emailRegex.test(formData.email.trim())) {
+      newErrors.email = 'Please enter a valid email address';
+      isValid = false;
+    }
+
+    if (!formData.city.trim()) {
+      newErrors.city = 'City / State is required';
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validateForm()) return;
+
     setIsSubmitting(true);
 
     await sendFormEnquiryToEmail({
@@ -163,14 +210,18 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                   Thank you for reaching out. All form field data has been sent directly to <strong className="text-gray-900">{RECIPIENT_EMAIL}</strong>. Our technical sales desk will review your requirement and reply promptly.
                 </p>
                 <button
-                  onClick={() => setFormSubmitted(false)}
+                  onClick={() => {
+                    setFormSubmitted(false);
+                    setFormData({ name: '', company: '', phone: '', email: '', city: '', requirement: 'Bulk Rolls', message: '' });
+                    setErrors({ name: '', phone: '', email: '', city: '' });
+                  }}
                   className="bg-[#111111] text-white px-6 py-2.5 rounded-full font-button text-xs font-bold uppercase tracking-wider mt-4 hover:bg-[#C67C4E] transition-colors"
                 >
                   Send Another Enquiry
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-5" noValidate>
                 <h3 className="font-serif text-2xl font-bold text-gray-900">
                   Request Bulk Quote or Swatch Samples
                 </h3>
@@ -182,12 +233,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                     </label>
                     <input
                       type="text"
-                      required
                       placeholder="e.g. Rajesh Kumar"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-sans focus:outline-none focus:ring-2 focus:ring-[#C67C4E]"
+                      onChange={(e) => {
+                        setFormData({ ...formData, name: e.target.value });
+                        if (errors.name) setErrors({ ...errors, name: '' });
+                      }}
+                      className={`w-full px-4 py-2.5 bg-gray-50 border rounded-xl text-xs font-sans focus:outline-none focus:ring-2 ${
+                        errors.name ? 'border-red-500 focus:ring-red-400' : 'border-gray-200 focus:ring-[#C67C4E]'
+                      }`}
                     />
+                    {errors.name && <p className="mt-1 text-[11px] text-red-500 font-medium">{errors.name}</p>}
                   </div>
 
                   <div>
@@ -211,12 +267,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                     </label>
                     <input
                       type="tel"
-                      required
                       placeholder="+91 81040 19890"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-sans focus:outline-none focus:ring-2 focus:ring-[#C67C4E]"
+                      onChange={(e) => {
+                        setFormData({ ...formData, phone: e.target.value });
+                        if (errors.phone) setErrors({ ...errors, phone: '' });
+                      }}
+                      className={`w-full px-4 py-2.5 bg-gray-50 border rounded-xl text-xs font-sans focus:outline-none focus:ring-2 ${
+                        errors.phone ? 'border-red-500 focus:ring-red-400' : 'border-gray-200 focus:ring-[#C67C4E]'
+                      }`}
                     />
+                    {errors.phone && <p className="mt-1 text-[11px] text-red-500 font-medium">{errors.phone}</p>}
                   </div>
 
                   <div>
@@ -225,12 +286,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                     </label>
                     <input
                       type="email"
-                      required
                       placeholder="name@company.com"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-sans focus:outline-none focus:ring-2 focus:ring-[#C67C4E]"
+                      onChange={(e) => {
+                        setFormData({ ...formData, email: e.target.value });
+                        if (errors.email) setErrors({ ...errors, email: '' });
+                      }}
+                      className={`w-full px-4 py-2.5 bg-gray-50 border rounded-xl text-xs font-sans focus:outline-none focus:ring-2 ${
+                        errors.email ? 'border-red-500 focus:ring-red-400' : 'border-gray-200 focus:ring-[#C67C4E]'
+                      }`}
                     />
+                    {errors.email && <p className="mt-1 text-[11px] text-red-500 font-medium">{errors.email}</p>}
                   </div>
                 </div>
 
@@ -241,12 +307,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                     </label>
                     <input
                       type="text"
-                      required
                       placeholder="e.g. Pune, Maharashtra"
                       value={formData.city}
-                      onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                      className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-sans focus:outline-none focus:ring-2 focus:ring-[#C67C4E]"
+                      onChange={(e) => {
+                        setFormData({ ...formData, city: e.target.value });
+                        if (errors.city) setErrors({ ...errors, city: '' });
+                      }}
+                      className={`w-full px-4 py-2.5 bg-gray-50 border rounded-xl text-xs font-sans focus:outline-none focus:ring-2 ${
+                        errors.city ? 'border-red-500 focus:ring-red-400' : 'border-gray-200 focus:ring-[#C67C4E]'
+                      }`}
                     />
+                    {errors.city && <p className="mt-1 text-[11px] text-red-500 font-medium">{errors.city}</p>}
                   </div>
 
                   <div>
@@ -289,7 +360,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnquiry }) => {
                   disabled={isSubmitting}
                   className="w-full bg-[#111111] hover:bg-[#C67C4E] text-white py-3.5 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md group disabled:opacity-50"
                 >
-                  <span>{isSubmitting ? 'Sending to amaannansib005@gmail.com...' : 'Submit Requirement Enquiry'}</span>
+                  <span>{isSubmitting ? `Sending to ${RECIPIENT_EMAIL}...` : 'Submit Requirement Enquiry'}</span>
                   <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </form>

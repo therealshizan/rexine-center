@@ -173,7 +173,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
               </div>
 
               {/* Thumbnail Bar */}
-              <div className="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
+              {/* <div className="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
                 <button
                   onClick={() => setSelectedImage(product.image)}
                   className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-all shrink-0 ${
@@ -212,7 +212,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
                   <Layers className="w-4 h-4 mb-1" />
                   <span>+ All Swatches</span>
                 </button>
-              </div>
+              </div> */}
             </div>
 
             {/* Specifications & Purchasing Column (Right) */}
@@ -237,7 +237,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
               </div>
 
               {/* RRP Price Display */}
-              <div className="bg-[#F8F6F2] p-5 rounded-2xl border border-gray-200/90 flex items-center justify-between">
+              {/* <div className="bg-[#F8F6F2] p-5 rounded-2xl border border-gray-200/90 flex items-center justify-between">
                 <div>
                   <span className="text-[10px] font-button font-bold uppercase tracking-wider text-gray-500 block">
                     Retail Price (RRP)
@@ -253,7 +253,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
                 <span className="text-[10px] font-button font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">
                   Ready Roll Stock
                 </span>
-              </div>
+              </div> */}
 
               {/* Technical Specifications Table */}
               <div className="space-y-2">
