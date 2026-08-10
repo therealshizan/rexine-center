@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { X, QrCode, CheckCircle2, Copy, FileText, ArrowRight, Camera, Sparkles, ExternalLink } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { X, QrCode, CheckCircle2, Copy, FileText, ArrowRight, Camera, Sparkles } from 'lucide-react';
 import { PDFViewerModal } from './PDFViewerModal';
+import { SITE_URL } from '../config';
 
 interface BookQRCodeModalProps {
   isOpen: boolean;
@@ -18,30 +18,45 @@ interface BookQRCodeModalProps {
 }
 
 export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClose, book }) => {
-  const navigate = useNavigate();
   const [scanning, setScanning] = useState(false);
   const [copied, setCopied] = useState(false);
   const [showPDF, setShowPDF] = useState(false);
 
+  // ESC key closes modal
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    },
+    [onClose]
+  );
+
+  useEffect(() => {
+    if (isOpen) document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, handleKeyDown]);
+
   if (!isOpen || !book) return null;
 
-  // Real URL for smartphone scanning
-  const targetUrl = `${window.location.origin}/books/${book.slug}`;
+  // PDF URL — used for QR image, displayed URL, copy button, and simulate-scan
+  const pdfUrl = book.pdfPath
+    ? `${SITE_URL.replace(/\/$/, '')}${book.pdfPath}`
+    : `${SITE_URL.replace(/\/$/, '')}/books/${book.slug}/catalogue.pdf`;
+
   const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(
-    targetUrl
+    pdfUrl
   )}&color=000000&bgcolor=FFFFFF`;
 
+  // Simulate scan: opens PDF directly in a new tab (mirrors real QR scan behaviour)
   const handleScanAndOpen = () => {
     setScanning(true);
     setTimeout(() => {
       setScanning(false);
-      onClose();
-      navigate(`/books/${book.slug}`);
+      window.open(pdfUrl, '_blank', 'noopener,noreferrer');
     }, 800);
   };
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(targetUrl);
+    navigator.clipboard.writeText(pdfUrl);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -61,7 +76,7 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
           className="w-full max-w-md bg-[#111111] text-white rounded-3xl shadow-2xl overflow-hidden border border-white/15 relative"
           style={{ cursor: 'auto' }}
         >
-
+          
           {/* Header */}
           <div className="p-5 border-b border-white/10 flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -88,7 +103,7 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
 
           {/* Content Body */}
           <div className="p-6 space-y-5 text-center">
-
+            
             <div className="space-y-1">
               <span className="text-[10px] font-button font-bold text-[#C67C4E] uppercase tracking-widest bg-[#C67C4E]/20 px-2.5 py-0.5 rounded border border-[#C67C4E]/30 inline-block">
                 {book.category || '100% Polyester Upholstery'}
@@ -96,14 +111,14 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
               <h2 className="font-serif text-xl font-bold text-white">
                 {book.title}
               </h2>
-              <p className="text-xs text-gray-400 font-sans">
+            <p className="text-xs text-gray-400 font-sans">
                 Scan QR code to open the PDF catalogue directly ({book.designCount || 35}+ swatches)
               </p>
             </div>
 
             {/* Genuine Scannable QR Code Image */}
             <div className="relative mx-auto w-64 h-64 bg-white p-3 rounded-2xl shadow-2xl border-4 border-[#C67C4E]/50 flex flex-col items-center justify-center group overflow-hidden">
-
+              
               {/* Animated Laser Scanning Line */}
               {scanning && (
                 <div className="absolute inset-x-0 h-1 bg-[#C67C4E] shadow-[0_0_20px_#C67C4E] z-20 animate-bounce" />
@@ -111,7 +126,7 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
 
               <img
                 src={qrImageUrl}
-                alt={`QR Code for ${book.title}`}
+                alt={`QR Code for ${book.title} PDF catalogue`}
                 className="w-full h-full object-contain"
               />
 
@@ -124,9 +139,9 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
               </div>
             </div>
 
-            {/* Direct URL Box */}
+            {/* PDF URL Box */}
             <div className="bg-white/5 p-3 rounded-2xl border border-white/10 text-xs font-mono text-amber-200/90 truncate flex items-center justify-between gap-2">
-              <span className="truncate text-left text-[11px]">{targetUrl}</span>
+              <span className="truncate text-left text-[11px]">{pdfUrl}</span>
               <button
                 onClick={handleCopy}
                 className="p-1.5 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors shrink-0 cursor-pointer"
@@ -151,7 +166,7 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
                 ) : (
                   <>
                     <Camera className="w-4 h-4" />
-                    <span>SIMULATE SCAN & OPEN DIGITAL BOOK</span>
+                    <span>SIMULATE SCAN & OPEN PDF CATALOGUE</span>
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}

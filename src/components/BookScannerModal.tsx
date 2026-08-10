@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { X, QrCode, BookOpen, CheckCircle, ExternalLink, ArrowRight, Camera, FileText, Sparkles, RefreshCw } from 'lucide-react';
 import { SAMPLE_BOOKS_DATA } from '../data/booksData';
 import { PDFViewerModal } from './PDFViewerModal';
+import { SITE_URL } from '../config';
 
 interface BookScannerModalProps {
   isOpen: boolean;
@@ -65,7 +66,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
       stopCamera();
       setScanned(false);
       onClose();
-      navigate(`/books/${book.id}`);
+      window.open(pdfTarget, '_blank', 'noopener,noreferrer');
     }, 1000);
   };
 

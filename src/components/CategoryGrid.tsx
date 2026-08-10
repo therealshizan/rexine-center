@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight, Layers, Sparkles, Grid as GridIcon, Armchair, Sofa, Car, Home, Palette } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { CATEGORIES } from '../data/mockData';
 
 interface CategoryGridProps {
@@ -33,14 +32,14 @@ export const CategoryGrid: React.FC<CategoryGridProps> = ({ onSelectCategory }) 
             </p>
           </div>
 
-          <Link
-            to="/books"
+          <a
+            href="#featured-products"
             className="inline-flex items-center gap-2 text-xs font-button font-bold uppercase tracking-wider text-[#111111] hover:text-[#C67C4E] transition-colors group"
             data-cursor="View All"
           >
             <span>VIEW ALL CATEGORIES</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
+          </a>
         </div>
 
         {/* Category Cards Grid (8 cols on lg desktop) */}
@@ -60,9 +59,6 @@ export const CategoryGrid: React.FC<CategoryGridProps> = ({ onSelectCategory }) 
                   alt={category.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    e.currentTarget.src = 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800&auto=format&fit=crop';
-                  }}
                 />
 
                 {/* Dark Gradient Overlay */}

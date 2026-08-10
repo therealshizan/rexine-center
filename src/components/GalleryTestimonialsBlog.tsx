@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ArrowRight, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { BLOG_POSTS, TESTIMONIAL_FEATURED } from '../data/mockData';
 import aboutInteriorDining from '../assets/images/about_interior_dining_1785154208545.jpg';
 import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
@@ -10,8 +9,40 @@ import heroLeatherFolds from '../assets/images/hero_leather_folds_1785161428952.
 import officeUse from '../assets/images/office-use.png';
 import { Link } from 'react-router-dom';
 
+const TESTIMONIALS = [
+  {
+    quote: TESTIMONIAL_FEATURED.quote,
+    author: TESTIMONIAL_FEATURED.author,
+    role: TESTIMONIAL_FEATURED.role,
+    avatar: TESTIMONIAL_FEATURED.avatar,
+  },
+  {
+    quote: "Rexine Centre's wholesale pricing and quick dispatch completely transformed our upholstery business. The quality of their leatherette consistently impresses our clients.",
+    author: "Rajesh Mehta",
+    role: "Owner, Mehta Furniture Works, Ahmedabad",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    quote: "We've sourced automotive rexine from many suppliers, but none match the consistency and GST-ready invoicing that Rexine Centre provides. Highly recommended for bulk orders.",
+    author: "Priya Nair",
+    role: "Procurement Head, AutoStyle Interiors, Kochi",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+];
+
 export const GalleryTestimonialsBlog: React.FC = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  const goTo = (index: number) => {
+    setFade(false);
+    setTimeout(() => {
+      setActiveTestimonial((index + TESTIMONIALS.length) % TESTIMONIALS.length);
+      setFade(true);
+    }, 150);
+  };
+
+  const current = TESTIMONIALS[activeTestimonial];
 
   const GALLERY_IMAGES = [
     chairLoungeContact,
@@ -50,9 +81,6 @@ export const GalleryTestimonialsBlog: React.FC = () => {
                       alt="Project Showcase"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        e.currentTarget.src = leatherSwatchesStacked;
-                      }}
                     />
                   </div>
                 ))}
@@ -68,39 +96,80 @@ export const GalleryTestimonialsBlog: React.FC = () => {
           {/* Column 2: CLIENT TESTIMONIALS (4 cols) */}
           <div className="lg:col-span-4 bg-[#F8F6F2] p-6 rounded-2xl border border-black/8 flex flex-col justify-between">
             <div>
-              <span className="text-[10px] font-button font-bold text-gray-400 uppercase tracking-widest block mb-4">
-                CLIENT TESTIMONIALS
-              </span>
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-[10px] font-button font-bold text-gray-400 uppercase tracking-widest">
+                  CLIENT TESTIMONIALS
+                </span>
+                <span className="text-[10px] font-button text-gray-400">
+                  {activeTestimonial + 1} / {TESTIMONIALS.length}
+                </span>
+              </div>
 
               <Quote className="w-8 h-8 text-[#C67C4E] opacity-50 mb-3" />
 
-              <p className="font-sans text-xs sm:text-sm text-gray-800 italic leading-relaxed mb-6">
-                "{TESTIMONIAL_FEATURED.quote}"
-              </p>
+              <div
+                style={{
+                  opacity: fade ? 1 : 0,
+                  transition: 'opacity 0.15s ease',
+                }}
+              >
+                <p className="font-sans text-xs sm:text-sm text-gray-800 italic leading-relaxed mb-6">
+                  "{current.quote}"
+                </p>
+              </div>
             </div>
 
             <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-              <div className="flex items-center gap-3">
+              <div
+                className="flex items-center gap-3"
+                style={{
+                  opacity: fade ? 1 : 0,
+                  transition: 'opacity 0.15s ease',
+                }}
+              >
                 <img
-                  src={TESTIMONIAL_FEATURED.avatar}
-                  alt={TESTIMONIAL_FEATURED.author}
+                  src={current.avatar}
+                  alt={current.author}
                   className="w-10 h-10 rounded-full object-cover border border-gray-300"
                 />
                 <div>
                   <h4 className="font-serif text-xs font-bold text-[#111111]">
-                    {TESTIMONIAL_FEATURED.author}
+                    {current.author}
                   </h4>
                   <p className="font-sans text-[10px] text-gray-500">
-                    {TESTIMONIAL_FEATURED.role}
+                    {current.role}
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center gap-1">
-                <button aria-label="Previous Testimonial" className="w-7 h-7 rounded-full bg-white text-gray-700 hover:bg-[#111111] hover:text-white flex items-center justify-center transition-colors shadow-sm">
+                {/* Dot indicators */}
+                <div className="flex items-center gap-1 mr-2">
+                  {TESTIMONIALS.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => goTo(i)}
+                      aria-label={`Go to testimonial ${i + 1}`}
+                      className={`w-1.5 h-1.5 rounded-full transition-all ${
+                        i === activeTestimonial
+                          ? 'bg-[#C67C4E] w-4'
+                          : 'bg-gray-300 hover:bg-gray-400'
+                      }`}
+                    />
+                  ))}
+                </div>
+                <button
+                  aria-label="Previous Testimonial"
+                  onClick={() => goTo(activeTestimonial - 1)}
+                  className="w-7 h-7 rounded-full bg-white text-gray-700 hover:bg-[#111111] hover:text-white flex items-center justify-center transition-colors shadow-sm"
+                >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
-                <button aria-label="Next Testimonial" className="w-7 h-7 rounded-full bg-white text-gray-700 hover:bg-[#111111] hover:text-white flex items-center justify-center transition-colors shadow-sm">
+                <button
+                  aria-label="Next Testimonial"
+                  onClick={() => goTo(activeTestimonial + 1)}
+                  className="w-7 h-7 rounded-full bg-white text-gray-700 hover:bg-[#111111] hover:text-white flex items-center justify-center transition-colors shadow-sm"
+                >
                   <ChevronRight className="w-4 h-4" />
                 </button>
               </div>

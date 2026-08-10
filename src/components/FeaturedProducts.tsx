@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowRight, Heart, MessageCircle, Eye } from 'lucide-react';
 import { Product } from '../types';
-import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
 
 interface FeaturedProductsProps {
   products: Product[];
@@ -59,9 +58,6 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
                     alt={product.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      e.currentTarget.src = leatherSwatchesStacked;
-                    }}
                     onClick={() => onSelectProduct(product)}
                   />
 
