@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, Search } from 'lucide-react';
-import { PRODUCTS, SAMPLE_BOOKS } from '../data/mockData';
+import { MOCK_BOOKS } from '../data/mockBooks';
 import { Product } from '../types';
 
 interface SearchModalProps {
@@ -24,21 +24,33 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   }, [initialQuery]);
 
   if (!isOpen) return null;
+  
+  const query = searchQuery.toLowerCase().trim();
 
-  const filteredProducts = PRODUCTS.filter(
-    (p) =>
-      p.code.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.description.toLowerCase().includes(searchQuery.toLowerCase())
+  // Map each product with its parent book metadata
+  const allProducts = MOCK_BOOKS.flatMap((book) => 
+    (book.products || []).map((product) => ({
+      product,
+      bookSlug: book.slug,
+      bookCode: book.code,
+      bookTitle: book.title,
+    }))
   );
 
-  const filteredBooks = SAMPLE_BOOKS.filter(
-    (b) =>
-      b.code.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      b.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      b.category.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // Filter products based on code, name, category, or book details
+  const filteredItems = allProducts.filter(({ product, bookCode, bookTitle }) => {
+    if (!query) return true;
+    return (
+      product.code.toLowerCase().includes(query) ||
+      (product.name && product.name.toLowerCase().includes(query)) ||
+      (product.category && product.category.toLowerCase().includes(query)) ||
+      bookCode.toLowerCase().includes(query) ||
+      bookTitle.toLowerCase().includes(query)
+    );
+  });
+
+  // Limit results to show only a manageable number (e.g., 9 items max)
+  const limitedResults = filteredItems.slice(0, 9);
 
   return (
     <div data-lenis-prevent className="fixed inset-0 z-[9000] flex flex-col bg-white/98 backdrop-blur-2xl p-6 md:p-12 overflow-y-auto animate-fade-in">
@@ -50,7 +62,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         </div>
         <button
           onClick={onClose}
-          className="p-2 text-gray-500 hover:text-black hover:bg-black/5 rounded-full transition-colors"
+          className="p-2 text-gray-500 hover:text-black hover:bg-black/5 rounded-full transition-colors cursor-pointer"
         >
           <X className="w-6 h-6" />
         </button>
@@ -65,7 +77,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
             autoFocus
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Type design code (e.g. ML-102), texture name (e.g. Milano), or book name..."
+            placeholder="Type design code (e.g. CINEFAB-651-01), texture name, or book title..."
             className="w-full bg-[#F8F6F2] border-2 border-black/10 focus:border-[#C67C4E] rounded-2xl pl-16 pr-6 py-5 text-base md:text-lg font-sans text-gray-900 placeholder-gray-400 focus:outline-none shadow-inner transition-all"
           />
         </div>
@@ -73,62 +85,40 @@ export const SearchModal: React.FC<SearchModalProps> = ({
 
       {/* Results Section */}
       <div className="max-w-4xl mx-auto w-full space-y-8">
-        {/* Products Results */}
         <div>
-          <h4 className="font-button text-xs font-bold uppercase tracking-widest text-[#C67C4E] mb-4">
-            Matching Products ({filteredProducts.length})
-          </h4>
+          <div className="flex items-center justify-between mb-4">
+            <h4 className="font-button text-xs font-bold uppercase tracking-widest text-[#C67C4E]">
+              Matching Products ({filteredItems.length} found{filteredItems.length > 9 ? ', showing top 9' : ''})
+            </h4>
+          </div>
 
-          {filteredProducts.length === 0 ? (
+          {limitedResults.length === 0 ? (
             <p className="font-sans text-xs text-gray-400">No matching products found for "{searchQuery}".</p>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {filteredProducts.map((p) => (
+              {limitedResults.map(({ product, bookSlug, bookCode }) => (
                 <div
-                  key={p.id}
+                  key={`${bookSlug}-${product.code}`}
                   onClick={() => {
                     onClose();
-                    onSelectProduct(p);
+                    onSelectProduct({
+                      ...product,
+                      id: (product as any).id || product.code, // Fallback id if missing
+                    } as Product);
                   }}
                   className="bg-white p-3 rounded-xl border border-black/8 hover:border-[#C67C4E] shadow-sm hover:shadow-md cursor-pointer transition-all flex items-center gap-3 group"
                 >
-                  <img src={p.image} alt={p.name} className="w-14 h-14 object-cover rounded-lg shrink-0" />
-                  <div>
-                    <span className="font-button text-[10px] font-bold text-[#C67C4E] uppercase">{p.code}</span>
-                    <h5 className="font-sans text-xs font-semibold text-gray-900 group-hover:text-[#C67C4E] transition-colors">{p.name}</h5>
-                    <p className="font-sans text-[11px] text-gray-400">₹{p.rrp} / {p.unit}</p>
+                  <img src={product.image} alt={product.code} className="w-14 h-14 object-cover rounded-lg shrink-0 border border-gray-100" />
+                  <div className="min-w-0 flex-1">
+                    <span className="font-button text-[10px] font-bold text-[#C67C4E] uppercase block truncate">{product.code}</span>
+                    <h5 className="font-sans text-xs font-semibold text-gray-900 group-hover:text-[#C67C4E] transition-colors truncate">{product.name || bookCode}</h5>
+                    <p className="font-sans text-[10px] text-gray-400 truncate">Book: {bookCode}</p>
                   </div>
                 </div>
               ))}
             </div>
           )}
         </div>
-
-        {/* Books Results */}
-        {/* <div>
-          <h4 className="font-button text-xs font-bold uppercase tracking-widest text-[#C67C4E] mb-4">
-            Matching Physical Sample Books ({filteredBooks.length})
-          </h4>
-
-          {filteredBooks.length === 0 ? (
-            <p className="font-sans text-xs text-gray-400">No matching sample books found.</p>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {filteredBooks.map((b) => (
-                <div
-                  key={b.id}
-                  className="bg-[#F8F6F2] p-4 rounded-xl border border-black/8 flex items-center justify-between"
-                >
-                  <div>
-                    <span className="font-button text-[10px] font-bold text-[#111111] uppercase">{b.code}</span>
-                    <h5 className="font-serif text-sm font-bold text-gray-900">{b.name}</h5>
-                    <p className="font-sans text-xs text-gray-500">{b.totalSwatches} Physical Swatches</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div> */}
       </div>
     </div>
   );

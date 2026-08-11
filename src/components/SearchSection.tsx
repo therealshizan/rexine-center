@@ -67,7 +67,7 @@ export const SearchSection: React.FC<SearchSectionProps> = ({ onSearchSubmit, on
 
             <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-sans">
               <span className="text-gray-500 font-medium">Popular:</span>
-              {['ML-102', 'RS-204', 'VG-S30', 'Milano', 'Rustic'].map((tag) => (
+              {['CINEFAB-651',"CLIFF-653",'FLOW-424','AURA-647','CORAL'].map((tag) => (
                 <button
                   key={tag}
                   type="button"
@@ -106,7 +106,7 @@ export const SearchSection: React.FC<SearchSectionProps> = ({ onSearchSubmit, on
 
             <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-sans">
               <span className="text-gray-500 font-medium">Popular:</span>
-              {['Milano', 'Supreme', 'Royal', 'Elite', 'Signature'].map((tag) => (
+              {['CINEFAB-651','AURA-647','CORAL',"CLIFF-653"].map((tag) => (
                 <button
                   key={tag}
                   type="button"

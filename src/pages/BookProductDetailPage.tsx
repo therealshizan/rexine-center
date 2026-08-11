@@ -71,7 +71,6 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
     category: product.category || book.category,
     bookTitle: book.title,
     bookId: book.slug,
-    rrp: product.rrp,
     unit: product.unit,
     description: product.description,
     image: product.image,
@@ -83,7 +82,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
   // WhatsApp prefilled link for this specific product
   const getWhatsAppProductUrl = () => {
     const text = encodeURIComponent(
-      `Hello Rexine Centre,\nI am inquiring about Product Code: *${product.code}* (${product.name})\nFrom Book: *${book.title}* (${book.code})\nRetail RRP: ₹${product.rrp}/${product.unit}\n\nPlease share wholesale roll pricing, stock availability, and dispatch timeline.`
+      `Hello Rexine Centre,\nI am inquiring about Product Code: *${product.code}* (${product.name})\nFrom Book: *${book.title}* (${book.code})\n\nPlease share wholesale roll pricing, stock availability, and dispatch timeline.`
     );
     return `https://wa.me/918104019890?text=${text}`;
   };
@@ -291,41 +290,27 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
               </div>
 
               {/* Action Buttons with Wishlist */}
-              <div className="space-y-3 pt-2">
-                <a
-                  href={getWhatsAppProductUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-[#25D366] hover:bg-[#1ebd59] text-white py-4 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md group"
-                >
-                  <MessageCircle className="w-4 h-4 fill-current group-hover:scale-110 transition-transform" />
-                  <span>PRE-FILLED WHATSAPP ENQUIRY FOR {product.code}</span>
-                </a>
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+  {/* WhatsApp Button */}
+  <a
+    href={getWhatsAppProductUrl()}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 w-full bg-[#25D366] hover:bg-[#1ebd59] text-white py-4 px-4 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md group"
+  >
+    <MessageCircle className="w-4 h-4 fill-current group-hover:scale-110 transition-transform shrink-0" />
+    <span>PRE-FILLED WHATSAPP ENQUIRY FOR {product.code}</span>
+  </a>
 
-                <div className="flex items-center gap-3">
-                  {/* <button
-                    onClick={() => onToggleWishlist(standardProduct.id)}
-                    className={`p-3.5 rounded-xl border transition-all flex items-center justify-center shrink-0 ${
-                      isWishlisted
-                        ? 'bg-[#C67C4E] text-white border-[#C67C4E]'
-                        : 'bg-white text-gray-700 border-gray-300 hover:border-[#C67C4E]'
-                    }`}
-                    data-cursor="Wishlist"
-                    title={isWishlisted ? 'Remove from Wishlist' : 'Add to Wishlist'}
-                  >
-                    <Heart className={`w-5 h-5 ${isWishlisted ? 'fill-current' : ''}`} />
-                  </button> */}
-
-                  <button
-                    onClick={() => onOpenEnquiry(standardProduct)}
-                    className="w-full bg-[#111111] hover:bg-[#C67C4E] text-white py-3.5 px-4 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md"
-                  >
-                    <Send className="w-4 h-4 text-amber-300" />
-                    <span>REQUEST FORM QUOTE & SAMPLE ROLL</span>
-                  </button>
-                </div>
-              </div>
-
+  {/* Quote Request Button */}
+  <button
+    onClick={() => onOpenEnquiry(standardProduct)}
+    className="flex-1 w-full bg-[#111111] hover:bg-[#C67C4E] text-white py-4 sm:py-3.5 px-4 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md"
+  >
+    <Send className="w-4 h-4 text-amber-300 shrink-0" />
+    <span>REQUEST FORM QUOTE & SAMPLE ROLL</span>
+  </button>
+</div>
             </div>
 
           </div>
@@ -373,9 +358,9 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
                     <h4 className="font-serif text-xs font-bold text-[#111111] group-hover:text-[#C67C4E] transition-colors line-clamp-1">
                       {rel.shadeName || rel.name}
                     </h4>
-                    <span className="font-button text-[11px] font-extrabold text-gray-900 block">
+                    {/* <span className="font-button text-[11px] font-extrabold text-gray-900 block">
                       RRP: ₹{rel.rrp}/{rel.unit}
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               ))}

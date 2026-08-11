@@ -7,7 +7,7 @@ interface PDFViewerModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  pdfUrl: string;
+  pdfUrl?: string;
   code?: string;
   pageCount?: number;
 }
@@ -16,16 +16,26 @@ export const PDFViewerModal: React.FC<PDFViewerModalProps> = ({
   isOpen,
   onClose,
   title,
-  pdfUrl,
+  pdfUrl: propPdfUrl,
   code = 'CINEFAB-651',
-  pageCount = 39,
+  pageCount: propPageCount,
 }) => {
-
-  
   const [currentPage, setCurrentPage] = useState(1);
   const [activeTab, setActiveTab] = useState<'embed' | 'gallery'>('gallery');
 
   if (!isOpen) return null;
+
+  // Dynamically find the book based on the code or slug
+  const book = MOCK_BOOKS.find(
+    (b) => b.code.toLowerCase() === code.toLowerCase() || b.slug === code.toLowerCase()
+  );
+
+  // Resolve dynamic properties with safe fallbacks
+  const pdfUrl = propPdfUrl || book?.pdfPath || `/books/${code.toLowerCase()}/catalogue.pdf`;
+  const products = book?.products ?? [];
+  // Dynamic page count: Cover page (1) + Swatches (products.length) + Back/Specs page (1)
+  const pageCount = propPageCount || (products.length > 0 ? products.length + 2 : 39);
+  const coverImage = book?.coverImage || `/books/${code.toLowerCase()}/cover.png`;
 
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -39,19 +49,11 @@ export const PDFViewerModal: React.FC<PDFViewerModalProps> = ({
   const handleOpenNewTab = () => {
     window.open(pdfUrl, '_blank', 'noopener,noreferrer');
   };
-  
-const book = MOCK_BOOKS.find((b) => b.slug === "cinefab-651");
 
-if (!book) {
-  return null;
-}
+  const swatchIndex = currentPage - 2;
+  const product = products[swatchIndex];
+  const shadeNumber = swatchIndex + 1;
 
-const products = book.products ?? [];
-
-const swatchIndex = currentPage - 2;
-const product = products[swatchIndex];
-
-const shadeNumber = swatchIndex + 1;
   return (
     <div className="fixed inset-0 z-[999] flex items-center justify-center p-2 sm:p-4 bg-black/85 backdrop-blur-md animate-fade-in">
       <div className="w-full max-w-5xl h-[90vh] bg-[#111111] text-white rounded-3xl shadow-2xl overflow-hidden border border-white/15 flex flex-col">
@@ -70,7 +72,7 @@ const shadeNumber = swatchIndex + 1;
                 <span className="text-xs text-gray-400 font-sans">Official Catalogue PDF</span>
               </div>
               <h3 className="font-serif text-base sm:text-lg font-bold text-white truncate max-w-md">
-                {title}
+                {title || book?.title}
               </h3>
             </div>
           </div>
@@ -174,38 +176,38 @@ const shadeNumber = swatchIndex + 1;
                 {/* Simulated / Rendered Page View */}
                 <div className="max-h-full max-w-full aspect-[1/1.4] bg-white text-black shadow-2xl rounded-lg overflow-hidden relative flex flex-col justify-between p-6">
                   {currentPage === 1 ? (
-                  
-<div className="h-full flex flex-col items-center justify-between text-center py-8">
-  <div className="text-xl font-bold tracking-widest font-serif pb-2">
-    REXINE CENTRE
-  </div>
+                    
+                    <div className="h-full flex flex-col items-center justify-between text-center py-8">
+                      <div className="text-xl font-bold tracking-widest font-serif pb-2">
+                        REXINE CENTRE
+                      </div>
 
-  <div className="my-auto space-y-3">
-    {/* Cover Image */}
-    <div className="w-48 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-[#C67C4E] shadow-sm">
-      <img
-        src="/books/cinefab-651/cover.png"
-        alt={`${code} catalogue cover`}
-        className="w-full h-full object-cover"
-      />
-    </div>
+                      <div className="my-auto space-y-3">
+                        {/* Cover Image */}
+                        <div className="w-48 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-[#C67C4E] shadow-sm">
+                          <img
+                            src={coverImage}
+                            alt={`${code} catalogue cover`}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
 
-    {/* Smaller Catalogue Title */}
-    <h2 className="font-serif text-2xl font-bold text-gray-900">
-      SAMPLE CATALOGUE
-    </h2>
+                        {/* Smaller Catalogue Title */}
+                        <h2 className="font-serif text-2xl font-bold text-gray-900">
+                          SAMPLE CATALOGUE
+                        </h2>
 
-    <p className="text-xs text-gray-600 font-sans max-w-xs mx-auto">
-      100% Polyester Premium Upholstery Fabrics
-      <br />
-      (380 GSM • 50,000 Martindale Rubs)
-    </p>
-  </div>
+                        <p className="text-xs text-gray-600 font-sans max-w-xs mx-auto">
+                          {book?.category || '100% Polyester Premium Upholstery Fabrics'}
+                          <br />
+                          {book?.specs?.finish || book?.specs?.thickness ? `(${book?.specs?.finish} • ${book?.specs?.thickness})` : ''}
+                        </p>
+                      </div>
 
-  <div className="text-[10px] uppercase font-button tracking-widest text-gray-500">
-    Official Rexine Centre Physical Sample Binder
-  </div>
-</div>
+                      <div className="text-[10px] uppercase font-button tracking-widest text-gray-500">
+                        Official Rexine Centre Physical Sample Binder
+                      </div>
+                    </div>
                   ) : currentPage === pageCount ? (
                     // Specs Back Cover
                     <div className="h-full flex flex-col justify-between p-4 bg-amber-50/50 rounded-lg border border-amber-200 text-left">
@@ -219,19 +221,19 @@ const shadeNumber = swatchIndex + 1;
                         <div className="grid grid-cols-2 gap-3 text-xs font-sans">
                           <div className="p-2.5 bg-white rounded border border-gray-200">
                             <span className="text-gray-500 block text-[10px] uppercase font-bold">Width</span>
-                            <span className="font-bold text-gray-900">140 CMS (54 Inches)</span>
+                            <span className="font-bold text-gray-900">{book?.specs?.width || '140 CMS (54 Inches)'}</span>
                           </div>
                           <div className="p-2.5 bg-white rounded border border-gray-200">
-                            <span className="text-gray-500 block text-[10px] uppercase font-bold">Composition</span>
-                            <span className="font-bold text-gray-900">100% Polyester</span>
+                            <span className="text-gray-500 block text-[10px] uppercase font-bold">Backing</span>
+                            <span className="font-bold text-gray-900">{book?.specs?.backing || 'Standard Backing'}</span>
                           </div>
                           <div className="p-2.5 bg-white rounded border border-gray-200">
-                            <span className="text-gray-500 block text-[10px] uppercase font-bold">GSM Weight</span>
-                            <span className="font-bold text-gray-900">380 GSM</span>
+                            <span className="text-gray-500 block text-[10px] uppercase font-bold">Finish / GSM</span>
+                            <span className="font-bold text-gray-900">{book?.specs?.finish || 'Standard Finish'}</span>
                           </div>
                           <div className="p-2.5 bg-white rounded border border-gray-200">
-                            <span className="text-gray-500 block text-[10px] uppercase font-bold">Abrasion</span>
-                            <span className="font-bold text-gray-900">50,000+ Martindale Rubs</span>
+                            <span className="text-gray-500 block text-[10px] uppercase font-bold">Target Use</span>
+                            <span className="font-bold text-gray-900">{book?.specs?.targetUse || 'Upholstery'}</span>
                           </div>
                         </div>
 
@@ -245,71 +247,71 @@ const shadeNumber = swatchIndex + 1;
                         Page {currentPage} of {pageCount} • Rexine Centre India
                       </div>
                     </div>
-                  ) : (
+                  ) : product ? (
                     // Swatch Page
                     <div className="h-full flex flex-col justify-between">
-  {/* Header */}
-  <div className="flex justify-between items-center text-xs text-gray-500 border-b border-gray-200 pb-2">
-    <span className="font-serif font-bold text-black">
-      REXINE CENTRE
-    </span>
+                      {/* Header */}
+                      <div className="flex justify-between items-center text-xs text-gray-500 border-b border-gray-200 pb-2">
+                        <span className="font-serif font-bold text-black">
+                          REXINE CENTRE
+                        </span>
 
-    <span className="font-mono text-xs font-bold text-[#C67C4E]">
-      SR.NO: {String(shadeNumber).padStart(2, '0')}
-    </span>
-  </div>
+                        <span className="font-mono text-xs font-bold text-[#C67C4E]">
+                          SR.NO: {String(shadeNumber).padStart(2, '0')}
+                        </span>
+                      </div>
 
-  {/* Swatch */}
-  <div className="my-auto flex flex-col items-center justify-center p-4">
-    <div className="w-56 h-64 bg-amber-100/50 rounded-xl border-4 border-dashed border-amber-300 flex flex-col items-center justify-center p-4 shadow-inner text-center">
-      
-      {/* Product image */}
-      <div className="w-50 h-50 rounded-2xl overflow-hidden mb-2 shadow-md border border-gray-200">
-        <img
-          src={product.image}
-          alt={product.code}
-          className="w-full h-full object-cover"
-        />
-      </div>
+                      {/* Swatch */}
+                      <div className="my-auto flex flex-col items-center justify-center p-4">
+                        <div className="w-56 h-64 bg-amber-100/50 rounded-xl border-4 border-dashed border-amber-300 flex flex-col items-center justify-center p-4 shadow-inner text-center">
+                          
+                          {/* Product image */}
+                          <div className="w-50 h-50 rounded-2xl overflow-hidden mb-2 shadow-md border border-gray-200">
+                            <img
+                              src={product.image}
+                              alt={product.code}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
 
-      {/* Product code */}
-      <span className="font-serif font-bold text-gray-900 text-base">
-        {product.code}
-      </span>
+                          {/* Product code */}
+                          <span className="font-serif font-bold text-gray-900 text-base">
+                            {product.code}
+                          </span>
 
-      {/* Shade number */}
-      <span className="font-mono text-xs text-[#C67C4E] font-bold mt-1">
-        Shade #{String(shadeNumber).padStart(2, '0')}
-      </span>
-    </div>
-  </div>
+                          {/* Shade number */}
+                          <span className="font-mono text-xs text-[#C67C4E] font-bold mt-1">
+                            Shade #{String(shadeNumber).padStart(2, '0')}
+                          </span>
+                        </div>
+                      </div>
 
-  {/* Specs */}
-  <div className="bg-gray-50 p-2.5 rounded border border-gray-200 text-[10px] font-mono grid grid-cols-4 gap-1 text-center">
-    <div>
-      <span className="text-gray-400 block">COMP</span>
-      <span className="font-bold">100% POLY</span>
-    </div>
+                      {/* Specs */}
+                      <div className="bg-gray-50 p-2.5 rounded border border-gray-200 text-[10px] font-mono grid grid-cols-4 gap-1 text-center">
+                        <div>
+                          <span className="text-gray-400 block">COMP</span>
+                          <span className="font-bold">POLY</span>
+                        </div>
 
-    <div>
-      <span className="text-gray-400 block">WIDTH</span>
-      <span className="font-bold">
-        {product.specs.width}
-      </span>
-    </div>
+                        <div>
+                          <span className="text-gray-400 block">WIDTH</span>
+                          <span className="font-bold">
+                            {product.specs?.width || '140 CMS'}
+                          </span>
+                        </div>
 
-    <div>
-      <span className="text-gray-400 block">GSM</span>
-      <span className="font-bold">380</span>
-    </div>
+                        <div>
+                          <span className="text-gray-400 block">GSM</span>
+                          <span className="font-bold">380</span>
+                        </div>
 
-    <div>
-      <span className="text-gray-400 block">RUBS</span>
-      <span className="font-bold">50000</span>
-    </div>
-  </div>
-</div>
-                  )}
+                        <div>
+                          <span className="text-gray-400 block">RUBS</span>
+                          <span className="font-bold">50000</span>
+                        </div>
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
 
                 {/* Left Navigation Arrow */}

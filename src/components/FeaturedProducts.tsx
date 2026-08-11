@@ -107,9 +107,9 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
                       {product.name}
                     </h3>
 
-                    <p className="font-sans text-xs text-gray-500 mb-4 font-medium">
+                    {/* <p className="font-sans text-xs text-gray-500 mb-4 font-medium">
                       RRP: ₹{product.rrp.toLocaleString('en-IN')} / {product.unit}
-                    </p>
+                    </p> */}
                   </div>
 
                   {/* Bottom Row: Swatches & WhatsApp */}

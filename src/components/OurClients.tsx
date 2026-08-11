@@ -98,13 +98,13 @@ export default function OurClients() {
                       className="mx-3 sm:mx-4 shrink-0 transition-transform duration-300 hover:scale-105"
                       title={client.name}
                     >
-                      <div className=" transition-all duration-300 shadow-[0_5px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.12)] flex items-center justify-center p-4">
+                      <div className=" transition-all duration-300 shadow-[0_5px_20px_rgba(0,0,0,0.04)] flex items-center justify-center p-4">
                         <img
                           src={client.logo}
                           alt={client.name}
                           width={140}
                           height={65}
-                          className="object-contain rounded-lg max-h-[65px] transition-opacity duration-300 hover:opacity-90"
+                          className="object-contain rounded-lg max-h-[65px] transition-opacity duration-300 hover:opacity-90 hover:shadow-[0_12px_28px_rgba(0,0,0,0.12)]"
                         />
                       </div>
                     </a>
