@@ -1,0 +1,364 @@
+{
+  "slug": "cliff-653",
+  "title": "CLIFF-653 - 100% Polyester Upholstery",
+  "code": "CLIFF-653",
+  "category": "100% Polyester Upholstery",
+  "year": "2026 Master Edition",
+  "description": "Official Rexine Centre CLIFF-653 sample book featuring 19 premium 100% Polyester upholstery swatches (360 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
+  "coverImage": "/books/cliff-653/cover.png",
+  "fallbackCover": "src/assets/images/rexine_slate_charcoal_1785227428841.jpg",
+  "pdfPath": "/books/cliff-653/catalogue.pdf",
+  "designCount": 19,
+  "salePrice": 850,
+  "specs": {
+    "thickness": "1.2 mm",
+    "width": "140 CMS (54 Inches)",
+    "backing": "100% Polyester Backing",
+    "finish": "360 GSM Soft Touch",
+    "targetUse": "Sofas, Armchairs, Recliners, Cushions & Interior Upholstery"
+  },
+  "products": [
+    {
+      "code": "653-01",
+      "name": "CLIFF-653 01",
+      "shadeName": "SR.NO: 01 - Moss Olive",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-01) from official catalogue 'CLIFF-653'. Features Moss Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-01.png",
+      "colors": [
+        {
+          "name": "Moss Olive",
+          "hex": "#5A6443"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-02",
+      "name": "CLIFF-653 02",
+      "shadeName": "SR.NO: 02 - Dusty Terracotta",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-02) from official catalogue 'CLIFF-653'. Features Dusty Terracotta with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-02.png",
+      "colors": [
+        {
+          "name": "Dusty Terracotta",
+          "hex": "#AB715D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-03",
+      "name": "CLIFF-653 03",
+      "shadeName": "SR.NO: 03 - Warm Ivory",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-03) from official catalogue 'CLIFF-653'. Features Warm Ivory with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-03.png",
+      "colors": [
+        {
+          "name": "Warm Ivory",
+          "hex": "#E2DBBF"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-04",
+      "name": "CLIFF-653 04",
+      "shadeName": "SR.NO: 04 - Soft Cream",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-04) from official catalogue 'CLIFF-653'. Features Soft Cream with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-04.png",
+      "colors": [
+        {
+          "name": "Soft Cream",
+          "hex": "#EEE9CC"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-05",
+      "name": "CLIFF-653 05",
+      "shadeName": "SR.NO: 05 - Warm Stone Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-05) from official catalogue 'CLIFF-653'. Features Warm Stone Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-05.png",
+      "colors": [
+        {
+          "name": "Warm Stone Grey",
+          "hex": "#8B8878"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-06",
+      "name": "CLIFF-653 06",
+      "shadeName": "SR.NO: 06 - Taupe Beige",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-06) from official catalogue 'CLIFF-653'. Features Taupe Beige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-06.png",
+      "colors": [
+        {
+          "name": "Taupe Beige",
+          "hex": "#95896E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-07",
+      "name": "CLIFF-653 07",
+      "shadeName": "SR.NO: 07 - Deep Charcoal Brown",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-07) from official catalogue 'CLIFF-653'. Features Deep Charcoal Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-07.png",
+      "colors": [
+        {
+          "name": "Deep Charcoal Brown",
+          "hex": "#494538"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-08",
+      "name": "CLIFF-653 08",
+      "shadeName": "SR.NO: 08 - Golden Ochre",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-08) from official catalogue 'CLIFF-653'. Features Golden Ochre with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-08.png",
+      "colors": [
+        {
+          "name": "Golden Ochre",
+          "hex": "#A1732F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-09",
+      "name": "CLIFF-653 09",
+      "shadeName": "SR.NO: 09 - Burnt Orange",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-09) from official catalogue 'CLIFF-653'. Features Burnt Orange with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-09.png",
+      "colors": [
+        {
+          "name": "Burnt Orange",
+          "hex": "#B15125"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-10",
+      "name": "CLIFF-653 10",
+      "shadeName": "SR.NO: 10 - Deep Olive",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-10) from official catalogue 'CLIFF-653'. Features Deep Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-10.png",
+      "colors": [
+        {
+          "name": "Deep Olive",
+          "hex": "#333926"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-11",
+      "name": "CLIFF-653 11",
+      "shadeName": "SR.NO: 11 - Deep Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-11) from official catalogue 'CLIFF-653'. Features Deep Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-11.png",
+      "colors": [
+        {
+          "name": "Deep Teal",
+          "hex": "#1D4B46"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-12",
+      "name": "CLIFF-653 12",
+      "shadeName": "SR.NO: 12 - Blue Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-12) from official catalogue 'CLIFF-653'. Features Blue Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-12.png",
+      "colors": [
+        {
+          "name": "Blue Grey",
+          "hex": "#77888B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-13",
+      "name": "CLIFF-653 13",
+      "shadeName": "SR.NO: 13 - Deep Denim Blue",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-13) from official catalogue 'CLIFF-653'. Features Deep Denim Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-13.png",
+      "colors": [
+        {
+          "name": "Deep Denim Blue",
+          "hex": "#17395A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-14",
+      "name": "CLIFF-653 14",
+      "shadeName": "SR.NO: 14 - Midnight Blue",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-14) from official catalogue 'CLIFF-653'. Features Midnight Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-14.png",
+      "colors": [
+        {
+          "name": "Midnight Blue",
+          "hex": "#152B39"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-15",
+      "name": "CLIFF-653 15",
+      "shadeName": "SR.NO: 15 - Light Sage Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-15) from official catalogue 'CLIFF-653'. Features Light Sage Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-15.png",
+      "colors": [
+        {
+          "name": "Light Sage Grey",
+          "hex": "#91958E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-16",
+      "name": "CLIFF-653 16",
+      "shadeName": "SR.NO: 16 - Muted Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-16) from official catalogue 'CLIFF-653'. Features Muted Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-16.png",
+      "colors": [
+        {
+          "name": "Muted Sage",
+          "hex": "#7D8476"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-17",
+      "name": "CLIFF-653 17",
+      "shadeName": "SR.NO: 17 - Dark Slate Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-17) from official catalogue 'CLIFF-653'. Features Dark Slate Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-17.png",
+      "colors": [
+        {
+          "name": "Dark Slate Green",
+          "hex": "#394340"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-18",
+      "name": "CLIFF-653 18",
+      "shadeName": "SR.NO: 18 - Charcoal Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-18) from official catalogue 'CLIFF-653'. Features Charcoal Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-18.png",
+      "colors": [
+        {
+          "name": "Charcoal Sage",
+          "hex": "#4B504A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "653-19",
+      "name": "CLIFF-653 19",
+      "shadeName": "SR.NO: 19 - Deep Forest Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (653-19) from official catalogue 'CLIFF-653'. Features Deep Forest Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cliff-653/products/653-19.png",
+      "colors": [
+        {
+          "name": "Deep Forest Grey",
+          "hex": "#39423B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

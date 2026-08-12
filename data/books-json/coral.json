@@ -1,0 +1,310 @@
+{
+  "slug": "coral",
+  "title": "CORAL - 100% Polyester Upholstery",
+  "code": "CORAL",
+  "category": "100% Polyester Upholstery",
+  "year": "2026 Master Edition",
+  "description": "Official Rexine Centre CORAL sample book featuring 19 premium 100% Polyester upholstery swatches (340 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
+  "coverImage": "/books/coral/cover.png",
+  "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
+  "pdfPath": "/books/coral/catalogue.pdf",
+  "designCount": 16,
+  "salePrice": 850,
+  "specs": {
+    "thickness": "1.2 mm",
+    "width": "140 CMS (54 Inches)",
+    "backing": "100% Polyester Backing",
+    "finish": "340 GSM Soft Touch",
+    "targetUse": "Sofas, Armchairs, Recliners, Cushions & Interior Upholstery"
+  },
+  "products": [
+    {
+      "code": "CORAL-01",
+      "name": "CORAL 01",
+      "shadeName": "SR.NO: 01 - Deep Terracotta Brown",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-01) from official catalogue 'CORAL'. Features Deep Terracotta Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-01.png",
+      "colors": [
+        {
+          "name": "Deep Terracotta Brown",
+          "hex": "#6B3C36"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-02",
+      "name": "CORAL 02",
+      "shadeName": "SR.NO: 02 - Muted Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-02) from official catalogue 'CORAL'. Features Muted Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-02.png",
+      "colors": [
+        {
+          "name": "Muted Teal",
+          "hex": "#2A6761"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-03",
+      "name": "CORAL 03",
+      "shadeName": "SR.NO: 03 - Silver Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-03) from official catalogue 'CORAL'. Features Silver Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-03.png",
+      "colors": [
+        {
+          "name": "Silver Grey",
+          "hex": "#A6A7A0"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-04",
+      "name": "CORAL 04",
+      "shadeName": "SR.NO: 04 - Soft Olive Cream",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-04) from official catalogue 'CORAL'. Features Soft Olive Cream with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-04.png",
+      "colors": [
+        {
+          "name": "Soft Olive Cream",
+          "hex": "#C1C0A2"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-05",
+      "name": "CORAL 05",
+      "shadeName": "SR.NO: 05 - Warm Taupe",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-05) from official catalogue 'CORAL'. Features Warm Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-05.png",
+      "colors": [
+        {
+          "name": "Warm Taupe",
+          "hex": "#A69B82"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-06",
+      "name": "CORAL 06",
+      "shadeName": "SR.NO: 06 - Mushroom Taupe",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-06) from official catalogue 'CORAL'. Features Mushroom Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-06.png",
+      "colors": [
+        {
+          "name": "Mushroom Taupe",
+          "hex": "#96907D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-07",
+      "name": "CORAL 07",
+      "shadeName": "SR.NO: 07 - Charcoal Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-07) from official catalogue 'CORAL'. Features Charcoal Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-07.png",
+      "colors": [
+        {
+          "name": "Charcoal Grey",
+          "hex": "#514F4D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-08",
+      "name": "CORAL 08",
+      "shadeName": "SR.NO: 08 - Blush Ivory",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-08) from official catalogue 'CORAL'. Features Blush Ivory with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-08.png",
+      "colors": [
+        {
+          "name": "Blush Ivory",
+          "hex": "#EDDDD6"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-09",
+      "name": "CORAL 09",
+      "shadeName": "SR.NO: 09 - Dusty Blue Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-09) from official catalogue 'CORAL'. Features Dusty Blue Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-09.png",
+      "colors": [
+        {
+          "name": "Dusty Blue Teal",
+          "hex": "#537E7D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-10",
+      "name": "CORAL 10",
+      "shadeName": "SR.NO: 10 - Deep Slate Blue",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-10) from official catalogue 'CORAL'. Features Deep Slate Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-10.png",
+      "colors": [
+        {
+          "name": "Deep Slate Blue",
+          "hex": "#1F3C47"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-11",
+      "name": "CORAL 11",
+      "shadeName": "SR.NO: 11 - Deep Petrol Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-11) from official catalogue 'CORAL'. Features Deep Petrol Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-11.png",
+      "colors": [
+        {
+          "name": "Deep Petrol Teal",
+          "hex": "#153F43"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-12",
+      "name": "CORAL 12",
+      "shadeName": "SR.NO: 12 - Pale Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-12) from official catalogue 'CORAL'. Features Pale Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-12.png",
+      "colors": [
+        {
+          "name": "Pale Sage",
+          "hex": "#ADB0A0"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-13",
+      "name": "CORAL 13",
+      "shadeName": "SR.NO: 13 - Soft Blue Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-13) from official catalogue 'CORAL'. Features Soft Blue Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-13.png",
+      "colors": [
+        {
+          "name": "Soft Blue Sage",
+          "hex": "#97A7A3"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-14",
+      "name": "CORAL 14",
+      "shadeName": "SR.NO: 14 - Muted Slate Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-14) from official catalogue 'CORAL'. Features Muted Slate Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-14.png",
+      "colors": [
+        {
+          "name": "Muted Slate Sage",
+          "hex": "#6B7D7A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-15",
+      "name": "CORAL 15",
+      "shadeName": "SR.NO: 15 - Muted Slate Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-15) from official catalogue 'CORAL'. Features Muted Slate Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-15.png",
+      "colors": [
+        {
+          "name": "Muted Slate Sage",
+          "hex": "#6B7D7A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "CORAL-16",
+      "name": "CORAL 16",
+      "shadeName": "SR.NO: 16 - Deep Charcoal Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (CORAL-16) from official catalogue 'CORAL'. Features Deep Charcoal Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/coral/products/CORAL-16.png",
+      "colors": [
+        {
+          "name": "Deep Charcoal Teal",
+          "hex": "#364343"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

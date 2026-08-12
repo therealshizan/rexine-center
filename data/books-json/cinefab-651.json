@@ -1,0 +1,652 @@
+{
+  "slug": "cinefab-651",
+  "title": "CINEFAB-651 - 100% Polyester Upholstery",
+  "code": "CINEFAB-651",
+  "category": "100% Polyester Upholstery",
+  "year": "2026 Master Edition",
+  "description": "Official Rexine Centre CINEFAB-651 sample book featuring 35 premium 100% Polyester upholstery swatches (380 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
+  "coverImage": "/books/cinefab-651/cover.png",
+  "fallbackCover": "src/assets/images/rexine_cognac_nappa_1785227277160.jpg",
+  "pdfPath": "/books/cinefab-651/catalogue.pdf",
+  "designCount": 35,
+  "salePrice": 850,
+  "specs": {
+    "thickness": "1.2 mm",
+    "width": "140 CMS (54 Inches)",
+    "backing": "100% Polyester Backing",
+    "finish": "380 GSM Soft Touch",
+    "targetUse": "Sofas, Armchairs, Recliners, Cushions & Interior Upholstery"
+  },
+  "products": [
+    {
+      "code": "651-01",
+      "name": "CINEFAB-651 01",
+      "shadeName": "SR.NO: 01 - Dusty Rose Pink",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-01) from official catalogue 'CINEFAB-651'. Features Dusty Rose Pink with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-01.png",
+      "colors": [
+        {
+          "name": "Dusty Rose Pink",
+          "hex": "#D19E9A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-02",
+      "name": "CINEFAB-651 02",
+      "shadeName": "SR.NO: 02 - Seafoam Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-02) from official catalogue 'CINEFAB-651'. Features Seafoam Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-02.png",
+      "colors": [
+        {
+          "name": "Seafoam Teal",
+          "hex": "#519E92"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-03",
+      "name": "CINEFAB-651 03",
+      "shadeName": "SR.NO: 03 - Peach Blush",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-03) from official catalogue 'CINEFAB-651'. Features Peach Blush with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-03.png",
+      "colors": [
+        {
+          "name": "Peach Blush",
+          "hex": "#E5A898"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-04",
+      "name": "CINEFAB-651 04",
+      "shadeName": "SR.NO: 04 - Pistachio Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-04) from official catalogue 'CINEFAB-651'. Features Pistachio Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-04.png",
+      "colors": [
+        {
+          "name": "Pistachio Green",
+          "hex": "#A8D09A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-05",
+      "name": "CINEFAB-651 05",
+      "shadeName": "SR.NO: 05 - Sand Cream",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-05) from official catalogue 'CINEFAB-651'. Features Sand Cream with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-05.png",
+      "colors": [
+        {
+          "name": "Sand Cream",
+          "hex": "#E1D5B8"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-06",
+      "name": "CINEFAB-651 06",
+      "shadeName": "SR.NO: 06 - Ivory Beige",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-06) from official catalogue 'CINEFAB-651'. Features Ivory Beige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-06.png",
+      "colors": [
+        {
+          "name": "Ivory Beige",
+          "hex": "#E8DEC8"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-07",
+      "name": "CINEFAB-651 07",
+      "shadeName": "SR.NO: 07 - Oat Cream",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-07) from official catalogue 'CINEFAB-651'. Features Oat Cream with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-07.png",
+      "colors": [
+        {
+          "name": "Oat Cream",
+          "hex": "#DFD3BC"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-08",
+      "name": "CINEFAB-651 08",
+      "shadeName": "SR.NO: 08 - Warm Greige",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-08) from official catalogue 'CINEFAB-651'. Features Warm Greige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-08.png",
+      "colors": [
+        {
+          "name": "Warm Greige",
+          "hex": "#C9C1AF"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-09",
+      "name": "CINEFAB-651 09",
+      "shadeName": "SR.NO: 09 - Pearl Off-White",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-09) from official catalogue 'CINEFAB-651'. Features Pearl Off-White with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-09.png",
+      "colors": [
+        {
+          "name": "Pearl Off-White",
+          "hex": "#E2DFD3"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-10",
+      "name": "CINEFAB-651 10",
+      "shadeName": "SR.NO: 10 - Sage Olive",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-10) from official catalogue 'CINEFAB-651'. Features Sage Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-10.png",
+      "colors": [
+        {
+          "name": "Sage Olive",
+          "hex": "#A1A690"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-11",
+      "name": "CINEFAB-651 11",
+      "shadeName": "SR.NO: 11 - Light Ash",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-11) from official catalogue 'CINEFAB-651'. Features Light Ash with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-11.png",
+      "colors": [
+        {
+          "name": "Light Ash",
+          "hex": "#9EA29C"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-12",
+      "name": "CINEFAB-651 12",
+      "shadeName": "SR.NO: 12 - Charcoal Slate",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-12) from official catalogue 'CINEFAB-651'. Features Charcoal Slate with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-12.png",
+      "colors": [
+        {
+          "name": "Charcoal Slate",
+          "hex": "#6B706B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-13",
+      "name": "CINEFAB-651 13",
+      "shadeName": "SR.NO: 13 - Mint Fog",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-13) from official catalogue 'CINEFAB-651'. Features Mint Fog with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-13.png",
+      "colors": [
+        {
+          "name": "Mint Fog",
+          "hex": "#B2C2B8"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-14",
+      "name": "CINEFAB-651 14",
+      "shadeName": "SR.NO: 14 - Taupe Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-14) from official catalogue 'CINEFAB-651'. Features Taupe Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-14.png",
+      "colors": [
+        {
+          "name": "Taupe Grey",
+          "hex": "#B2AEA3"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-15",
+      "name": "CINEFAB-651 15",
+      "shadeName": "SR.NO: 15 - Desert Camel",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-15) from official catalogue 'CINEFAB-651'. Features Desert Camel with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-15.png",
+      "colors": [
+        {
+          "name": "Desert Camel",
+          "hex": "#C9AD85"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-16",
+      "name": "CINEFAB-651 16",
+      "shadeName": "SR.NO: 16 - Cognac Tan",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-16) from official catalogue 'CINEFAB-651'. Features Cognac Tan with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-16.png",
+      "colors": [
+        {
+          "name": "Cognac Tan",
+          "hex": "#AC8356"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-17",
+      "name": "CINEFAB-651 17",
+      "shadeName": "SR.NO: 17 - Espresso Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-17) from official catalogue 'CINEFAB-651'. Features Espresso Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-17.png",
+      "colors": [
+        {
+          "name": "Espresso Grey",
+          "hex": "#7A7568"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-18",
+      "name": "CINEFAB-651 18",
+      "shadeName": "SR.NO: 18 - Seafoam Light",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-18) from official catalogue 'CINEFAB-651'. Features Seafoam Light with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-18.png",
+      "colors": [
+        {
+          "name": "Seafoam Light",
+          "hex": "#A4C6B8"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-19",
+      "name": "CINEFAB-651 19",
+      "shadeName": "SR.NO: 19 - Sky Blue",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-19) from official catalogue 'CINEFAB-651'. Features Sky Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-19.png",
+      "colors": [
+        {
+          "name": "Sky Blue",
+          "hex": "#ACCFCD"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-20",
+      "name": "CINEFAB-651 20",
+      "shadeName": "SR.NO: 20 - Ocean Cyan",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-20) from official catalogue 'CINEFAB-651'. Features Ocean Cyan with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-20.png",
+      "colors": [
+        {
+          "name": "Ocean Cyan",
+          "hex": "#72B2BF"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-21",
+      "name": "CINEFAB-651 21",
+      "shadeName": "SR.NO: 21 - Deep Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-21) from official catalogue 'CINEFAB-651'. Features Deep Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-21.png",
+      "colors": [
+        {
+          "name": "Deep Teal",
+          "hex": "#43757F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-22",
+      "name": "CINEFAB-651 22",
+      "shadeName": "SR.NO: 22 - Steel Blue",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-22) from official catalogue 'CINEFAB-651'. Features Steel Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-22.png",
+      "colors": [
+        {
+          "name": "Steel Blue",
+          "hex": "#698B99"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-23",
+      "name": "CINEFAB-651 23",
+      "shadeName": "SR.NO: 23 - Midnight Navy",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-23) from official catalogue 'CINEFAB-651'. Features Midnight Navy with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-23.png",
+      "colors": [
+        {
+          "name": "Midnight Navy",
+          "hex": "#263B51"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-24",
+      "name": "CINEFAB-651 24",
+      "shadeName": "SR.NO: 24 - Royal Blue",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-24) from official catalogue 'CINEFAB-651'. Features Royal Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-24.png",
+      "colors": [
+        {
+          "name": "Royal Blue",
+          "hex": "#21496E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-25",
+      "name": "CINEFAB-651 25",
+      "shadeName": "SR.NO: 25 - Cyan Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-25) from official catalogue 'CINEFAB-651'. Features Cyan Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-25.png",
+      "colors": [
+        {
+          "name": "Cyan Teal",
+          "hex": "#1E6C84"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-26",
+      "name": "CINEFAB-651 26",
+      "shadeName": "SR.NO: 26 - Emerald Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-26) from official catalogue 'CINEFAB-651'. Features Emerald Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-26.png",
+      "colors": [
+        {
+          "name": "Emerald Green",
+          "hex": "#298565"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-27",
+      "name": "CINEFAB-651 27",
+      "shadeName": "SR.NO: 27 - Forest Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-27) from official catalogue 'CINEFAB-651'. Features Forest Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-27.png",
+      "colors": [
+        {
+          "name": "Forest Green",
+          "hex": "#1E5E48"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-28",
+      "name": "CINEFAB-651 28",
+      "shadeName": "SR.NO: 28 - Dark Pine",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-28) from official catalogue 'CINEFAB-651'. Features Dark Pine with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-28.png",
+      "colors": [
+        {
+          "name": "Dark Pine",
+          "hex": "#234938"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-29",
+      "name": "CINEFAB-651 29",
+      "shadeName": "SR.NO: 29 - Pearl White",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-29) from official catalogue 'CINEFAB-651'. Features Pearl White with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-29.png",
+      "colors": [
+        {
+          "name": "Pearl White",
+          "hex": "#DCE0DA"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-30",
+      "name": "CINEFAB-651 30",
+      "shadeName": "SR.NO: 30 - Textured Ice Blue",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-30) from official catalogue 'CINEFAB-651'. Features Textured Ice Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-30.png",
+      "colors": [
+        {
+          "name": "Textured Ice Blue",
+          "hex": "#BDCCC9"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-31",
+      "name": "CINEFAB-651 31",
+      "shadeName": "SR.NO: 31 - Slate Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-31) from official catalogue 'CINEFAB-651'. Features Slate Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-31.png",
+      "colors": [
+        {
+          "name": "Slate Grey",
+          "hex": "#738180"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-32",
+      "name": "CINEFAB-651 32",
+      "shadeName": "SR.NO: 32 - Gunmetal Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-32) from official catalogue 'CINEFAB-651'. Features Gunmetal Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-32.png",
+      "colors": [
+        {
+          "name": "Gunmetal Grey",
+          "hex": "#687776"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-33",
+      "name": "CINEFAB-651 33",
+      "shadeName": "SR.NO: 33 - Dark Charcoal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-33) from official catalogue 'CINEFAB-651'. Features Dark Charcoal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-33.png",
+      "colors": [
+        {
+          "name": "Dark Charcoal",
+          "hex": "#485656"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-34",
+      "name": "CINEFAB-651 34",
+      "shadeName": "SR.NO: 34 - Shadow Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-34) from official catalogue 'CINEFAB-651'. Features Shadow Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-34.png",
+      "colors": [
+        {
+          "name": "Shadow Grey",
+          "hex": "#4D5957"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "651-35",
+      "name": "CINEFAB-651 35",
+      "shadeName": "SR.NO: 35 - Dusty Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (651-35) from official catalogue 'CINEFAB-651'. Features Dusty Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/cinefab-651/products/651-35.png",
+      "colors": [
+        {
+          "name": "Dusty Sage",
+          "hex": "#8BA393"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

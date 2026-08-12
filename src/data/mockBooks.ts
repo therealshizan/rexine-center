@@ -4,10 +4,10 @@ import rexineSlateCharcoal from '../assets/images/rexine_slate_charcoal_17852274
 import rexineEmeraldGreen from '../assets/images/rexine_emerald_green_1785227447891.jpg';
 import rexineMidnightNavy from '../assets/images/rexine_midnight_navy_1785227463408.jpg';
 import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.jpg';
-import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
-import aboutInteriorDining from '../assets/images/about_interior_dining_1785154208545.jpg';
-import chairLoungeContact from '../assets/images/chair_lounge_contact_1785154236762.jpg';
-import heroLeatherFolds from '../assets/images/hero_leather_folds_1785161428952.jpg';
+// import leatherSwatchesStacked from '../assets/images/leather_swatches_stacked_1785154222031.jpg';
+// import aboutInteriorDining from '../assets/images/about_interior_dining_1785154208545.jpg';
+// import chairLoungeContact from '../assets/images/chair_lounge_contact_1785154236762.jpg';
+// import heroLeatherFolds from '../assets/images/hero_leather_folds_1785161428952.jpg';
 import { CINEFAB_SHADES } from './books/cinefabShades';
 import { AURA_SHADES } from './books/auraShades';
 import { CLIFF_SHADES } from './books/cliffShades';
@@ -15,150 +15,197 @@ import { CORAL_SHADES } from './books/coralShades';
 import { FLOW_SHADES } from './books/flowShades';
 import { ITALIAN_LEATHER_SHADES } from './books/italianLeatherShades';
 
+import aura647 from '../../data/books-json/aura-647.json'
+import cinefab651 from '../../data/books-json/cinefab-651.json'
+import cliff653 from '../../data/books-json/cliff-653.json'
+import coral from '../../data/books-json/coral.json'
+import flow424 from '../../data/books-json/flow-424.json'
+import italianleather422 from '../../data/books-json/italian-leather-422.json'
+
 export interface BookProduct {
   code: string;
+
   name: string;
+
   shadeName?: string;
-  category?: string; // Retail RRP price in INR per meter
+
+  category?: string;
+
+  // Retail RRP price in INR per meter
+  rrp: number;
+
   unit: string;
+
   description: string;
+
   image: string;
+
   fallbackImage?: string;
+
   gallery?: string[];
+
   colors?: { name: string; hex: string }[];
+
   specs: {
     thickness?: string;
+
     width?: string;
+
     backing?: string;
+
     finish?: string;
+
     gsm?: string;
+
     rollLength?: string;
+
     abrasion?: string;
   };
+
   inStock?: boolean;
 }
 
 export interface Book {
   slug: string;
+
   title: string;
+
   code: string;
+
   category: string;
+
   year?: string;
+
   description: string;
+
   coverImage: string;
+
   fallbackCover?: string;
+
   pdfPath: string;
+
   designCount: number;
+
+  // Sale price in INR per meter
+  salePrice: number;
+
   specs?: {
     thickness?: string;
+
     width?: string;
+
     backing?: string;
+
     finish?: string;
+
     targetUse?: string;
   };
+
   products: BookProduct[];
 }
+
 export interface BookShade {
   sr: string;
+
   name: string;
+
   hex: string;
 }
-
 // Fallback images pool for graceful rendering when local webp isn't uploaded yet
-const FALLBACK_IMAGES = [
-  rexineBurgundyWine,
-  rexineCognacNappa,
-  rexineSlateCharcoal,
-  rexineMidnightNavy,
-  rexineEmeraldGreen,
-  heroLeatherRolls,
-  leatherSwatchesStacked,
-  aboutInteriorDining,
-  chairLoungeContact,
-  heroLeatherFolds,
-];
+// const FALLBACK_IMAGES = [
+//   rexineBurgundyWine,
+//   rexineCognacNappa,
+//   rexineSlateCharcoal,
+//   rexineMidnightNavy,
+//   rexineEmeraldGreen,
+//   heroLeatherRolls,
+//   leatherSwatchesStacked,
+//   aboutInteriorDining,
+//   chairLoungeContact,
+//   heroLeatherFolds,
+// ];
 
 // Helper to generate products for a mock book
-const generateMockProducts = (
-  slug: string,
-  bookCode: string,
-  bookTitle: string,
-  category: string,
-  count: number,
-  basePrice: number
-): BookProduct[] => {
-  const shades = [
-    { name: 'Royal Crimson Wine', hex: '#581825' },
-    { name: 'Amber Cognac', hex: '#A66E38' },
-    { name: 'Midnight Charcoal', hex: '#1C2024' },
-    { name: 'Deep Midnight Navy', hex: '#1E2A38' },
-    { name: 'Emerald Forest Green', hex: '#1E4D3A' },
-    { name: 'Pristine Pearl Ivory', hex: '#F0EAD6' },
-    { name: 'Espresso Roast Brown', hex: '#4A2511' },
-    { name: 'Slate Steel Grey', hex: '#383D42' },
-    { name: 'Mustard Ochre Gold', hex: '#C29B38' },
-    { name: 'Copper Bronze Shimmer', hex: '#B87333' },
-    { name: 'Jet Black Matte', hex: '#000000' },
-    { name: 'Sand Taupe Beige', hex: '#C2B280' },
-    { name: 'Teal Peacock Marine', hex: '#008080' },
-    { name: 'Rustic Terracotta', hex: '#A35422' },
-    { name: 'Olive Army Green', hex: '#4B5320' },
-    { name: 'Plum Violet Purple', hex: '#4A1521' },
-    { name: 'Saddle Chestnut', hex: '#8C5638' },
-    { name: 'Charcoal Perforated', hex: '#2B2B2B' },
-    { name: 'Warm Almond Cream', hex: '#E3D7C5' },
-    { name: 'Gunmetal Silver Gloss', hex: '#2A2E33' },
-    { name: 'Mahogany Vintage', hex: '#421C0E' },
-    { name: 'Ocean Cyan Marine', hex: '#1B4D5C' },
-    { name: 'Rosewood Blush', hex: '#6D3A3B' },
-    { name: 'Ash Fog Light Grey', hex: '#8C9298' },
-    { name: 'Desert Camel Tan', hex: '#C67C4E' },
-    { name: 'Champagne Shimmer', hex: '#D4B886' },
-    { name: 'Forest Moss Green', hex: '#2E473B' },
-    { name: 'Cobalt Sapphire', hex: '#102A45' },
-  ];
+// const generateMockProducts = (
+//   slug: string,
+//   bookCode: string,
+//   bookTitle: string,
+//   category: string,
+//   count: number,
+//   basePrice: number
+// ): BookProduct[] => {
+//   const shades = [
+//     { name: 'Royal Crimson Wine', hex: '#581825' },
+//     { name: 'Amber Cognac', hex: '#A66E38' },
+//     { name: 'Midnight Charcoal', hex: '#1C2024' },
+//     { name: 'Deep Midnight Navy', hex: '#1E2A38' },
+//     { name: 'Emerald Forest Green', hex: '#1E4D3A' },
+//     { name: 'Pristine Pearl Ivory', hex: '#F0EAD6' },
+//     { name: 'Espresso Roast Brown', hex: '#4A2511' },
+//     { name: 'Slate Steel Grey', hex: '#383D42' },
+//     { name: 'Mustard Ochre Gold', hex: '#C29B38' },
+//     { name: 'Copper Bronze Shimmer', hex: '#B87333' },
+//     { name: 'Jet Black Matte', hex: '#000000' },
+//     { name: 'Sand Taupe Beige', hex: '#C2B280' },
+//     { name: 'Teal Peacock Marine', hex: '#008080' },
+//     { name: 'Rustic Terracotta', hex: '#A35422' },
+//     { name: 'Olive Army Green', hex: '#4B5320' },
+//     { name: 'Plum Violet Purple', hex: '#4A1521' },
+//     { name: 'Saddle Chestnut', hex: '#8C5638' },
+//     { name: 'Charcoal Perforated', hex: '#2B2B2B' },
+//     { name: 'Warm Almond Cream', hex: '#E3D7C5' },
+//     { name: 'Gunmetal Silver Gloss', hex: '#2A2E33' },
+//     { name: 'Mahogany Vintage', hex: '#421C0E' },
+//     { name: 'Ocean Cyan Marine', hex: '#1B4D5C' },
+//     { name: 'Rosewood Blush', hex: '#6D3A3B' },
+//     { name: 'Ash Fog Light Grey', hex: '#8C9298' },
+//     { name: 'Desert Camel Tan', hex: '#C67C4E' },
+//     { name: 'Champagne Shimmer', hex: '#D4B886' },
+//     { name: 'Forest Moss Green', hex: '#2E473B' },
+//     { name: 'Cobalt Sapphire', hex: '#102A45' },
+//   ];
 
-  const prefix = bookCode.split('-')[0];
-  const products: BookProduct[] = [];
+//   const prefix = bookCode.split('-')[0];
+//   const products: BookProduct[] = [];
 
-  for (let i = 1; i <= count; i++) {
-    const shade = shades[(i - 1) % shades.length];
-    const code = `${prefix}-${100 + i}`;
-    const fallback = FALLBACK_IMAGES[(i - 1) % FALLBACK_IMAGES.length];
-    const imagePath = `/books/${slug}/products/${code}.webp`;
-    const rrp = basePrice + i * 25;
+//   for (let i = 1; i <= count; i++) {
+//     const shade = shades[(i - 1) % shades.length];
+//     const code = `${prefix}-${100 + i}`;
+//     const fallback = FALLBACK_IMAGES[(i - 1) % FALLBACK_IMAGES.length];
+//     const imagePath = `/books/${slug}/products/${code}.webp`;
+//     const rrp = basePrice + i * 25;
 
-    products.push({
-      code,
-      name: `${bookTitle} - ${shade.name}`,
-      shadeName: shade.name,
-      category,
+//     products.push({
+//       code,
+//       name: `${bookTitle} - ${shade.name}`,
+//       shadeName: shade.name,
+//       category,
       
-      unit: 'Meter',
-      description: `Premium swatch #${i} (${code}) from official catalogue '${bookTitle}'. Features ${shade.name} with reinforced backing and high abrasion resistance for contract and residential upholstery.`,
-      image: imagePath,
-      fallbackImage: fallback,
-      gallery: [imagePath, fallback],
-      colors: [
-        { name: shade.name, hex: shade.hex },
-        { name: 'Companion Neutral', hex: '#D6C5B3' },
-        { name: 'Accent Dark', hex: '#111111' },
-      ],
-      specs: {
-        thickness: '1.2 mm - 1.4 mm',
-        width: '54 inches (137 cm)',
-        backing: 'Woven Cotton Fleece Mesh',
-        finish: 'Stain-Shield Protective Topcoat',
-        gsm: `${580 + i * 5} GSM`,
-        rollLength: '30 Meters Standard Roll',
-        abrasion: '80,000+ Martindale Cycles',
-      },
-      inStock: true,
-    });
-  }
+//       unit: 'Meter',
+//       description: `Premium swatch #${i} (${code}) from official catalogue '${bookTitle}'. Features ${shade.name} with reinforced backing and high abrasion resistance for contract and residential upholstery.`,
+//       image: imagePath,
+//       fallbackImage: fallback,
+//       gallery: [imagePath, fallback],
+//       colors: [
+//         { name: shade.name, hex: shade.hex },
+//         { name: 'Companion Neutral', hex: '#D6C5B3' },
+//         { name: 'Accent Dark', hex: '#111111' },
+//       ],
+//       specs: {
+//         thickness: '1.2 mm - 1.4 mm',
+//         width: '54 inches (137 cm)',
+//         backing: 'Woven Cotton Fleece Mesh',
+//         finish: 'Stain-Shield Protective Topcoat',
+//         gsm: `${580 + i * 5} GSM`,
+//         rollLength: '30 Meters Standard Roll',
+//         abrasion: '80,000+ Martindale Cycles',
+//       },
+//       inStock: true,
+//     });
+//   }
 
-  return products;
-};
+//   return products;
+// };
 
 //===========
 
@@ -166,21 +213,26 @@ export function generateNewProducts(
   products: BookShade[],
   bookCode: string,
   bookSlug: string,
-  category: string
+  category: string,
+  rrp: number
 ): BookProduct[] {
-
   const productNumber = bookCode.split('-').pop() ?? bookCode;
 
   return products.map((shade) => ({
     code: `${productNumber}-${shade.sr}`,
+
     name: `${bookCode} ${shade.sr}`,
+
     shadeName: `SR.NO: ${shade.sr} - ${shade.name}`,
+
     category,
 
-    // rrp: 0,
+    rrp,
+
     unit: 'meter',
 
-      description: `Premium swatch (${productNumber}-${shade.sr}) from official catalogue '${bookCode}'. Features ${shade.name} with reinforced backing and high abrasion resistance for contract and residential upholstery.`,
+    description: `Premium swatch (${productNumber}-${shade.sr}) from official catalogue '${bookCode}'. Features ${shade.name} with reinforced backing and high abrasion resistance for contract and residential upholstery.`,
+
     image: `/books/${bookSlug}/products/${productNumber}-${shade.sr}.png`,
 
     colors: [
@@ -272,193 +324,12 @@ export function generateNewProducts(
 // };
 
 export const MOCK_BOOKS: Book[] = [
-    {
-    slug: 'cinefab-651',
-    title: 'CINEFAB-651 - 100% Polyester Upholstery',
-    code: 'CINEFAB-651',
-    category: '100% Polyester Upholstery',
-    year: '2026 Master Edition',
-
-    description:
-      'Official Rexine Centre CINEFAB-651 sample book featuring 35 premium 100% Polyester upholstery swatches (380 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.',
-
-    coverImage: '/books/cinefab-651/cover.png',
-    fallbackCover: '/books/cinefab-651/cover.png',
-    pdfPath: '/books/cinefab-651/catalogue.pdf',
-
-    designCount: 35,
-
-    specs: {
-      thickness: '1.2 mm',
-      width: '140 CMS (54 Inches)',
-      backing: '100% Polyester Backing',
-      finish: '380 GSM Soft Touch',
-      targetUse:
-        'Sofas, Armchairs, Recliners, Cushions & Interior Upholstery',
-    },
-
-    products: generateNewProducts(
-      CINEFAB_SHADES,
-      'CINEFAB-651',
-      'cinefab-651',
-      '100% Polyester Upholstery'
-    ),
-  }, {
-    slug: 'aura-647',
-    title: 'AURA-647 - 100% Polyester Upholstery',
-    code: 'AURA-647',
-    category: '100% Polyester Upholstery',
-    year: '2026 Master Edition',
-
-    description:
-      'Official Rexine Centre AURA-647 sample book featuring 25 premium 100% Polyester upholstery swatches (360 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.',
-
-    coverImage: '/books/aura-647/cover.png',
-    fallbackCover: '/books/aura-647/cover.png',
-    pdfPath: '/books/aura-647/catalogue.pdf',
-
-    designCount: 25,
-
-    specs: {
-      thickness: '1.2 mm',
-      width: '140 CMS (54 Inches)',
-      backing: '100% Polyester Backing',
-      finish: '360 GSM Soft Touch',
-      targetUse:
-        'Sofas, Armchairs, Recliners, Cushions & Interior Upholstery',
-    },
-
-    products: generateNewProducts(
-      AURA_SHADES,
-      'AURA-647',
-      'aura-647',
-      '100% Polyester Upholstery'
-    ),
-  }, {
-    slug: 'cliff-653',
-    title: 'CLIFF-653 - 100% Polyester Upholstery',
-    code: 'CLIFF-653',
-    category: '100% Polyester Upholstery',
-    year: '2026 Master Edition',
-
-    description:
-      'Official Rexine Centre CLIFF-653 sample book featuring 19 premium 100% Polyester upholstery swatches (360 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.',
-
-    coverImage: '/books/cliff-653/cover.png',
-    fallbackCover: '/books/cliff-653/cover.png',
-    pdfPath: '/books/cliff-653/catalogue.pdf',
-
-    designCount: 19,
-
-    specs: {
-      thickness: '1.2 mm',
-      width: '140 CMS (54 Inches)',
-      backing: '100% Polyester Backing',
-      finish: '360 GSM Soft Touch',
-      targetUse:
-        'Sofas, Armchairs, Recliners, Cushions & Interior Upholstery',
-    },
-
-    products: generateNewProducts(
-      CLIFF_SHADES,
-      'CLIFF-653',
-      'cliff-653',
-      '100% Polyester Upholstery'
-    ),
-  }, {
-    slug: 'coral',
-    title: 'CORAL - 100% Polyester Upholstery',
-    code: 'CORAL',
-    category: '100% Polyester Upholstery',
-    year: '2026 Master Edition',
-
-    description:
-      'Official Rexine Centre CORAL sample book featuring 19 premium 100% Polyester upholstery swatches (340 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.',
-
-    coverImage: '/books/coral/cover.png',
-    fallbackCover: '/books/coral/cover.png',
-    pdfPath: '/books/coral/catalogue.pdf',
-
-    designCount: 16,
-
-    specs: {
-      thickness: '1.2 mm',
-      width: '140 CMS (54 Inches)',
-      backing: '100% Polyester Backing',
-      finish: '340 GSM Soft Touch',
-      targetUse:
-        'Sofas, Armchairs, Recliners, Cushions & Interior Upholstery',
-    },
-
-    products: generateNewProducts(
-      CORAL_SHADES,
-      'CORAL',
-      'coral',
-      '100% Polyester Upholstery'
-    ),
-  }, {
-    slug: 'flow-424',
-    title: 'FLOW-424 - 60% Poly. 40% PU',
-    code: 'FLOW-424',
-    category: '60% Polyester 40% Polyurethane',
-    year: '2026 Master Edition',
-
-    description:
-      'Official Rexine Centre FLOW-424 sample book featuring 23 premium 60% Polyester 40% Polyurethane swatches (350 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.',
-
-    coverImage: '/books/flow-424/cover.png',
-    fallbackCover: '/books/flow-424/cover.png',
-    pdfPath: '/books/flow-424/catalogue.pdf',
-
-    designCount: 23,
-
-    specs: {
-      thickness: '1.2 mm',
-      width: '140 CMS (54 Inches)',
-      backing: '60% Polyester',
-      finish: '350 GSM Soft Touch',
-      targetUse:
-        'Sofas, Armchairs, Recliners, Cushions & Interior Upholstery',
-    },
-
-    products: generateNewProducts(
-      FLOW_SHADES,
-      'FLOW-424',
-      'flow-424',
-      '60% Polyester 40% Polyurethane'
-    ),
-  }, {
-    slug: 'italian-leather-422',
-    title: 'ITALIAN-LEATHER-422 - 60% Poly. 40% PU',
-    code: 'FLOW-424',
-    category: '60% Polyester 40% Polyurethane',
-    year: '2026 Master Edition',
-
-    description:
-      'Official Rexine Centre FLOW-424 sample book featuring 23 premium 60% Polyester 40% Polyurethane swatches (500 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.',
-
-    coverImage: '/books/italian-leather-422/cover.png',
-    fallbackCover: '/books/italian-leather-422/cover.png',
-    pdfPath: '/books/italian-leather-422/catalogue.pdf',
-
-    designCount: 20,
-
-    specs: {
-      thickness: '1.2 mm',
-      width: '140 CMS (54 Inches)',
-      backing: '60% Polyester',
-      finish: '500 GSM Soft Touch',
-      targetUse:
-        'Sofas, Armchairs, Recliners, Cushions & Interior Upholstery',
-    },
-
-    products: generateNewProducts(
-      ITALIAN_LEATHER_SHADES,
-      'ITALIAN-LEATHER-422',
-      'italian-leather-422',
-      '60% Polyester 40% Polyurethane'
-    ),
-  },
+   aura647,
+   cinefab651,
+   cliff653,
+   coral,
+   flow424,
+   italianleather422
   // {
   //   slug: 'ddecor-luxury-velvet',
   //   title: "D'Decor - Luxury Velvet Vol. 1",

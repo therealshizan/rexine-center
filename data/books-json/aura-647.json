@@ -1,0 +1,472 @@
+{
+  "slug": "aura-647",
+  "title": "AURA-647 - 100% Polyester Upholstery",
+  "code": "AURA-647",
+  "category": "100% Polyester Upholstery",
+  "year": "2026 Master Edition",
+  "description": "Official Rexine Centre AURA-647 sample book featuring 25 premium 100% Polyester upholstery swatches (360 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
+  "coverImage": "/books/aura-647/cover.png",
+  "fallbackCover": "src/assets/images/rexine_burgundy_wine_1785227406807.jpg",
+  "pdfPath": "/books/aura-647/catalogue.pdf",
+  "designCount": 25,
+  "salePrice": 850,
+  "specs": {
+    "thickness": "1.2 mm",
+    "width": "140 CMS (54 Inches)",
+    "backing": "100% Polyester Backing",
+    "finish": "360 GSM Soft Touch",
+    "targetUse": "Sofas, Armchairs, Recliners, Cushions & Interior Upholstery"
+  },
+  "products": [
+    {
+      "code": "647-01",
+      "name": "AURA-647 01",
+      "shadeName": "SR.NO: 01 - Warm Ivory",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-01) from official catalogue 'AURA-647'. Features Warm Ivory with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-01.png",
+      "colors": [
+        {
+          "name": "Warm Ivory",
+          "hex": "#E7E2D7"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-02",
+      "name": "AURA-647 02",
+      "shadeName": "SR.NO: 02 - Sage Beige",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-02) from official catalogue 'AURA-647'. Features Sage Beige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-02.png",
+      "colors": [
+        {
+          "name": "Sage Beige",
+          "hex": "#B9B89B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-03",
+      "name": "AURA-647 03",
+      "shadeName": "SR.NO: 03 - Muted Khaki",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-03) from official catalogue 'AURA-647'. Features Muted Khaki with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-03.png",
+      "colors": [
+        {
+          "name": "Muted Khaki",
+          "hex": "#A09679"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-04",
+      "name": "AURA-647 04",
+      "shadeName": "SR.NO: 04 - Olive Taupe",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-04) from official catalogue 'AURA-647'. Features Olive Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-04.png",
+      "colors": [
+        {
+          "name": "Olive Taupe",
+          "hex": "#7C7C68"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-05",
+      "name": "AURA-647 05",
+      "shadeName": "SR.NO: 05 - Soft Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-05) from official catalogue 'AURA-647'. Features Soft Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-05.png",
+      "colors": [
+        {
+          "name": "Soft Sage",
+          "hex": "#B7B9A1"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-06",
+      "name": "AURA-647 06",
+      "shadeName": "SR.NO: 06 - Pale Eucalyptus",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-06) from official catalogue 'AURA-647'. Features Pale Eucalyptus with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-06.png",
+      "colors": [
+        {
+          "name": "Pale Eucalyptus",
+          "hex": "#DCE2D2"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-07",
+      "name": "AURA-647 07",
+      "shadeName": "SR.NO: 07 - Moss Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-07) from official catalogue 'AURA-647'. Features Moss Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-07.png",
+      "colors": [
+        {
+          "name": "Moss Grey",
+          "hex": "#9EA397"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-08",
+      "name": "AURA-647 08",
+      "shadeName": "SR.NO: 08 - Silver Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-08) from official catalogue 'AURA-647'. Features Silver Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-08.png",
+      "colors": [
+        {
+          "name": "Silver Sage",
+          "hex": "#A7AEA4"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-09",
+      "name": "AURA-647 09",
+      "shadeName": "SR.NO: 09 - Muted Eucalyptus",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-09) from official catalogue 'AURA-647'. Features Muted Eucalyptus with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-09.png",
+      "colors": [
+        {
+          "name": "Muted Eucalyptus",
+          "hex": "#949F97"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-10",
+      "name": "AURA-647 10",
+      "shadeName": "SR.NO: 10 - Dusty Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-10) from official catalogue 'AURA-647'. Features Dusty Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-10.png",
+      "colors": [
+        {
+          "name": "Dusty Teal",
+          "hex": "#647F79"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-11",
+      "name": "AURA-647 11",
+      "shadeName": "SR.NO: 11 - Deep Forest Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-11) from official catalogue 'AURA-647'. Features Deep Forest Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-11.png",
+      "colors": [
+        {
+          "name": "Deep Forest Teal",
+          "hex": "#213E36"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-12",
+      "name": "AURA-647 12",
+      "shadeName": "SR.NO: 12 - Earthy Olive",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-12) from official catalogue 'AURA-647'. Features Earthy Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-12.png",
+      "colors": [
+        {
+          "name": "Earthy Olive",
+          "hex": "#555847"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-13",
+      "name": "AURA-647 13",
+      "shadeName": "SR.NO: 13 - Deep Moss",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-13) from official catalogue 'AURA-647'. Features Deep Moss with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-13.png",
+      "colors": [
+        {
+          "name": "Deep Moss",
+          "hex": "#314137"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-14",
+      "name": "AURA-647 14",
+      "shadeName": "SR.NO: 14 - Warm Chestnut",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-14) from official catalogue 'AURA-647'. Features Warm Chestnut with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-14.png",
+      "colors": [
+        {
+          "name": "Warm Chestnut",
+          "hex": "#71533B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-15",
+      "name": "AURA-647 15",
+      "shadeName": "SR.NO: 15 - Dark Cocoa",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-15) from official catalogue 'AURA-647'. Features Dark Cocoa with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-15.png",
+      "colors": [
+        {
+          "name": "Dark Cocoa",
+          "hex": "#52382C"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-16",
+      "name": "AURA-647 16",
+      "shadeName": "SR.NO: 16 - Deep Taupe Brown",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-16) from official catalogue 'AURA-647'. Features Deep Taupe Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-16.png",
+      "colors": [
+        {
+          "name": "Deep Taupe Brown",
+          "hex": "#403B2F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-17",
+      "name": "AURA-647 17",
+      "shadeName": "SR.NO: 17 - Stone Brown",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-17) from official catalogue 'AURA-647'. Features Stone Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-17.png",
+      "colors": [
+        {
+          "name": "Stone Brown",
+          "hex": "#58554B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-18",
+      "name": "AURA-647 18",
+      "shadeName": "SR.NO: 18 - Charcoal Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-18) from official catalogue 'AURA-647'. Features Charcoal Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-18.png",
+      "colors": [
+        {
+          "name": "Charcoal Sage",
+          "hex": "#4F564F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-19",
+      "name": "AURA-647 19",
+      "shadeName": "SR.NO: 19 - Deep Slate Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-19) from official catalogue 'AURA-647'. Features Deep Slate Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-19.png",
+      "colors": [
+        {
+          "name": "Deep Slate Green",
+          "hex": "#404A44"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-20",
+      "name": "AURA-647 20",
+      "shadeName": "SR.NO: 20 - Dark Blue Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-20) from official catalogue 'AURA-647'. Features Dark Blue Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-20.png",
+      "colors": [
+        {
+          "name": "Dark Blue Grey",
+          "hex": "#343E3E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-21",
+      "name": "AURA-647 21",
+      "shadeName": "SR.NO: 21 - Midnight Slate",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-21) from official catalogue 'AURA-647'. Features Midnight Slate with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-21.png",
+      "colors": [
+        {
+          "name": "Midnight Slate",
+          "hex": "#282F36"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-22",
+      "name": "AURA-647 22",
+      "shadeName": "SR.NO: 22 - Dark Espresso",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-22) from official catalogue 'AURA-647'. Features Dark Espresso with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-22.png",
+      "colors": [
+        {
+          "name": "Dark Espresso",
+          "hex": "#2C2523"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-23",
+      "name": "AURA-647 23",
+      "shadeName": "SR.NO: 23 - Muted Forest",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-23) from official catalogue 'AURA-647'. Features Muted Forest with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-23.png",
+      "colors": [
+        {
+          "name": "Muted Forest",
+          "hex": "#5A7E6B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-24",
+      "name": "AURA-647 24",
+      "shadeName": "SR.NO: 24 - Deep Petrol Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-24) from official catalogue 'AURA-647'. Features Deep Petrol Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-24.png",
+      "colors": [
+        {
+          "name": "Deep Petrol Teal",
+          "hex": "#0D3136"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "647-25",
+      "name": "AURA-647 25",
+      "shadeName": "SR.NO: 25 - Deep Pine Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 1200,
+      "unit": "meter",
+      "description": "Premium swatch (647-25) from official catalogue 'AURA-647'. Features Deep Pine Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/aura-647/products/647-25.png",
+      "colors": [
+        {
+          "name": "Deep Pine Green",
+          "hex": "#0B2D27"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

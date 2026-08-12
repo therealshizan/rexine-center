@@ -8,17 +8,12 @@ import {
   MessageCircle,
   Share2,
   ChevronRight,
-  ShieldCheck,
-  CheckCircle2,
   FileText,
-  Info,
   CheckSquare,
   Square,
   Layers,
-  Send,
-  Camera,
 } from 'lucide-react';
-import { getBookBySlug, MOCK_BOOKS, Book, BookProduct } from '../data/mockBooks';
+import { getBookBySlug, MOCK_BOOKS, BookProduct } from '../data/mockBooks';
 import { Product } from '../types';
 import { BookQRCodeModal } from '../components/BookQRCodeModal';
 import { PDFViewerModal } from '../components/PDFViewerModal';
@@ -43,6 +38,16 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
   const [showQRModal, setShowQRModal] = useState(false);
   const [showPDFModal, setShowPDFModal] = useState(false);
 
+// Dynamic Price Mapping & Auto-Calculated Savings
+  const wholesalePrice = book.salePrice || 1500;
+  
+  // Calculate average RRP from products, or fallback to a 25% markup on wholesale
+  const avgSwatchRrp = book.products?.length > 0 
+    ? Math.round(book.products.reduce((acc, p) => acc + (p.rrp || 0), 0) / book.products.length)
+    : Math.round(wholesalePrice * 1.25);
+
+  const rrpPrice = avgSwatchRrp > wholesalePrice ? avgSwatchRrp : Math.round(wholesalePrice * 1.25);
+  const savingAmount = Math.max(0, rrpPrice - wholesalePrice);
   // Filter swatches inside book
   const filteredProducts = book.products.filter((p) => {
     if (!searchQuery) return true;
@@ -186,7 +191,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                 </p>
               </div>
 
-              {/* Wholesale Price + Description Container - Properly Aligned */}
+              {/* Wholesale Price + Description Container - Dynamically Mapped */}
               <div className="bg-[#111111] p-5 rounded-2xl border border-[#111111] shadow-sm">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   
@@ -197,7 +202,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                     </span>
                     <div className="flex items-baseline gap-1.5">
                       <span className="font-serif text-3xl sm:text-4xl font-bold text-white leading-none">
-                        ₹1500
+                        ₹{wholesalePrice}
                       </span>
                       <span className="text-xs text-gray-400 font-sans">
                         / meter
@@ -209,10 +214,10 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                   <div className="flex items-center gap-3 sm:text-right pt-2 sm:pt-0 border-t sm:border-t-0 border-white/10">
                     <div>
                       <span className="text-xs text-gray-400 font-sans block">
-                        RRP ₹1880 /meter
+                        AVG. RRP ₹{rrpPrice} /meter
                       </span>
                       <span className="text-sm font-bold text-emerald-400">
-                        Save ₹380
+                        Save ₹{savingAmount}
                       </span>
                     </div>
                   </div>
@@ -329,7 +334,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                     }`}
                   >
                     <div>
-                      {/* Swatch Image - Fixed consistent aspect ratio across mobile/desktop */}
+                      {/* Swatch Image */}
                       <div
                         className="relative aspect-[4/3] w-full bg-gray-100 overflow-hidden cursor-pointer"
                         onClick={() => navigate(`/books/${book.slug}/${product.code}`)}
@@ -431,4 +436,5 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
     </div>
   );
 };
+
 export default BookDetailPage;
