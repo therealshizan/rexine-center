@@ -61,7 +61,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
   const handleSimulateScan = (book: typeof MOCK_BOOKS[0]) => {
     setSelectedBook(book);
     setScanned(true);
-    const pdfTarget = `${SITE_URL.replace(/\/$/, '')}/books/${book.code}/catalogue.pdf`;
+    const pdfTarget = `${SITE_URL.replace(/\/$/, '')}/books/${book.slug}/catalogue.pdf`;
     setTimeout(() => {
       stopCamera();
       setScanned(false);
@@ -285,7 +285,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
         isOpen={showPDFModal}
         onClose={() => setShowPDFModal(false)}
         title={selectedBook.title}
-        pdfUrl={`/books/${selectedBook.slug}/catalogue.pdf`}
+        pdfUrl={selectedBook.pdfPath}
         code={selectedBook.code}
         pageCount={selectedBook.designCount + 4}
       />

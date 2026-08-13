@@ -31,7 +31,7 @@ export const PDFViewerModal: React.FC<PDFViewerModalProps> = ({
   );
 
   // Resolve dynamic properties with safe fallbacks
-  const pdfUrl = propPdfUrl || book?.pdfPath || `/books/${code.toLowerCase()}/catalogue.pdf`;
+  const pdfUrl = book?.pdfPath || `/books/${code.toLowerCase()}/catalogue.pdf`;
   const products = book?.products ?? [];
   // Dynamic page count: Cover page (1) + Swatches (products.length) + Back/Specs page (1)
   const pageCount = propPageCount || (products.length > 0 ? products.length + 2 : 39);
@@ -285,31 +285,7 @@ export const PDFViewerModal: React.FC<PDFViewerModalProps> = ({
                           </span>
                         </div>
                       </div>
-
-                      {/* Specs */}
-                      <div className="bg-gray-50 p-2.5 rounded border border-gray-200 text-[10px] font-mono grid grid-cols-4 gap-1 text-center">
-                        <div>
-                          <span className="text-gray-400 block">COMP</span>
-                          <span className="font-bold">POLY</span>
-                        </div>
-
-                        <div>
-                          <span className="text-gray-400 block">WIDTH</span>
-                          <span className="font-bold">
-                            {product.specs?.width || '140 CMS'}
-                          </span>
-                        </div>
-
-                        <div>
-                          <span className="text-gray-400 block">GSM</span>
-                          <span className="font-bold">380</span>
-                        </div>
-
-                        <div>
-                          <span className="text-gray-400 block">RUBS</span>
-                          <span className="font-bold">50000</span>
-                        </div>
-                      </div>
+                      
                     </div>
                   ) : null}
                 </div>

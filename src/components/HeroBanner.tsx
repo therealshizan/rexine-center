@@ -7,6 +7,7 @@ import rexineBurgundyWine from '../assets/images/rexine_burgundy_wine_1785227406
 import rexineEmeraldGreen from '../assets/images/rexine_emerald_green_1785227447891.jpg';
 import rexineMidnightNavy from '../assets/images/rexine_midnight_navy_1785227463408.jpg';
 import rexineSlateCharcoal from '../assets/images/rexine_slate_charcoal_1785227428841.jpg';
+import { useNavigate } from 'react-router-dom';
 
 interface HeroBannerProps {
   onOpenBookScanner: () => void;
@@ -77,6 +78,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
   onOpenEnquiry,
 }) => {
   const [active, setActive] = useState(0);
+  const navigate = useNavigate();
 
   return (
     <section className="relative h-[620px] sm:h-[700px] w-full overflow-hidden bg-[#EDE8E3] border-b border-gray-300">
@@ -116,14 +118,13 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <a
-              href="/books"
-              className="flex w-fit items-center gap-3 rounded-full bg-[#111111] hover:bg-[#C67C4E] px-8 py-4 text-xs font-button font-bold uppercase tracking-wider text-white transition-all shadow-lg hover:shadow-xl group"
-            >
+          <button
+            onClick={() => navigate('/books')}
+            className="inline-flex items-center gap-2 bg-[#C67C4E] hover:bg-[#b06a3d] text-white px-6 py-3.5 rounded-full font-button text-xs font-bold uppercase tracking-wider shrink-0 transition-colors shadow-lg cursor-pointer"
+          >
               <span>{HERO_SLIDES[active].button}</span>
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-
+          </button>
             <button
               onClick={onOpenBookScanner}
               className="flex w-fit items-center gap-2 rounded-full border border-black/20 hover:border-black bg-white/70 hover:bg-white px-7 py-4 text-xs font-button font-bold uppercase tracking-wider text-black transition-all shadow-sm"
