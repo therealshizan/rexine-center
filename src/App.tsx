@@ -32,6 +32,7 @@ import { SearchModal } from './components/SearchModal';
 
 import { PRODUCTS } from './data/mockData';
 import { Product } from './types';
+import { BlogDetailPage } from './pages/BlogDetailPage';
 
 // ScrollToTop Component
 function ScrollToTop() {
@@ -167,15 +168,23 @@ function MainAppContent() {
               /> 
 
 
-              <Route
-                path="/applications"
-                element={
-                  <ApplicationsPage
-                    onOpenEnquiry={handleOpenEnquiryWithProduct}
-                  />
-                }
-              />
+<Route
+  path="/applications"
+  element={
+    <ApplicationsPage
+      onOpenEnquiry={handleOpenEnquiryWithProduct}
+    />
+  }
+/>
 
+<Route
+  path="/applications/:applicationId"
+  element={
+    <ApplicationsPage
+      onOpenEnquiry={handleOpenEnquiryWithProduct}
+    />
+  }
+/>
               <Route
                 path="/customizer"
                 element={
@@ -195,6 +204,12 @@ function MainAppContent() {
                   />
                 }
               />
+              <Route 
+                path="/resources/:slug" 
+                element={<BlogDetailPage
+                 />
+                }
+               />
 
               <Route
                 path="/about"

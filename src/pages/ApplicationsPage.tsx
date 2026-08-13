@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { APPLICATIONS } from '../data/mockData';
 import { ArrowRight, Check, ShieldCheck, Flame, Sun, Droplets, Sparkles, Building, Car, Sofa, Wrench } from 'lucide-react';
 import { Product } from '../types';
@@ -8,72 +9,76 @@ interface ApplicationsPageProps {
   onOpenEnquiry: (product?: Product | null) => void;
 }
 
-const INDUSTRY_DETAILS = [
-  {
-    id: 'automotive',
-    title: 'Automotive Upholstery',
-    tagline: 'UV-stabilized, high abrasion resistance synthetic hides for vehicle interiors.',
-    icon: Car,
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop',
-    keySpecs: ['100,000+ Martindale Rubs', 'UV & Fade Resistance (Grade 7)', 'Cold Crack Resistant to -20°C', 'Low Odor Auto Specification'],
-    suitableFor: ['Car Seat Covers', 'Dashboard Wraps', 'Door Trim Panels', 'Headliners', 'Commercial Bus Seating'],
-    recommendedSeries: 'Quilted Diamond & Supreme Auto-Grade'
-  },
-  {
-    id: 'furniture',
-    title: 'Sofa & Luxury Furniture',
-    tagline: 'Supple hand-feel, tactile pebble grains and rich earth-tone palettes.',
-    icon: Sofa,
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800&auto=format&fit=crop',
-    keySpecs: ['Pebble & Litchi Grain Emboss', 'Breathable Cotton Backing', 'Stain Guard & Hydrophobic Coating', 'High Tear Strength'],
-    suitableFor: ['Luxury Sofas', 'Recliners', 'Dining Chairs', 'Bed Headboards', 'Ottomans'],
-    recommendedSeries: 'Pebble Grain & Nappa Finish'
-  },
-  {
-    id: 'office',
-    title: 'Office Chairs & Executive Seating',
-    tagline: 'Ergonomic, breathable, long-wearing commercial seating materials.',
-    icon: Building,
-    image: officeUse,
-    keySpecs: ['Satin Smooth Nappa Finish', 'Sweat & Friction Resistant', 'Flame Retardant (BS 5852)', 'Easy Wipe Surface'],
-    suitableFor: ['Executive Task Chairs', 'Conference Room Chairs', 'Acoustic Wall Panels', 'Lobby Seating'],
-    recommendedSeries: 'Nappa Finish 1.2mm'
-  },
-  {
-    id: 'hospitality',
-    title: 'Hotels, Restaurants & Bars',
-    tagline: 'Commercial fire-retardant and stain-resistant luxury hides.',
-    icon: Sparkles,
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800&auto=format&fit=crop',
-    keySpecs: ['Fire Retardant (CAL 117 / BS 5852)', 'Alcohol & Disinfectant Wipeable', 'Antimicrobial Surface Treatment', '150,000 Rub Count'],
-    suitableFor: ['Restaurant Booths', 'Hotel Lounge Chairs', 'Bar Stools', 'Club VIP Wall Paneling'],
-    recommendedSeries: 'Milano Master Collection'
-  },
-  {
-    id: 'marine',
-    title: 'Marine & Outdoor Yachting',
-    tagline: 'Saltwater proof, anti-fungal, mildew resistant exterior synthetic hides.',
-    icon: Droplets,
-    image: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=800&auto=format&fit=crop',
-    keySpecs: ['100% Saltwater Waterproof', 'Mildew & Mold Inhibitor', 'Pink Stain Resistant', 'High Sun Reflective Index'],
-    suitableFor: ['Yacht Deck Loungers', 'Boat Helm Seats', 'Resort Outdoor Daybeds', 'Poolside Lounges'],
-    recommendedSeries: 'Marine Guard Vinyl Sheets'
-  },
-  {
-    id: 'healthcare',
-    title: 'Healthcare & Medical Equipment',
-    tagline: 'Hygienic, anti-bacterial, bleach-cleanable synthetic vinyl.',
-    icon: Wrench,
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop',
-    keySpecs: ['ISO 10993 Cytotoxicity Passed', 'Bleach Cleanable 1:10 ratio', 'Phthalate Free & Low VOC', 'Zero Cracking Surface'],
-    suitableFor: ['Hospital Beds', 'Examination Tables', 'Dentist Chairs', 'Physiotherapy Benches'],
-    recommendedSeries: 'MediClean PVC Series'
+const INDUSTRY_ICONS = [Car, Sofa, Building, Sparkles, Droplets, Wrench];
+
+const INDUSTRY_DETAILS = APPLICATIONS.map((app, index) => {
+  let customDetails = {
+    keySpecs: ['High Durability & Abrasion Resistance', 'UV & Fade Resistance', 'Tear & Puncture Proof', 'Easy Clean Surface'],
+    suitableFor: ['Commercial Projects', 'Residential Applications'],
+    recommendedSeries: `${app.title} Master Series`
+  };
+
+  if (index === 0 || app.id === 'automotive') {
+    customDetails = {
+      keySpecs: ['100,000+ Martindale Rubs', 'UV & Fade Resistance (Grade 7)', 'Cold Crack Resistant to -20°C', 'Low Odor Auto Specification'],
+      suitableFor: ['Car Seat Covers', 'Dashboard Wraps', 'Door Trim Panels', 'Headliners', 'Commercial Bus Seating'],
+      recommendedSeries: 'Quilted Diamond & Supreme Auto-Grade'
+    };
+  } else if (index === 1 || app.id === 'furniture') {
+    customDetails = {
+      keySpecs: ['Pebble & Litchi Grain Emboss', 'Breathable Cotton Backing', 'Stain Guard & Hydrophobic Coating', 'High Tear Strength'],
+      suitableFor: ['Luxury Sofas', 'Recliners', 'Dining Chairs', 'Bed Headboards', 'Ottomans'],
+      recommendedSeries: 'Pebble Grain & Nappa Finish'
+    };
+  } else if (index === 2 || app.id === 'office') {
+    customDetails = {
+      keySpecs: ['Satin Smooth Nappa Finish', 'Sweat & Friction Resistant', 'Flame Retardant (BS 5852)', 'Easy Wipe Surface'],
+      suitableFor: ['Executive Task Chairs', 'Conference Room Chairs', 'Acoustic Wall Panels', 'Lobby Seating'],
+      recommendedSeries: 'Nappa Finish 1.2mm'
+    };
+  } else if (index === 3 || app.id === 'hospitality') {
+    customDetails = {
+      keySpecs: ['Fire Retardant (CAL 117 / BS 5852)', 'Alcohol & Disinfectant Wipeable', 'Antimicrobial Surface Treatment', '150,000 Rub Count'],
+      suitableFor: ['Restaurant Booths', 'Hotel Lounge Chairs', 'Bar Stools', 'Club VIP Wall Paneling'],
+      recommendedSeries: 'Milano Master Collection'
+    };
+  } else if (index === 4 || app.id === 'marine') {
+    customDetails = {
+      keySpecs: ['100% Saltwater Waterproof', 'Mildew & Mold Inhibitor', 'Pink Stain Resistant', 'High Sun Reflective Index'],
+      suitableFor: ['Yacht Deck Loungers', 'Boat Helm Seats', 'Resort Outdoor Daybeds', 'Poolside Lounges'],
+      recommendedSeries: 'Marine Guard Vinyl Sheets'
+    };
+  } else if (index === 5 || app.id === 'healthcare') {
+    customDetails = {
+      keySpecs: ['ISO 10993 Cytotoxicity Passed', 'Bleach Cleanable 1:10 ratio', 'Phthalate Free & Low VOC', 'Zero Cracking Surface'],
+      suitableFor: ['Hospital Beds', 'Examination Tables', 'Dentist Chairs', 'Physiotherapy Benches'],
+      recommendedSeries: 'MediClean PVC Series'
+    };
   }
-];
 
+  // Fallback map for local image overrides (like officeUse import)
+  let imageSource = app.image;
+  if (index === 2 || app.id === 'office') {
+    imageSource = officeUse;
+  }
+
+  return {
+    id: app.id || `industry-${index}`,
+    title: app.title,
+    tagline: app.description,
+    icon: INDUSTRY_ICONS[index] || Sparkles,
+    image: imageSource,
+    ...customDetails
+  };
+});
 export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onOpenEnquiry }) => {
-  const [selectedApp, setSelectedApp] = useState(INDUSTRY_DETAILS[0]);
+  const { applicationId } = useParams<{ applicationId: string }>();
 
+  const initialApp =
+    INDUSTRY_DETAILS.find((app) => app.id === applicationId) ||
+    INDUSTRY_DETAILS[0];
+
+  const [selectedApp, setSelectedApp] = useState(initialApp);
   return (
     <div className="bg-[#F8F6F2] min-h-screen pt-8 pb-20">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">

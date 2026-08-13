@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { X, QrCode, BookOpen, CheckCircle, ExternalLink, ArrowRight, Camera, FileText, Sparkles, RefreshCw } from 'lucide-react';
-import { SAMPLE_BOOKS_DATA } from '../data/booksData';
+import { MOCK_BOOKS } from '../data/mockBooks';
 import { PDFViewerModal } from './PDFViewerModal';
 import { SITE_URL } from '../config';
 
@@ -12,7 +12,7 @@ interface BookScannerModalProps {
 
 export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
-  const [selectedBook, setSelectedBook] = useState(SAMPLE_BOOKS_DATA[0]);
+  const [selectedBook, setSelectedBook] = useState(MOCK_BOOKS[0]);
   const [scanned, setScanned] = useState(false);
   const [isCameraActive, setIsCameraActive] = useState(false);
   const [cameraError, setCameraError] = useState<string | null>(null);
@@ -58,10 +58,10 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
 
   if (!isOpen) return null;
 
-  const handleSimulateScan = (book: typeof SAMPLE_BOOKS_DATA[0]) => {
+  const handleSimulateScan = (book: typeof MOCK_BOOKS[0]) => {
     setSelectedBook(book);
     setScanned(true);
-    const pdfTarget = `${SITE_URL.replace(/\/$/, '')}/books/${book.id}/catalogue.pdf`;
+    const pdfTarget = `${SITE_URL.replace(/\/$/, '')}/books/${book.code}/catalogue.pdf`;
     setTimeout(() => {
       stopCamera();
       setScanned(false);
@@ -84,10 +84,11 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
           stopCamera();
           onClose();
         }}
-      ><div
-  onClick={(e) => e.stopPropagation()}
-  className="relative w-full max-w-2xl max-h-[90vh] bg-[#111111] text-white rounded-3xl shadow-2xl border border-white/15 overflow-hidden flex flex-col"
-> 
+      >
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className="relative w-full max-w-2xl max-h-[90vh] bg-[#111111] text-white rounded-3xl shadow-2xl border border-white/15 overflow-hidden flex flex-col"
+        > 
           {/* Header */}
           <div className="p-5 bg-[#181818] border-b border-white/10 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-3">
@@ -153,7 +154,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
                 </div>
               </div>
 
-              {/* Camera Action Controls (Moved out of video overlay to prevent hiding scanner) */}
+              {/* Camera Action Controls */}
               <div className="flex items-center justify-between gap-2 flex-wrap">
                 {!isCameraActive ? (
                   <button
@@ -193,7 +194,7 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
               <div className="relative w-24 h-24 bg-gray-900 rounded-xl overflow-hidden shrink-0 border border-white/10 shadow-md">
                 <img
                   src={selectedBook.coverImage}
-                  alt={selectedBook.name}
+                  alt={selectedBook.title}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black/20" />
@@ -204,13 +205,13 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
 
               <div className="flex-grow text-center sm:text-left space-y-1">
                 <span className="text-[10px] uppercase font-button text-[#C67C4E] font-bold tracking-wider">
-                  {selectedBook.collectionName}
+                  {selectedBook.category}
                 </span>
                 <h4 className="font-serif text-lg font-bold text-white">
-                  {selectedBook.name}
+                  {selectedBook.title}
                 </h4>
                 <p className="font-sans text-xs text-gray-400 mb-3">
-                  Contains {selectedBook.totalSwatches} active physical swatches with specs & wholesale rates.
+                  Contains {selectedBook.designCount} active physical swatches with specs & wholesale rates.
                 </p>
 
                 {scanned ? (
@@ -229,10 +230,10 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
                     </button>
 
                     <button
-                      onClick={() => handleOpenDirectly(selectedBook.id)}
+                      onClick={() => handleOpenDirectly(selectedBook.slug)}
                       className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white px-4 py-2.5 rounded-xl font-button text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer border border-white/10"
                     >
-                      <span>Open Book ({selectedBook.totalSwatches})</span>
+                      <span>Open Book ({selectedBook.designCount})</span>
                       <ArrowRight className="w-3.5 h-3.5 text-amber-300" />
                     </button>
                   </div>
@@ -246,29 +247,29 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
                 Select Physical Sample Book:
               </h5>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
-                {SAMPLE_BOOKS_DATA.map((book) => (
+                {MOCK_BOOKS.map((book) => (
                   <button
-                    key={book.id}
+                    key={book.slug}
                     onClick={() => {
                       setSelectedBook(book);
                       handleSimulateScan(book);
                     }}
                     className={`p-2.5 rounded-xl border text-left transition-all flex items-center gap-2.5 cursor-pointer ${
-                      selectedBook.id === book.id
+                      selectedBook.slug === book.slug
                         ? 'border-[#C67C4E] bg-[#C67C4E]/15 shadow-md text-white ring-1 ring-[#C67C4E]'
                         : 'border-white/10 bg-white/5 hover:bg-white/10 text-gray-300'
                     }`}
                   >
                     <img
                       src={book.coverImage}
-                      alt={book.name}
+                      alt={book.title}
                       className="w-9 h-9 rounded-lg object-cover shrink-0 border border-white/10"
                     />
                     <div className="overflow-hidden">
                       <p className="font-button text-[10px] font-bold text-amber-300 uppercase truncate">
                         {book.code}
                       </p>
-                      <p className="font-sans text-[11px] text-gray-200 truncate">{book.name}</p>
+                      <p className="font-sans text-[11px] text-gray-200 truncate">{book.title}</p>
                     </div>
                   </button>
                 ))}
@@ -283,10 +284,10 @@ export const BookScannerModal: React.FC<BookScannerModalProps> = ({ isOpen, onCl
       <PDFViewerModal
         isOpen={showPDFModal}
         onClose={() => setShowPDFModal(false)}
-        title={selectedBook.name}
-        pdfUrl={`/books/${selectedBook.id}/catalogue.pdf`}
+        title={selectedBook.title}
+        pdfUrl={`/books/${selectedBook.slug}/catalogue.pdf`}
         code={selectedBook.code}
-        pageCount={selectedBook.totalSwatches + 4}
+        pageCount={selectedBook.designCount + 4}
       />
     </>
   );

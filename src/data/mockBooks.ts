@@ -8,19 +8,19 @@ import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.
 // import aboutInteriorDining from '../assets/images/about_interior_dining_1785154208545.jpg';
 // import chairLoungeContact from '../assets/images/chair_lounge_contact_1785154236762.jpg';
 // import heroLeatherFolds from '../assets/images/hero_leather_folds_1785161428952.jpg';
-import { CINEFAB_SHADES } from './books/cinefabShades';
-import { AURA_SHADES } from './books/auraShades';
-import { CLIFF_SHADES } from './books/cliffShades';
-import { CORAL_SHADES } from './books/coralShades';
-import { FLOW_SHADES } from './books/flowShades';
-import { ITALIAN_LEATHER_SHADES } from './books/italianLeatherShades';
+import { CINEFAB_SHADES } from './book-shades/cinefabShades';
+import { AURA_SHADES } from './book-shades/auraShades';
+import { CLIFF_SHADES } from './book-shades/cliffShades';
+import { CORAL_SHADES } from './book-shades/coralShades';
+import { FLOW_SHADES } from './book-shades/flowShades';
+import { ITALIAN_LEATHER_SHADES } from './book-shades/italianLeatherShades';
 
-import aura647 from '../../data/books-json/aura-647.json'
-import cinefab651 from '../../data/books-json/cinefab-651.json'
-import cliff653 from '../../data/books-json/cliff-653.json'
-import coral from '../../data/books-json/coral.json'
-import flow424 from '../../data/books-json/flow-424.json'
-import italianleather422 from '../../data/books-json/italian-leather-422.json'
+import aura647 from '../../public/data/books-json/aura-647.json'
+import cinefab651 from '../../public/data/books-json/cinefab-651.json'
+import cliff653 from '../../public/data/books-json/cliff-653.json'
+import coral from '../../public/data/books-json/coral.json'
+import flow424 from '../../public/data/books-json/flow-424.json'
+import italianleather422 from '../../public/data/books-json/italian-leather-422.json'
 
 export interface BookProduct {
   code: string;
@@ -209,44 +209,44 @@ export interface BookShade {
 
 //===========
 
-export function generateNewProducts(
-  products: BookShade[],
-  bookCode: string,
-  bookSlug: string,
-  category: string,
-  rrp: number
-): BookProduct[] {
-  const productNumber = bookCode.split('-').pop() ?? bookCode;
+// export function generateNewProducts(
+//   products: BookShade[],
+//   bookCode: string,
+//   bookSlug: string,
+//   category: string,
+//   rrp: number
+// ): BookProduct[] {
+//   const productNumber = bookCode.split('-').pop() ?? bookCode;
 
-  return products.map((shade) => ({
-    code: `${productNumber}-${shade.sr}`,
+//   return products.map((shade) => ({
+//     code: `${productNumber}-${shade.sr}`,
 
-    name: `${bookCode} ${shade.sr}`,
+//     name: `${bookCode} ${shade.sr}`,
 
-    shadeName: `SR.NO: ${shade.sr} - ${shade.name}`,
+//     shadeName: `SR.NO: ${shade.sr} - ${shade.name}`,
 
-    category,
+//     category,
 
-    rrp,
+//     rrp,
 
-    unit: 'meter',
+//     unit: 'meter',
 
-    description: `Premium swatch (${productNumber}-${shade.sr}) from official catalogue '${bookCode}'. Features ${shade.name} with reinforced backing and high abrasion resistance for contract and residential upholstery.`,
+//     description: `Premium swatch (${productNumber}-${shade.sr}) from official catalogue '${bookCode}'. Features ${shade.name} with reinforced backing and high abrasion resistance for contract and residential upholstery.`,
 
-    image: `/books/${bookSlug}/products/${productNumber}-${shade.sr}.png`,
+//     image: `/books/${bookSlug}/products/${productNumber}-${shade.sr}.png`,
 
-    colors: [
-      {
-        name: shade.name,
-        hex: shade.hex,
-      },
-    ],
+//     colors: [
+//       {
+//         name: shade.name,
+//         hex: shade.hex,
+//       },
+//     ],
 
-    specs: {},
+//     specs: {},
 
-    inStock: true,
-  }));
-}
+//     inStock: true,
+//   }));
+// }
 //============
 
 // // Specific generator for CINEFAB-651 swatches matching exact 35 serial numbers from PDF

@@ -60,6 +60,7 @@ export interface CategoryItem {
 
 export interface SampleBook {
   id: string;
+  slug: string;
   code: string;
   name: string;
   collectionId?: string;

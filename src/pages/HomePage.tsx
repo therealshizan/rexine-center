@@ -19,7 +19,7 @@ interface HomePageProps {
   onOpenEnquiry: (product?: Product | null) => void;
   onSearchSubmit: (query: string) => void;
   onSelectProduct: (product: Product) => void;
-  onSelectApplication: (appTitle: string) => void;
+  onSelectApplication: (appId: string) => void;
 }
 
 export const HomePage: React.FC<HomePageProps> = ({
@@ -58,10 +58,9 @@ export const HomePage: React.FC<HomePageProps> = ({
       />
 
       {/* 6. Applications Section */}
-      <ApplicationsSection
-        onSelectApplication={onSelectApplication}
-      />
-
+<ApplicationsSection
+  onSelectApplication={(appId) => navigate(`/applications/${appId}`)}
+/>
       {/* 7. Metrics Bar */}
       <MetricsBar />
 

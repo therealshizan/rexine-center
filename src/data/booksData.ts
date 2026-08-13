@@ -70,6 +70,7 @@ export const BRAND_COLLECTIONS: BrandCollection[] = [
 // Helper converter from Book -> SampleBook
 const mapBookToSampleBook = (b: Book): SampleBook => ({
   id: b.slug,
+  slug: b.slug,
   code: b.code,
   name: b.title,
   collectionId: b.slug.split('-')[0],
@@ -79,7 +80,7 @@ const mapBookToSampleBook = (b: Book): SampleBook => ({
   description: b.description,
   totalSwatches: b.designCount,
   // Prefer fallbackCover when coverImage is a local placeholder path not yet uploaded
-  coverImage: (b.coverImage && !b.coverImage.startsWith('/books/'))
+  coverImage: (b.coverImage && !b.coverImage.startsWith('/books-json/'))
     ? b.coverImage
     : (b.fallbackCover || rexineBurgundyWine),
   // QR code points directly to the PDF catalogue, not the book page

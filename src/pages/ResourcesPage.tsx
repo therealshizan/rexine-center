@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import { BLOG_POSTS, FAQS, SAMPLE_BOOKS } from '../data/mockData';
+import { BLOG_POSTS, FAQS } from '../data/mockData';
+import { MOCK_BOOKS } from '../data/mockBooks';
 import { BookOpen, FileText, Download, Play, HelpCircle, ChevronDown, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
 import { Product } from '../types';
+import { SITE_URL } from '../config';
+import { Link } from 'react-router-dom';
 
 interface ResourcesPageProps {
   onOpenEnquiry: (product?: Product | null) => void;
@@ -15,6 +18,11 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({
   onOpenVideoModal,
 }) => {
   const [openFaq, setOpenFaq] = useState<string | null>('faq1');
+
+  const handleDownloadPDF = (book: typeof MOCK_BOOKS[0]) => {
+    const pdfTarget = `${SITE_URL.replace(/\/$/, '')}/books/${book.slug}/catalogue.pdf`;
+    window.open(pdfTarget, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <div className="bg-[#F8F6F2] min-h-screen pt-8 pb-20">
@@ -41,24 +49,24 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({
             </h2>
             <button
               onClick={onOpenBookScanner}
-              className="text-xs font-button font-bold text-[#C67C4E] hover:underline flex items-center gap-1 uppercase tracking-wider"
+              className="text-xs font-button font-bold text-[#C67C4E] hover:underline flex items-center gap-1 uppercase tracking-wider cursor-pointer"
             >
               <span>Scan Physical Swatch Book QR</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {SAMPLE_BOOKS.map((book) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">         
+            {MOCK_BOOKS.map((book) => (
               <div
-                key={book.id}
+                key={book.slug}
                 className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between"
               >
                 <div>
                   <div className="relative h-48 bg-gray-100 overflow-hidden">
                     <img
                       src={book.coverImage}
-                      alt={book.name}
+                      alt={book.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <span className="absolute top-3 left-3 bg-[#111111]/80 backdrop-blur-md text-white text-[10px] font-button font-bold uppercase tracking-wider px-2.5 py-1 rounded-md">
@@ -67,18 +75,18 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({
                   </div>
                   <div className="p-5">
                     <span className="text-[10px] font-button font-bold text-[#C67C4E] uppercase tracking-wider block mb-1">
-                      {book.category} • {book.totalSwatches} Swatches
+                      {book.category} • {book.designCount} Swatches
                     </span>
                     <h3 className="font-serif font-bold text-base text-gray-900 mb-2">
-                      {book.name}
+                      {book.title}
                     </h3>
                   </div>
                 </div>
 
                 <div className="p-5 pt-0">
                   <button
-                    onClick={() => onOpenEnquiry(null)}
-                    className="w-full bg-gray-50 hover:bg-[#111111] hover:text-white text-gray-800 py-2.5 rounded-lg font-button text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-2 border border-gray-200"
+                    onClick={() => handleDownloadPDF(book)}
+                    className="w-full bg-gray-50 hover:bg-[#111111] hover:text-white text-gray-800 py-2.5 rounded-lg font-button text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-2 border border-gray-200 cursor-pointer"
                   >
                     <Download className="w-3.5 h-3.5" />
                     <span>Download PDF Book</span>
@@ -96,39 +104,48 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {BLOG_POSTS.map((post) => (
-              <div
+              <Link
                 key={post.id}
-                className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-all group cursor-pointer"
+                to={`/resources/${post.slug}`}
+                className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between"
               >
-                <div className="h-48 overflow-hidden bg-gray-100 relative">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <span className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md text-gray-800 text-[10px] font-button font-bold px-2.5 py-1 rounded-md">
-                    {post.date}
-                  </span>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-serif font-bold text-lg text-gray-900 group-hover:text-[#C67C4E] transition-colors mb-2">
-                    {post.title}
-                  </h3>
-                  <p className="font-sans text-xs text-gray-600 line-clamp-2 leading-relaxed">
-                    Learn essential industry tips on selecting material density, maintaining surface elasticity, and choosing flame retardant properties.
-                  </p>
-                  <div className="mt-4 flex items-center gap-1 text-xs font-button font-bold text-[#C67C4E] uppercase tracking-wider">
-                    <span>Read Guide</span>
-                    <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                <div>
+                  <div className="relative h-48 bg-gray-100 overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute top-3 left-3 bg-[#111111]/80 backdrop-blur-md text-white text-[10px] font-button font-bold uppercase tracking-wider px-2.5 py-1 rounded-md">
+                      {post.date}
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <span className="text-[10px] font-button font-bold text-[#C67C4E] uppercase tracking-wider block mb-1">
+                      Technical Guide
+                    </span>
+                    <h3 className="font-serif font-bold text-base text-gray-900 group-hover:text-[#C67C4E] transition-colors mb-2">
+                      {post.title}
+                    </h3>
+                    <p className="font-sans text-xs text-gray-600 line-clamp-2 leading-relaxed">
+                      {post.excerpt}
+                    </p>
                   </div>
                 </div>
-              </div>
+
+                <div className="p-5 pt-0">
+                  <div className="w-full bg-gray-50 group-hover:bg-[#111111] group-hover:text-white text-gray-800 py-2.5 rounded-lg font-button text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-2 border border-gray-200">
+                    <span>Read Guide</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
 
         {/* Video Tutorial Card Banner */}
-        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 mb-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+        {/* <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 mb-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
           <div className="space-y-4 max-w-xl">
             <span className="font-button text-xs font-bold uppercase tracking-[0.2em] text-[#C67C4E]">
               Video Workshop
@@ -142,11 +159,11 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({
           </div>
           <button
             onClick={onOpenVideoModal}
-            className="w-16 h-16 rounded-full bg-[#C67C4E] hover:bg-white hover:text-[#111111] text-white flex items-center justify-center transition-all shadow-xl shrink-0 group scale-105 hover:scale-110"
+            className="w-16 h-16 rounded-full bg-[#C67C4E] hover:bg-white hover:text-[#111111] text-white flex items-center justify-center transition-all shadow-xl shrink-0 group scale-105 hover:scale-110 cursor-pointer"
           >
             <Play className="w-6 h-6 fill-current ml-1" />
           </button>
-        </div>
+        </div> */}
 
         {/* Technical FAQ Accordion */}
         <div className="bg-white rounded-3xl p-6 sm:p-10 border border-gray-200 shadow-lg">
@@ -169,7 +186,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({
                 >
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : faq.id)}
-                    className="w-full p-5 text-left bg-gray-50/50 hover:bg-gray-50 flex items-center justify-between gap-4 font-serif font-bold text-gray-900 transition-colors"
+                    className="w-full p-5 text-left bg-gray-50/50 hover:bg-gray-50 flex items-center justify-between gap-4 font-serif font-bold text-gray-900 transition-colors cursor-pointer"
                   >
                     <span>{faq.question}</span>
                     <ChevronDown

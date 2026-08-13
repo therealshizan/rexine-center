@@ -14,13 +14,12 @@ import {
   Share2,
   Printer
 } from 'lucide-react';
-import { SAMPLE_BOOKS_DATA, BRAND_COLLECTIONS } from '../data/booksData';
+import { SAMPLE_BOOKS_DATA } from '../data/booksData';
 import { SampleBook, Product } from '../types';
 
 interface BooksPageProps {
   onOpenEnquiry: (product?: Product | null) => void;
 }
-
 export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
@@ -29,23 +28,31 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
   const [selectedBrand, setSelectedBrand] = useState<string>(initialCategory);
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Filter physical sample books
-  const filteredBooks = SAMPLE_BOOKS_DATA.filter((book) => {
+  // Deduplicate SAMPLE_BOOKS_DATA by 'id' to ensure no item ever renders twice
+  const uniqueBooks = Array.from(
+    new Map(SAMPLE_BOOKS_DATA.map((book) => [book.id, book])).values()
+  );
+
+  // Filter physical sample books using the deduplicated array
+  const filteredBooks = uniqueBooks.filter((book) => {
     const matchesBrand =
       selectedBrand === 'all' ||
-      book.collectionId.toLowerCase() === selectedBrand.toLowerCase() ||
-      book.collectionName.toLowerCase().includes(selectedBrand.toLowerCase());
+      book.code.toLowerCase() === selectedBrand.toLowerCase() ||
+      book.collectionId?.toLowerCase() === selectedBrand.toLowerCase() ||
+      book.collectionName?.toLowerCase().includes(selectedBrand.toLowerCase());
 
     const matchesSearch =
       !searchQuery ||
       book.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       book.code.toLowerCase().includes(searchQuery.toLowerCase()) ||
       book.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      book.description.toLowerCase().includes(searchQuery.toLowerCase());
+      book.description?.toLowerCase().includes(searchQuery.toLowerCase());
 
     return matchesBrand && matchesSearch;
   });
 
+  // ... rest of your component remains the same, 
+  // but ensure any other map loops use uniqueBooks if needed.
   return (
     <div className="bg-[#F8F6F2] min-h-screen pt-6 pb-28">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,64 +84,64 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
           </div>
         </div>
 
-        {/* 1. PHYSICAL SAMPLE BOOKS SHOWCASE BANNER */}
-        <div className="bg-[#111111] text-white rounded-3xl p-6 sm:p-8 mb-10 border border-white/10 shadow-xl">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
-            <div>
-              <div className="inline-flex items-center gap-1.5 bg-[#C67C4E]/20 text-[#C67C4E] px-3 py-1 rounded-full text-[10px] font-button font-bold uppercase tracking-widest border border-[#C67C4E]/30 mb-2">
-                <QrCode className="w-3.5 h-3.5" />
-                <span>Physical Sample Books with QR Code</span>
-              </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
-                Scan Any Physical Book to View 25–30 Swatches
-              </h3>
-              <p className="font-sans text-xs text-gray-300 mt-1 max-w-2xl">
-                Every physical sample book sent to dealers and architects carries a unique QR Code. Click any book below to simulate scanning and view all designs with RRP pricing.
-              </p>
-            </div>
-            <button
-              onClick={() => onOpenEnquiry(null)}
-              className="bg-[#C67C4E] hover:bg-[#b06a3d] text-white px-5 py-2.5 rounded-full font-button text-xs font-bold uppercase tracking-wider shrink-0 transition-colors shadow-md"
-            >
-              Request Physical Book
-            </button>
-          </div>
+{/* 1. PHYSICAL SAMPLE BOOKS SHOWCASE BANNER */}
+<div className="bg-[#111111] text-white rounded-3xl p-6 sm:p-8 mb-10 border border-white/10 shadow-xl">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
+    <div>
+      <div className="inline-flex items-center gap-1.5 bg-[#C67C4E]/20 text-[#C67C4E] px-3 py-1 rounded-full text-[10px] font-button font-bold uppercase tracking-widest border border-[#C67C4E]/30 mb-2">
+        <QrCode className="w-3.5 h-3.5" />
+        <span>Physical Sample Books with QR Code</span>
+      </div>
+      <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+        Scan Any Physical Book to View 25–30 Swatches
+      </h3>
+      <p className="font-sans text-xs text-gray-300 mt-1 max-w-2xl">
+        Every physical sample book sent to dealers and architects carries a unique QR Code. Click any book below to simulate scanning and view all designs with RRP pricing.
+      </p>
+    </div>
+    <button
+      onClick={() => onOpenEnquiry(null)}
+      className="bg-[#C67C4E] hover:bg-[#b06a3d] text-white px-5 py-2.5 rounded-full font-button text-xs font-bold uppercase tracking-wider shrink-0 transition-colors shadow-md"
+    >
+      Request Physical Book
+    </button>
+  </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            {SAMPLE_BOOKS_DATA.map((book) => (
-              <div
-                key={book.id}
-                onClick={() => navigate(`/books/${book.id}`)}
-                className="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C67C4E] rounded-2xl p-3 cursor-pointer transition-all text-center group flex flex-col justify-between"
-              >
-                <div className="relative aspect-square rounded-xl overflow-hidden bg-gray-900 mb-2 border border-white/10">
-                  <img
-                    src={book.coverImage}
-                    alt={book.name}
-                    className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
-                    referrerPolicy="no-referrer"
-                  />
-                  <span className="absolute top-2 right-2 bg-[#C67C4E] text-white text-[9px] font-button font-bold uppercase px-1.5 py-0.5 rounded">
-                    QR Code
-                  </span>
-                  <div className="absolute bottom-2 left-2 right-2 bg-black/70 backdrop-blur-sm text-[9px] font-button font-bold text-amber-300 uppercase px-1 py-0.5 rounded truncate">
-                    {book.totalSwatches} Designs
-                  </div>
-                </div>
-
-                <div className="space-y-1">
-                  <h4 className="font-serif text-xs font-bold text-white group-hover:text-[#C67C4E] transition-colors line-clamp-1">
-                    {book.name}
-                  </h4>
-                  <span className="text-[10px] font-button text-gray-400 block uppercase font-bold">
-                    Code: {book.code}
-                  </span>
-                </div>
-              </div>
-            ))}
+  {/* Added .slice(0, 5) and adjusted grid columns to lg:grid-cols-5 */}
+  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+    {uniqueBooks.slice(0, 5).map((book) => (
+      <div
+        key={book.id}
+        onClick={() => navigate(`/books/${book.id}`)}
+        className="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C67C4E] rounded-2xl p-3 cursor-pointer transition-all text-center group flex flex-col justify-between"
+      >
+        <div className="relative aspect-square rounded-xl overflow-hidden bg-gray-900 mb-2 border border-white/10">
+          <img
+            src={book.coverImage}
+            alt={book.name}
+            className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+            referrerPolicy="no-referrer"
+          />
+          <span className="absolute top-2 right-2 bg-[#C67C4E] text-white text-[9px] font-button font-bold uppercase px-1.5 py-0.5 rounded">
+            QR Code
+          </span>
+          <div className="absolute bottom-2 left-2 right-2 bg-black/70 backdrop-blur-sm text-[9px] font-button font-bold text-amber-300 uppercase px-1 py-0.5 rounded truncate">
+            {book.totalSwatches} Designs
           </div>
         </div>
 
+        <div className="space-y-1">
+          <h4 className="font-serif text-xs font-bold text-white group-hover:text-[#C67C4E] transition-colors line-clamp-1">
+            {book.name}
+          </h4>
+          <span className="text-[10px] font-button text-gray-400 block uppercase font-bold">
+            Code: {book.code}
+          </span>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
         {/* 2. BRAND & SEARCH FILTERS */}
         <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm mb-10 flex flex-col md:flex-row items-center gap-4 justify-between">
           {/* Brand Filter Tabs */}
@@ -150,17 +157,17 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
               All Sample Books ({SAMPLE_BOOKS_DATA.length})
             </button>
 
-            {BRAND_COLLECTIONS.map((brand) => (
+            {SAMPLE_BOOKS_DATA.map((brand) => (
               <button
-                key={brand.id}
-                onClick={() => setSelectedBrand(brand.id)}
-                className={`px-4 py-2 rounded-xl text-xs font-button font-bold uppercase tracking-wider shrink-0 transition-all ${
-                  selectedBrand === brand.id
+                key={brand.slug}
+                onClick={() => setSelectedBrand(brand.code)}
+                className={`px-3 py-2 rounded-xl text-xs font-button font-bold uppercase tracking-wider shrink-0 transition-all ${
+                  selectedBrand === brand.code
                     ? 'bg-[#C67C4E] text-white shadow-sm'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
-                {brand.name}
+                {brand.code}
               </button>
             ))}
           </div>
@@ -170,14 +177,13 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
             <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
             <input
               type="text"
-              placeholder="Search Book Name e.g. D'Decor, Velvet..."
+              placeholder="Search e.g. Aura, Cinefab..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-xl text-xs font-sans focus:outline-none focus:ring-2 focus:ring-[#C67C4E]"
             />
           </div>
         </div>
-
         {/* 3. DETAILED PHYSICAL SAMPLE BOOKS GRID */}
         {filteredBooks.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

@@ -92,7 +92,7 @@ export const BrowseBooksSection: React.FC = () => {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 space-y-4">
+                <div className="p-6 pb-3 space-y-4">
                   <p className="font-sans text-xs text-gray-300 leading-relaxed line-clamp-2">
                     {book.description}
                   </p>
@@ -116,7 +116,7 @@ export const BrowseBooksSection: React.FC = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="p-6 pt-0 border-t border-white/10 mt-4 flex items-center gap-3">
+              <div className="p-6 border-t border-white/10 mt-4 flex items-center gap-3">
                 <button
                   onClick={() => navigate(`/books/${book.slug}`)}
                   className="flex-1 bg-white hover:bg-[#C67C4E] text-[#111111] hover:text-white py-3 rounded-xl font-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md cursor-pointer"

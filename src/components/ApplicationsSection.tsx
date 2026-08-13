@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { APPLICATIONS } from "../data/mockData";
 
 interface ApplicationsSectionProps {
-  onSelectApplication: (appTitle: string) => void;
+  onSelectApplication: (appId: string) => void;
 }
 
 export const ApplicationsSection: React.FC<ApplicationsSectionProps> = ({
@@ -77,7 +77,7 @@ export const ApplicationsSection: React.FC<ApplicationsSectionProps> = ({
                 style={{
                   width: "calc((100% - 5 * 1rem) / 6)",
                 }}
-                onClick={() => onSelectApplication(app.title)}
+                onClick={() => onSelectApplication(app.id)}
               >
                 <img
                   src={app.image}
@@ -103,7 +103,7 @@ export const ApplicationsSection: React.FC<ApplicationsSectionProps> = ({
           {APPLICATIONS.map((app) => (
             <div
               key={app.id}
-              onClick={() => onSelectApplication(app.title)}
+              onClick={() => onSelectApplication(app.id)}
               className="snap-start shrink-0 w-[80%] sm:w-[45%] md:w-[30%] relative h-48 rounded-2xl overflow-hidden shadow-md border border-black/10 group"
             >
               <img
