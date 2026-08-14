@@ -6,9 +6,9 @@
   "year": "2026 Master Edition",
   "salePrice": 800,
   "description": "Official Rexine Centre LUXE-648 sample book featuring 27 premium 100% Polyester upholstery swatches (380 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
-  "coverImage": "/books/luxe-648/cover.png",
+  "coverImage": "/book/luxe-648/cover.png",
   "fallbackCover": "src/assets/images/rexine_burgundy_wine_1785227406807.jpg",
-  "pdfPath": "/books/luxe-648/catalogue.pdf",
+  "pdfPath": "/book/luxe-648/catalogue.pdf",
   "designCount": 27,
   "specs": {
     "thickness": "1.2 mm",
@@ -26,7 +26,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-01) from official catalogue 'LUXE-648'. Features Pewter Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-01.png",
+      "image": "/book/luxe-648/products/648-01.png",
       "colors": [
         {
           "name": "Pewter Grey",
@@ -44,7 +44,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-02) from official catalogue 'LUXE-648'. Features Charcoal Black with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-02.png",
+      "image": "/book/luxe-648/products/648-02.png",
       "colors": [
         {
           "name": "Charcoal Black",
@@ -62,7 +62,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-03) from official catalogue 'LUXE-648'. Features Camel Beige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-03.png",
+      "image": "/book/luxe-648/products/648-03.png",
       "colors": [
         {
           "name": "Camel Beige",
@@ -80,7 +80,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-04) from official catalogue 'LUXE-648'. Features Warm Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-04.png",
+      "image": "/book/luxe-648/products/648-04.png",
       "colors": [
         {
           "name": "Warm Taupe",
@@ -98,7 +98,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-05) from official catalogue 'LUXE-648'. Features Mocha Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-05.png",
+      "image": "/book/luxe-648/products/648-05.png",
       "colors": [
         {
           "name": "Mocha Brown",
@@ -116,7 +116,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-06) from official catalogue 'LUXE-648'. Features Dark Espresso with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-06.png",
+      "image": "/book/luxe-648/products/648-06.png",
       "colors": [
         {
           "name": "Dark Espresso",
@@ -134,7 +134,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-07) from official catalogue 'LUXE-648'. Features Deep Charcoal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-07.png",
+      "image": "/book/luxe-648/products/648-07.png",
       "colors": [
         {
           "name": "Deep Charcoal",
@@ -152,7 +152,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-08) from official catalogue 'LUXE-648'. Features Midnight Charcoal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-08.png",
+      "image": "/book/luxe-648/products/648-08.png",
       "colors": [
         {
           "name": "Midnight Charcoal",
@@ -170,7 +170,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-09) from official catalogue 'LUXE-648'. Features Deep Burgundy with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-09.png",
+      "image": "/book/luxe-648/products/648-09.png",
       "colors": [
         {
           "name": "Deep Burgundy",
@@ -188,7 +188,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-10) from official catalogue 'LUXE-648'. Features Deep Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-10.png",
+      "image": "/book/luxe-648/products/648-10.png",
       "colors": [
         {
           "name": "Deep Teal",
@@ -206,7 +206,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-11) from official catalogue 'LUXE-648'. Features Slate Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-11.png",
+      "image": "/book/luxe-648/products/648-11.png",
       "colors": [
         {
           "name": "Slate Teal",
@@ -224,7 +224,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-12) from official catalogue 'LUXE-648'. Features Forest Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-12.png",
+      "image": "/book/luxe-648/products/648-12.png",
       "colors": [
         {
           "name": "Forest Sage",
@@ -242,7 +242,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-13) from official catalogue 'LUXE-648'. Features Dark Olive Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-13.png",
+      "image": "/book/luxe-648/products/648-13.png",
       "colors": [
         {
           "name": "Dark Olive Green",
@@ -260,7 +260,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-14) from official catalogue 'LUXE-648'. Features Antique Cream with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-14.png",
+      "image": "/book/luxe-648/products/648-14.png",
       "colors": [
         {
           "name": "Antique Cream",
@@ -278,7 +278,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-15) from official catalogue 'LUXE-648'. Features Warm Beige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-15.png",
+      "image": "/book/luxe-648/products/648-15.png",
       "colors": [
         {
           "name": "Warm Beige",
@@ -296,7 +296,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-16) from official catalogue 'LUXE-648'. Features Stone Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-16.png",
+      "image": "/book/luxe-648/products/648-16.png",
       "colors": [
         {
           "name": "Stone Taupe",
@@ -314,7 +314,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-17) from official catalogue 'LUXE-648'. Features Warm Ash Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-17.png",
+      "image": "/book/luxe-648/products/648-17.png",
       "colors": [
         {
           "name": "Warm Ash Grey",
@@ -332,7 +332,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-18) from official catalogue 'LUXE-648'. Features Deep Charcoal Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-18.png",
+      "image": "/book/luxe-648/products/648-18.png",
       "colors": [
         {
           "name": "Deep Charcoal Brown",
@@ -350,7 +350,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-19) from official catalogue 'LUXE-648'. Features Dark Coffee with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-19.png",
+      "image": "/book/luxe-648/products/648-19.png",
       "colors": [
         {
           "name": "Dark Coffee",
@@ -368,7 +368,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-20) from official catalogue 'LUXE-648'. Features Deep Forest Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-20.png",
+      "image": "/book/luxe-648/products/648-20.png",
       "colors": [
         {
           "name": "Deep Forest Teal",
@@ -386,7 +386,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-21) from official catalogue 'LUXE-648'. Features Dark Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-21.png",
+      "image": "/book/luxe-648/products/648-21.png",
       "colors": [
         {
           "name": "Dark Olive",
@@ -404,7 +404,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-22) from official catalogue 'LUXE-648'. Features Deep Forest Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-22.png",
+      "image": "/book/luxe-648/products/648-22.png",
       "colors": [
         {
           "name": "Deep Forest Green",
@@ -422,7 +422,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-23) from official catalogue 'LUXE-648'. Features Peacock Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-23.png",
+      "image": "/book/luxe-648/products/648-23.png",
       "colors": [
         {
           "name": "Peacock Teal",
@@ -440,7 +440,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-24) from official catalogue 'LUXE-648'. Features Slate Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-24.png",
+      "image": "/book/luxe-648/products/648-24.png",
       "colors": [
         {
           "name": "Slate Green",
@@ -458,7 +458,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-25) from official catalogue 'LUXE-648'. Features Steel Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-25.png",
+      "image": "/book/luxe-648/products/648-25.png",
       "colors": [
         {
           "name": "Steel Grey",
@@ -476,7 +476,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-26) from official catalogue 'LUXE-648'. Features Deep Slate with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-26.png",
+      "image": "/book/luxe-648/products/648-26.png",
       "colors": [
         {
           "name": "Deep Slate",
@@ -494,7 +494,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (648-27) from official catalogue 'LUXE-648'. Features Graphite Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/luxe-648/products/648-27.png",
+      "image": "/book/luxe-648/products/648-27.png",
       "colors": [
         {
           "name": "Graphite Grey",

@@ -6,9 +6,9 @@
   "year": "2026 Master Edition",
   "salePrice": 800,
   "description": "Official Rexine Centre ULTRA-649 sample book featuring 15 premium 100% Polyester upholstery swatches (350 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
-  "coverImage": "/books/ultra-649/cover.png",
+  "coverImage": "/book/ultra-649/cover.png",
   "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
-  "pdfPath": "/books/ultra-649/catalogue.pdf",
+  "pdfPath": "/book/ultra-649/catalogue.pdf",
   "designCount": 15,
   "specs": {
     "thickness": "1.2 mm",
@@ -26,7 +26,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-01) from official catalogue 'ULTRA-649'. Features Forest Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-01.png",
+      "image": "/book/ultra-649/products/649-01.png",
       "colors": [
         {
           "name": "Forest Sage",
@@ -44,7 +44,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-02) from official catalogue 'ULTRA-649'. Features Burnt Sienna with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-02.png",
+      "image": "/book/ultra-649/products/649-02.png",
       "colors": [
         {
           "name": "Burnt Sienna",
@@ -62,7 +62,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-03) from official catalogue 'ULTRA-649'. Features Soft Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-03.png",
+      "image": "/book/ultra-649/products/649-03.png",
       "colors": [
         {
           "name": "Soft Olive",
@@ -80,7 +80,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-04) from official catalogue 'ULTRA-649'. Features Muted Khaki with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-04.png",
+      "image": "/book/ultra-649/products/649-04.png",
       "colors": [
         {
           "name": "Muted Khaki",
@@ -98,7 +98,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-05) from official catalogue 'ULTRA-649'. Features Olive Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-05.png",
+      "image": "/book/ultra-649/products/649-05.png",
       "colors": [
         {
           "name": "Olive Grey",
@@ -116,7 +116,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-06) from official catalogue 'ULTRA-649'. Features Deep Olive Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-06.png",
+      "image": "/book/ultra-649/products/649-06.png",
       "colors": [
         {
           "name": "Deep Olive Grey",
@@ -134,7 +134,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-07) from official catalogue 'ULTRA-649'. Features Dark Charcoal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-07.png",
+      "image": "/book/ultra-649/products/649-07.png",
       "colors": [
         {
           "name": "Dark Charcoal",
@@ -152,7 +152,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-08) from official catalogue 'ULTRA-649'. Features Sage Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-08.png",
+      "image": "/book/ultra-649/products/649-08.png",
       "colors": [
         {
           "name": "Sage Grey",
@@ -170,7 +170,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-09) from official catalogue 'ULTRA-649'. Features Slate Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-09.png",
+      "image": "/book/ultra-649/products/649-09.png",
       "colors": [
         {
           "name": "Slate Grey",
@@ -188,7 +188,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-10) from official catalogue 'ULTRA-649'. Features Dark Slate with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-10.png",
+      "image": "/book/ultra-649/products/649-10.png",
       "colors": [
         {
           "name": "Dark Slate",
@@ -206,7 +206,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-11) from official catalogue 'ULTRA-649'. Features Deep Graphite with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-11.png",
+      "image": "/book/ultra-649/products/649-11.png",
       "colors": [
         {
           "name": "Deep Graphite",
@@ -224,7 +224,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-12) from official catalogue 'ULTRA-649'. Features Deep Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-12.png",
+      "image": "/book/ultra-649/products/649-12.png",
       "colors": [
         {
           "name": "Deep Teal",
@@ -242,7 +242,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-13) from official catalogue 'ULTRA-649'. Features Dark Blue Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-13.png",
+      "image": "/book/ultra-649/products/649-13.png",
       "colors": [
         {
           "name": "Dark Blue Grey",
@@ -260,7 +260,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-14) from official catalogue 'ULTRA-649'. Features Deep Forest Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-14.png",
+      "image": "/book/ultra-649/products/649-14.png",
       "colors": [
         {
           "name": "Deep Forest Green",
@@ -278,7 +278,7 @@
       "rrp": 900,
       "unit": "meter",
       "description": "Premium swatch (649-15) from official catalogue 'ULTRA-649'. Features Dark Forest Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/ultra-649/products/649-15.png",
+      "image": "/book/ultra-649/products/649-15.png",
       "colors": [
         {
           "name": "Dark Forest Green",

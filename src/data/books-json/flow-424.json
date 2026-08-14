@@ -5,9 +5,9 @@
   "category": "60% Polyester 40% Polyurethane",
   "year": "2026 Master Edition",
   "description": "Official Rexine Centre FLOW-424 sample book featuring 23 premium 60% Polyester 40% Polyurethane swatches (350 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
-  "coverImage": "/books/flow-424/cover.png",
+  "coverImage": "/book/flow-424/cover.png",
   "fallbackCover": "src/assets/images/rexine_midnight_navy_1785227463408.jpg",
-  "pdfPath": "/books/flow-424/catalogue.pdf",
+  "pdfPath": "/book/flow-424/catalogue.pdf",
   "designCount": 23,
   "salePrice": 850,
   "specs": {
@@ -26,7 +26,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-01) from official catalogue 'FLOW-424'. Features Dusty Clay Rose with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-01.png",
+      "image": "/book/flow-424/products/424-01.png",
       "colors": [
         {
           "name": "Dusty Clay Rose",
@@ -44,7 +44,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-02) from official catalogue 'FLOW-424'. Features Seafoam Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-02.png",
+      "image": "/book/flow-424/products/424-02.png",
       "colors": [
         {
           "name": "Seafoam Teal",
@@ -62,7 +62,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-03) from official catalogue 'FLOW-424'. Features Warm Ivory with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-03.png",
+      "image": "/book/flow-424/products/424-03.png",
       "colors": [
         {
           "name": "Warm Ivory",
@@ -80,7 +80,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-04) from official catalogue 'FLOW-424'. Features Soft Linen with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-04.png",
+      "image": "/book/flow-424/products/424-04.png",
       "colors": [
         {
           "name": "Soft Linen",
@@ -98,7 +98,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-05) from official catalogue 'FLOW-424'. Features Pale Stone with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-05.png",
+      "image": "/book/flow-424/products/424-05.png",
       "colors": [
         {
           "name": "Pale Stone",
@@ -116,7 +116,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-06) from official catalogue 'FLOW-424'. Features Warm Greige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-06.png",
+      "image": "/book/flow-424/products/424-06.png",
       "colors": [
         {
           "name": "Warm Greige",
@@ -134,7 +134,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-07) from official catalogue 'FLOW-424'. Features Soft Sand with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-07.png",
+      "image": "/book/flow-424/products/424-07.png",
       "colors": [
         {
           "name": "Soft Sand",
@@ -152,7 +152,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-08) from official catalogue 'FLOW-424'. Features Cocoa Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-08.png",
+      "image": "/book/flow-424/products/424-08.png",
       "colors": [
         {
           "name": "Cocoa Taupe",
@@ -170,7 +170,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-09) from official catalogue 'FLOW-424'. Features Sandstone Tan with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-09.png",
+      "image": "/book/flow-424/products/424-09.png",
       "colors": [
         {
           "name": "Sandstone Tan",
@@ -188,7 +188,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-10) from official catalogue 'FLOW-424'. Features Mocha Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-10.png",
+      "image": "/book/flow-424/products/424-10.png",
       "colors": [
         {
           "name": "Mocha Brown",
@@ -206,7 +206,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-11) from official catalogue 'FLOW-424'. Features Burnt Caramel with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-11.png",
+      "image": "/book/flow-424/products/424-11.png",
       "colors": [
         {
           "name": "Burnt Caramel",
@@ -224,7 +224,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-12) from official catalogue 'FLOW-424'. Features Cocoa Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-12.png",
+      "image": "/book/flow-424/products/424-12.png",
       "colors": [
         {
           "name": "Cocoa Brown",
@@ -242,7 +242,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-13) from official catalogue 'FLOW-424'. Features Earthy Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-13.png",
+      "image": "/book/flow-424/products/424-13.png",
       "colors": [
         {
           "name": "Earthy Taupe",
@@ -260,7 +260,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-14) from official catalogue 'FLOW-424'. Features Olive Charcoal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-14.png",
+      "image": "/book/flow-424/products/424-14.png",
       "colors": [
         {
           "name": "Olive Charcoal",
@@ -278,7 +278,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-15) from official catalogue 'FLOW-424'. Features Soft Graphite with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-15.png",
+      "image": "/book/flow-424/products/424-15.png",
       "colors": [
         {
           "name": "Soft Graphite",
@@ -296,7 +296,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-16) from official catalogue 'FLOW-424'. Features Pale Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-16.png",
+      "image": "/book/flow-424/products/424-16.png",
       "colors": [
         {
           "name": "Pale Sage",
@@ -314,7 +314,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-17) from official catalogue 'FLOW-424'. Features Cloud White with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-17.png",
+      "image": "/book/flow-424/products/424-17.png",
       "colors": [
         {
           "name": "Cloud White",
@@ -332,7 +332,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-18) from official catalogue 'FLOW-424'. Features Warm Greige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-18.png",
+      "image": "/book/flow-424/products/424-18.png",
       "colors": [
         {
           "name": "Warm Greige",
@@ -350,7 +350,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-19) from official catalogue 'FLOW-424'. Features Sea Glass with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-19.png",
+      "image": "/book/flow-424/products/424-19.png",
       "colors": [
         {
           "name": "Sea Glass",
@@ -368,7 +368,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-20) from official catalogue 'FLOW-424'. Features Deep Slate Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-20.png",
+      "image": "/book/flow-424/products/424-20.png",
       "colors": [
         {
           "name": "Deep Slate Teal",
@@ -386,7 +386,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-21) from official catalogue 'FLOW-424'. Features Olive Gray with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-21.png",
+      "image": "/book/flow-424/products/424-21.png",
       "colors": [
         {
           "name": "Olive Gray",
@@ -404,7 +404,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-22) from official catalogue 'FLOW-424'. Features Pale Gray with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-22.png",
+      "image": "/book/flow-424/products/424-22.png",
       "colors": [
         {
           "name": "Pale Gray",
@@ -422,7 +422,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (424-23) from official catalogue 'FLOW-424'. Features Charcoal Gray with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/flow-424/products/424-23.png",
+      "image": "/book/flow-424/products/424-23.png",
       "colors": [
         {
           "name": "Charcoal Gray",

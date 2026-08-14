@@ -5,9 +5,9 @@
   "category": "60% Polyester 40% Polyurethane",
   "year": "2026 Master Edition",
   "description": "Official Rexine Centre FLOW-424 sample book featuring 23 premium 60% Polyester 40% Polyurethane swatches (500 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
-  "coverImage": "/books/italian-leather-422/cover.png",
+  "coverImage": "/book/italian-leather-422/cover.png",
   "fallbackCover": "src/assets/images/hero_leather_rolls_1785154192570.jpg",
-  "pdfPath": "/books/italian-leather-422/catalogue.pdf",
+  "pdfPath": "/book/italian-leather-422/catalogue.pdf",
   "designCount": 20,
   "salePrice": 850,
   "specs": {
@@ -26,7 +26,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-01) from official catalogue 'ITALIAN-LEATHER-422'. Features Warm Ivory with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-01.png",
+      "image": "/book/italian-leather-422/products/422-01.png",
       "colors": [
         {
           "name": "Warm Ivory",
@@ -44,7 +44,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-02) from official catalogue 'ITALIAN-LEATHER-422'. Features Soft Ivory with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-02.png",
+      "image": "/book/italian-leather-422/products/422-02.png",
       "colors": [
         {
           "name": "Soft Ivory",
@@ -62,7 +62,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-03) from official catalogue 'ITALIAN-LEATHER-422'. Features Pale Cream with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-03.png",
+      "image": "/book/italian-leather-422/products/422-03.png",
       "colors": [
         {
           "name": "Pale Cream",
@@ -80,7 +80,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-04) from official catalogue 'ITALIAN-LEATHER-422'. Features Light Champagne with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-04.png",
+      "image": "/book/italian-leather-422/products/422-04.png",
       "colors": [
         {
           "name": "Light Champagne",
@@ -98,7 +98,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-05) from official catalogue 'ITALIAN-LEATHER-422'. Features Warm Beige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-05.png",
+      "image": "/book/italian-leather-422/products/422-05.png",
       "colors": [
         {
           "name": "Warm Beige",
@@ -116,7 +116,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-06) from official catalogue 'ITALIAN-LEATHER-422'. Features Stone Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-06.png",
+      "image": "/book/italian-leather-422/products/422-06.png",
       "colors": [
         {
           "name": "Stone Taupe",
@@ -134,7 +134,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-07) from official catalogue 'ITALIAN-LEATHER-422'. Features Natural Camel with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-07.png",
+      "image": "/book/italian-leather-422/products/422-07.png",
       "colors": [
         {
           "name": "Natural Camel",
@@ -152,7 +152,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-08) from official catalogue 'ITALIAN-LEATHER-422'. Features Golden Tan with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-08.png",
+      "image": "/book/italian-leather-422/products/422-08.png",
       "colors": [
         {
           "name": "Golden Tan",
@@ -170,7 +170,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-09) from official catalogue 'ITALIAN-LEATHER-422'. Features Burnt Terracotta with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-09.png",
+      "image": "/book/italian-leather-422/products/422-09.png",
       "colors": [
         {
           "name": "Burnt Terracotta",
@@ -188,7 +188,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-10) from official catalogue 'ITALIAN-LEATHER-422'. Features Warm Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-10.png",
+      "image": "/book/italian-leather-422/products/422-10.png",
       "colors": [
         {
           "name": "Warm Taupe",
@@ -206,7 +206,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-11) from official catalogue 'ITALIAN-LEATHER-422'. Features Sage Gray with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-11.png",
+      "image": "/book/italian-leather-422/products/422-11.png",
       "colors": [
         {
           "name": "Sage Gray",
@@ -224,7 +224,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-12) from official catalogue 'ITALIAN-LEATHER-422'. Features Soft Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-12.png",
+      "image": "/book/italian-leather-422/products/422-12.png",
       "colors": [
         {
           "name": "Soft Sage",
@@ -242,7 +242,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-13) from official catalogue 'ITALIAN-LEATHER-422'. Features Muted Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-13.png",
+      "image": "/book/italian-leather-422/products/422-13.png",
       "colors": [
         {
           "name": "Muted Sage",
@@ -260,7 +260,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-14) from official catalogue 'ITALIAN-LEATHER-422'. Features Deep Olive Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-14.png",
+      "image": "/book/italian-leather-422/products/422-14.png",
       "colors": [
         {
           "name": "Deep Olive Green",
@@ -278,7 +278,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-15) from official catalogue 'ITALIAN-LEATHER-422'. Features Deep Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-15.png",
+      "image": "/book/italian-leather-422/products/422-15.png",
       "colors": [
         {
           "name": "Deep Teal",
@@ -296,7 +296,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-16) from official catalogue 'ITALIAN-LEATHER-422'. Features Pale Mint Gray with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-16.png",
+      "image": "/book/italian-leather-422/products/422-16.png",
       "colors": [
         {
           "name": "Pale Mint Gray",
@@ -314,7 +314,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-17) from official catalogue 'ITALIAN-LEATHER-422'. Features Cool Gray with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-17.png",
+      "image": "/book/italian-leather-422/products/422-17.png",
       "colors": [
         {
           "name": "Cool Gray",
@@ -332,7 +332,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-18) from official catalogue 'ITALIAN-LEATHER-422'. Features Muted Green Gray with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-18.png",
+      "image": "/book/italian-leather-422/products/422-18.png",
       "colors": [
         {
           "name": "Muted Green Gray",
@@ -350,7 +350,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-19) from official catalogue 'ITALIAN-LEATHER-422'. Features Deep Charcoal Gray with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-19.png",
+      "image": "/book/italian-leather-422/products/422-19.png",
       "colors": [
         {
           "name": "Deep Charcoal Gray",
@@ -368,7 +368,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (422-20) from official catalogue 'ITALIAN-LEATHER-422'. Features Rich Charcoal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/italian-leather-422/products/422-20.png",
+      "image": "/book/italian-leather-422/products/422-20.png",
       "colors": [
         {
           "name": "Rich Charcoal",

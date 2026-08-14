@@ -122,7 +122,7 @@ const rrpPrice =
     <h4 className="font-serif text-sm sm:text-base font-bold text-white mt-0.5">
       Deep Link Target:{' '}
       <span className="text-amber-200 break-all">
-        {SITE_URL.replace('https://', '')}/books/{book.slug}/catalogue.pdf
+        {SITE_URL.replace('https://', '')}/book/{book.slug}/catalogue.pdf
       </span>
     </h4>
   </div>

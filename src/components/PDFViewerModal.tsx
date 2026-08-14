@@ -31,11 +31,11 @@ export const PDFViewerModal: React.FC<PDFViewerModalProps> = ({
   );
 
   // Resolve dynamic properties with safe fallbacks
-  const pdfUrl = book?.pdfPath || `/books/${code.toLowerCase()}/catalogue.pdf`;
+  const pdfUrl = book?.pdfPath || `/book/${code.toLowerCase()}/catalogue.pdf`;
   const products = book?.products ?? [];
   // Dynamic page count: Cover page (1) + Swatches (products.length) + Back/Specs page (1)
   const pageCount = propPageCount || (products.length > 0 ? products.length + 2 : 39);
-  const coverImage = book?.coverImage || `/books/${code.toLowerCase()}/cover.png`;
+  const coverImage = book?.coverImage || `/book/${code.toLowerCase()}/cover.png`;
 
   const handleDownload = () => {
     const link = document.createElement('a');

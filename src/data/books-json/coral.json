@@ -5,9 +5,9 @@
   "category": "100% Polyester Upholstery",
   "year": "2026 Master Edition",
   "description": "Official Rexine Centre CORAL sample book featuring 19 premium 100% Polyester upholstery swatches (340 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
-  "coverImage": "/books/coral/cover.png",
+  "coverImage": "/book/coral/cover.png",
   "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
-  "pdfPath": "/books/coral/catalogue.pdf",
+  "pdfPath": "/book/coral/catalogue.pdf",
   "designCount": 16,
   "salePrice": 850,
   "specs": {
@@ -26,7 +26,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-01) from official catalogue 'CORAL'. Features Deep Terracotta Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-01.png",
+      "image": "/book/coral/products/CORAL-01.png",
       "colors": [
         {
           "name": "Deep Terracotta Brown",
@@ -44,7 +44,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-02) from official catalogue 'CORAL'. Features Muted Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-02.png",
+      "image": "/book/coral/products/CORAL-02.png",
       "colors": [
         {
           "name": "Muted Teal",
@@ -62,7 +62,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-03) from official catalogue 'CORAL'. Features Silver Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-03.png",
+      "image": "/book/coral/products/CORAL-03.png",
       "colors": [
         {
           "name": "Silver Grey",
@@ -80,7 +80,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-04) from official catalogue 'CORAL'. Features Soft Olive Cream with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-04.png",
+      "image": "/book/coral/products/CORAL-04.png",
       "colors": [
         {
           "name": "Soft Olive Cream",
@@ -98,7 +98,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-05) from official catalogue 'CORAL'. Features Warm Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-05.png",
+      "image": "/book/coral/products/CORAL-05.png",
       "colors": [
         {
           "name": "Warm Taupe",
@@ -116,7 +116,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-06) from official catalogue 'CORAL'. Features Mushroom Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-06.png",
+      "image": "/book/coral/products/CORAL-06.png",
       "colors": [
         {
           "name": "Mushroom Taupe",
@@ -134,7 +134,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-07) from official catalogue 'CORAL'. Features Charcoal Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-07.png",
+      "image": "/book/coral/products/CORAL-07.png",
       "colors": [
         {
           "name": "Charcoal Grey",
@@ -152,7 +152,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-08) from official catalogue 'CORAL'. Features Blush Ivory with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-08.png",
+      "image": "/book/coral/products/CORAL-08.png",
       "colors": [
         {
           "name": "Blush Ivory",
@@ -170,7 +170,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-09) from official catalogue 'CORAL'. Features Dusty Blue Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-09.png",
+      "image": "/book/coral/products/CORAL-09.png",
       "colors": [
         {
           "name": "Dusty Blue Teal",
@@ -188,7 +188,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-10) from official catalogue 'CORAL'. Features Deep Slate Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-10.png",
+      "image": "/book/coral/products/CORAL-10.png",
       "colors": [
         {
           "name": "Deep Slate Blue",
@@ -206,7 +206,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-11) from official catalogue 'CORAL'. Features Deep Petrol Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-11.png",
+      "image": "/book/coral/products/CORAL-11.png",
       "colors": [
         {
           "name": "Deep Petrol Teal",
@@ -224,7 +224,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-12) from official catalogue 'CORAL'. Features Pale Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-12.png",
+      "image": "/book/coral/products/CORAL-12.png",
       "colors": [
         {
           "name": "Pale Sage",
@@ -242,7 +242,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-13) from official catalogue 'CORAL'. Features Soft Blue Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-13.png",
+      "image": "/book/coral/products/CORAL-13.png",
       "colors": [
         {
           "name": "Soft Blue Sage",
@@ -260,7 +260,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-14) from official catalogue 'CORAL'. Features Muted Slate Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-14.png",
+      "image": "/book/coral/products/CORAL-14.png",
       "colors": [
         {
           "name": "Muted Slate Sage",
@@ -278,7 +278,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-15) from official catalogue 'CORAL'. Features Muted Slate Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-15.png",
+      "image": "/book/coral/products/CORAL-15.png",
       "colors": [
         {
           "name": "Muted Slate Sage",
@@ -296,7 +296,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (CORAL-16) from official catalogue 'CORAL'. Features Deep Charcoal Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/coral/products/CORAL-16.png",
+      "image": "/book/coral/products/CORAL-16.png",
       "colors": [
         {
           "name": "Deep Charcoal Teal",

@@ -20,7 +20,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({
   const [openFaq, setOpenFaq] = useState<string | null>('faq1');
 
   const handleDownloadPDF = (book: typeof MOCK_BOOKS[0]) => {
-    const pdfTarget = `${SITE_URL.replace(/\/$/, '')}/books/${book.slug}/catalogue.pdf`;
+    const pdfTarget = `${SITE_URL.replace(/\/$/, '')}/book/${book.slug}/catalogue.pdf`;
     window.open(pdfTarget, '_blank', 'noopener,noreferrer');
   };
 

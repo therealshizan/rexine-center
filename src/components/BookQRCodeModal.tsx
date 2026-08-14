@@ -40,7 +40,7 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
   // PDF URL — used for QR image, displayed URL, copy button, and simulate-scan
   const pdfUrl = book.pdfPath
     ? `${SITE_URL.replace(/\/$/, '')}${book.pdfPath}`
-    : `${SITE_URL.replace(/\/$/, '')}/books/${book.slug}/catalogue.pdf`;
+    : `${SITE_URL.replace(/\/$/, '')}/book/${book.slug}/catalogue.pdf`;
 
   const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(
     pdfUrl
@@ -195,7 +195,7 @@ export const BookQRCodeModal: React.FC<BookQRCodeModalProps> = ({ isOpen, onClos
         isOpen={showPDF}
         onClose={() => setShowPDF(false)}
         title={book.title}
-        pdfUrl={book.pdfPath || '/books/cinefab-651/catalogue.pdf'}
+        pdfUrl={book.pdfPath || '/book/cinefab-651/catalogue.pdf'}
         code={book.code}
         pageCount={book.designCount ? book.designCount + 4 : 39}
       />

@@ -5,9 +5,9 @@
   "category": "100% Polyester Upholstery",
   "year": "2026 Master Edition",
   "description": "Official Rexine Centre AURA-647 sample book featuring 25 premium 100% Polyester upholstery swatches (360 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
-  "coverImage": "/books/aura-647/cover.png",
+  "coverImage": "/book/aura-647/cover.png",
   "fallbackCover": "src/assets/images/rexine_burgundy_wine_1785227406807.jpg",
-  "pdfPath": "/books/aura-647/catalogue.pdf",
+  "pdfPath": "/book/aura-647/catalogue.pdf",
   "designCount": 25,
   "salePrice": 850,
   "specs": {
@@ -26,7 +26,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-01) from official catalogue 'AURA-647'. Features Warm Ivory with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-01.png",
+      "image": "/book/aura-647/products/647-01.png",
       "colors": [
         {
           "name": "Warm Ivory",
@@ -44,7 +44,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-02) from official catalogue 'AURA-647'. Features Sage Beige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-02.png",
+      "image": "/book/aura-647/products/647-02.png",
       "colors": [
         {
           "name": "Sage Beige",
@@ -62,7 +62,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-03) from official catalogue 'AURA-647'. Features Muted Khaki with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-03.png",
+      "image": "/book/aura-647/products/647-03.png",
       "colors": [
         {
           "name": "Muted Khaki",
@@ -80,7 +80,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-04) from official catalogue 'AURA-647'. Features Olive Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-04.png",
+      "image": "/book/aura-647/products/647-04.png",
       "colors": [
         {
           "name": "Olive Taupe",
@@ -98,7 +98,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-05) from official catalogue 'AURA-647'. Features Soft Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-05.png",
+      "image": "/book/aura-647/products/647-05.png",
       "colors": [
         {
           "name": "Soft Sage",
@@ -116,7 +116,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-06) from official catalogue 'AURA-647'. Features Pale Eucalyptus with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-06.png",
+      "image": "/book/aura-647/products/647-06.png",
       "colors": [
         {
           "name": "Pale Eucalyptus",
@@ -134,7 +134,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-07) from official catalogue 'AURA-647'. Features Moss Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-07.png",
+      "image": "/book/aura-647/products/647-07.png",
       "colors": [
         {
           "name": "Moss Grey",
@@ -152,7 +152,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-08) from official catalogue 'AURA-647'. Features Silver Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-08.png",
+      "image": "/book/aura-647/products/647-08.png",
       "colors": [
         {
           "name": "Silver Sage",
@@ -170,7 +170,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-09) from official catalogue 'AURA-647'. Features Muted Eucalyptus with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-09.png",
+      "image": "/book/aura-647/products/647-09.png",
       "colors": [
         {
           "name": "Muted Eucalyptus",
@@ -188,7 +188,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-10) from official catalogue 'AURA-647'. Features Dusty Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-10.png",
+      "image": "/book/aura-647/products/647-10.png",
       "colors": [
         {
           "name": "Dusty Teal",
@@ -206,7 +206,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-11) from official catalogue 'AURA-647'. Features Deep Forest Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-11.png",
+      "image": "/book/aura-647/products/647-11.png",
       "colors": [
         {
           "name": "Deep Forest Teal",
@@ -224,7 +224,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-12) from official catalogue 'AURA-647'. Features Earthy Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-12.png",
+      "image": "/book/aura-647/products/647-12.png",
       "colors": [
         {
           "name": "Earthy Olive",
@@ -242,7 +242,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-13) from official catalogue 'AURA-647'. Features Deep Moss with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-13.png",
+      "image": "/book/aura-647/products/647-13.png",
       "colors": [
         {
           "name": "Deep Moss",
@@ -260,7 +260,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-14) from official catalogue 'AURA-647'. Features Warm Chestnut with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-14.png",
+      "image": "/book/aura-647/products/647-14.png",
       "colors": [
         {
           "name": "Warm Chestnut",
@@ -278,7 +278,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-15) from official catalogue 'AURA-647'. Features Dark Cocoa with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-15.png",
+      "image": "/book/aura-647/products/647-15.png",
       "colors": [
         {
           "name": "Dark Cocoa",
@@ -296,7 +296,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-16) from official catalogue 'AURA-647'. Features Deep Taupe Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-16.png",
+      "image": "/book/aura-647/products/647-16.png",
       "colors": [
         {
           "name": "Deep Taupe Brown",
@@ -314,7 +314,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-17) from official catalogue 'AURA-647'. Features Stone Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-17.png",
+      "image": "/book/aura-647/products/647-17.png",
       "colors": [
         {
           "name": "Stone Brown",
@@ -332,7 +332,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-18) from official catalogue 'AURA-647'. Features Charcoal Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-18.png",
+      "image": "/book/aura-647/products/647-18.png",
       "colors": [
         {
           "name": "Charcoal Sage",
@@ -350,7 +350,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-19) from official catalogue 'AURA-647'. Features Deep Slate Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-19.png",
+      "image": "/book/aura-647/products/647-19.png",
       "colors": [
         {
           "name": "Deep Slate Green",
@@ -368,7 +368,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-20) from official catalogue 'AURA-647'. Features Dark Blue Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-20.png",
+      "image": "/book/aura-647/products/647-20.png",
       "colors": [
         {
           "name": "Dark Blue Grey",
@@ -386,7 +386,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-21) from official catalogue 'AURA-647'. Features Midnight Slate with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-21.png",
+      "image": "/book/aura-647/products/647-21.png",
       "colors": [
         {
           "name": "Midnight Slate",
@@ -404,7 +404,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-22) from official catalogue 'AURA-647'. Features Dark Espresso with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-22.png",
+      "image": "/book/aura-647/products/647-22.png",
       "colors": [
         {
           "name": "Dark Espresso",
@@ -422,7 +422,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-23) from official catalogue 'AURA-647'. Features Muted Forest with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-23.png",
+      "image": "/book/aura-647/products/647-23.png",
       "colors": [
         {
           "name": "Muted Forest",
@@ -440,7 +440,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-24) from official catalogue 'AURA-647'. Features Deep Petrol Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-24.png",
+      "image": "/book/aura-647/products/647-24.png",
       "colors": [
         {
           "name": "Deep Petrol Teal",
@@ -458,7 +458,7 @@
       "rrp": 1200,
       "unit": "meter",
       "description": "Premium swatch (647-25) from official catalogue 'AURA-647'. Features Deep Pine Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
-      "image": "/books/aura-647/products/647-25.png",
+      "image": "/book/aura-647/products/647-25.png",
       "colors": [
         {
           "name": "Deep Pine Green",

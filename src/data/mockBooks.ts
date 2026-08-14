@@ -146,7 +146,7 @@ export interface BookShade {
 
 //     description: `Premium swatch (${productNumber}-${shade.sr}) from official catalogue '${bookCode}'. Features ${shade.name} with reinforced backing and high abrasion resistance for contract and residential upholstery.`,
 
-//     image: `/books/${bookSlug}/products/${productNumber}-${shade.sr}.png`,
+//     image: ``,
 
 //     colors: [
 //       {
