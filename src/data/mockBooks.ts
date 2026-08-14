@@ -19,16 +19,16 @@ import heroLeatherRolls from '../assets/images/hero_leather_rolls_1785154192570.
 // import { STAR_SHADES } from './book-shades/starShades';
 // import { ULTRA_SHADES } from './book-shades/ultraShades';
 
-import aura647 from '../../public/data/books-json/aura-647.json'
-import cinefab651 from '../../public/data/books-json/cinefab-651.json'
-import cliff653 from '../../public/data/books-json/cliff-653.json'
-import coral from '../../public/data/books-json/coral.json'
-import flow424 from '../../public/data/books-json/flow-424.json'
-import italianleather422 from '../../public/data/books-json/italian-leather-422.json'
-import luxe648 from '../../public/data/books-json/luxe-648.json'
-import sand from '../../public/data/books-json/sand.json'
-import star from '../../public/data/books-json/star.json'
-import ultra649 from '../../public/data/books-json/ultra-649.json'
+import aura647 from './books-json/aura-647.json'
+import cinefab651 from './books-json/cinefab-651.json'
+import cliff653 from './books-json/cliff-653.json'
+import coral from './books-json/coral.json'
+import flow424 from './books-json/flow-424.json'
+import italianleather422 from './books-json/italian-leather-422.json'
+import luxe648 from './books-json/luxe-648.json'
+import sand from './books-json/sand.json'
+import star from './books-json/star.json'
+import ultra649 from './books-json/ultra-649.json'
 
 export interface BookProduct {
   code: string;
