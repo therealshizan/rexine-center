@@ -104,21 +104,29 @@ const rrpPrice =
         {/* 1. PHYSICAL BOOK DEEP LINK NOTIFICATION BANNER */}
         <div className="bg-[#111111] text-white p-4 sm:p-5 rounded-2xl mb-8 flex flex-col md:flex-row items-center justify-between gap-4 border border-white/10 shadow-lg">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#C67C4E] flex items-center justify-center shrink-0 text-white animate-pulse">
-              <QrCode className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] font-button font-bold text-[#C67C4E] uppercase tracking-widest bg-[#C67C4E]/20 px-2.5 py-0.5 rounded border border-[#C67C4E]/40">
-                  Physical Book QR Verified
-                </span>
-                <span className="text-xs font-sans text-gray-300">Book Code: {book.code}</span>
-              </div>
-              <h4 className="font-serif text-sm sm:text-base font-bold text-white mt-0.5">
-                Deep Link Target: <span className="text-amber-200">{SITE_URL.replace('https://', '')}/books/{book.slug}/catalogue.pdf</span>
-              </h4>
-            </div>
-          </div>
+  <div className="w-10 h-10 rounded-full bg-[#C67C4E] flex items-center justify-center shrink-0 text-white animate-pulse">
+    <QrCode className="w-5 h-5" />
+  </div>
+
+  <div className="min-w-0 flex-1">
+    <div className="flex items-center gap-2 min-w-0">
+      <span className="shrink-0 text-[10px] font-button font-bold text-[#C67C4E] uppercase tracking-widest bg-[#C67C4E]/20 px-2.5 py-0.5 rounded border border-[#C67C4E]/40">
+        Physical Book QR Verified
+      </span>
+<span className="hidden sm:inline text-xs font-sans text-gray-300">
+  Book Code: {book.code}
+</span>
+
+    </div>
+
+    <h4 className="font-serif text-sm sm:text-base font-bold text-white mt-0.5">
+      Deep Link Target:{' '}
+      <span className="text-amber-200 break-all">
+        {SITE_URL.replace('https://', '')}/books/{book.slug}/catalogue.pdf
+      </span>
+    </h4>
+  </div>
+</div>
 
           <div className="flex items-center gap-3 shrink-0">
             <button
