@@ -1,0 +1,292 @@
+{
+  "slug": "ultra-649",
+  "title": "ULTRA-649 - 100% Polyester Upholstery",
+  "code": "ULTRA-649",
+  "category": "100% Polyester Upholstery",
+  "year": "2026 Master Edition",
+  "salePrice": 800,
+  "description": "Official Rexine Centre ULTRA-649 sample book featuring 15 premium 100% Polyester upholstery swatches (350 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
+  "coverImage": "/books/ultra-649/cover.png",
+  "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
+  "pdfPath": "/books/ultra-649/catalogue.pdf",
+  "designCount": 15,
+  "specs": {
+    "thickness": "1.2 mm",
+    "width": "140 CMS (54 Inches)",
+    "backing": "100% Polyester Backing",
+    "finish": "350 GSM Soft Touch",
+    "targetUse": "Sofas, Armchairs, Recliners, Cushions & Interior Upholstery"
+  },
+  "products": [
+    {
+      "code": "649-01",
+      "name": "ULTRA-649 01",
+      "shadeName": "SR.NO: 01 - Forest Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-01) from official catalogue 'ULTRA-649'. Features Forest Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-01.png",
+      "colors": [
+        {
+          "name": "Forest Sage",
+          "hex": "#465748"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-02",
+      "name": "ULTRA-649 02",
+      "shadeName": "SR.NO: 02 - Burnt Sienna",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-02) from official catalogue 'ULTRA-649'. Features Burnt Sienna with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-02.png",
+      "colors": [
+        {
+          "name": "Burnt Sienna",
+          "hex": "#6B382F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-03",
+      "name": "ULTRA-649 03",
+      "shadeName": "SR.NO: 03 - Soft Olive",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-03) from official catalogue 'ULTRA-649'. Features Soft Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-03.png",
+      "colors": [
+        {
+          "name": "Soft Olive",
+          "hex": "#B6B59F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-04",
+      "name": "ULTRA-649 04",
+      "shadeName": "SR.NO: 04 - Muted Khaki",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-04) from official catalogue 'ULTRA-649'. Features Muted Khaki with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-04.png",
+      "colors": [
+        {
+          "name": "Muted Khaki",
+          "hex": "#817E6C"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-05",
+      "name": "ULTRA-649 05",
+      "shadeName": "SR.NO: 05 - Olive Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-05) from official catalogue 'ULTRA-649'. Features Olive Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-05.png",
+      "colors": [
+        {
+          "name": "Olive Grey",
+          "hex": "#646255"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-06",
+      "name": "ULTRA-649 06",
+      "shadeName": "SR.NO: 06 - Deep Olive Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-06) from official catalogue 'ULTRA-649'. Features Deep Olive Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-06.png",
+      "colors": [
+        {
+          "name": "Deep Olive Grey",
+          "hex": "#32332D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-07",
+      "name": "ULTRA-649 07",
+      "shadeName": "SR.NO: 07 - Dark Charcoal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-07) from official catalogue 'ULTRA-649'. Features Dark Charcoal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-07.png",
+      "colors": [
+        {
+          "name": "Dark Charcoal",
+          "hex": "#1F1E1A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-08",
+      "name": "ULTRA-649 08",
+      "shadeName": "SR.NO: 08 - Sage Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-08) from official catalogue 'ULTRA-649'. Features Sage Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-08.png",
+      "colors": [
+        {
+          "name": "Sage Grey",
+          "hex": "#474C45"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-09",
+      "name": "ULTRA-649 09",
+      "shadeName": "SR.NO: 09 - Slate Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-09) from official catalogue 'ULTRA-649'. Features Slate Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-09.png",
+      "colors": [
+        {
+          "name": "Slate Grey",
+          "hex": "#3D4345"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-10",
+      "name": "ULTRA-649 10",
+      "shadeName": "SR.NO: 10 - Dark Slate",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-10) from official catalogue 'ULTRA-649'. Features Dark Slate with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-10.png",
+      "colors": [
+        {
+          "name": "Dark Slate",
+          "hex": "#2C312F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-11",
+      "name": "ULTRA-649 11",
+      "shadeName": "SR.NO: 11 - Deep Graphite",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-11) from official catalogue 'ULTRA-649'. Features Deep Graphite with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-11.png",
+      "colors": [
+        {
+          "name": "Deep Graphite",
+          "hex": "#222421"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-12",
+      "name": "ULTRA-649 12",
+      "shadeName": "SR.NO: 12 - Deep Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-12) from official catalogue 'ULTRA-649'. Features Deep Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-12.png",
+      "colors": [
+        {
+          "name": "Deep Teal",
+          "hex": "#183739"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-13",
+      "name": "ULTRA-649 13",
+      "shadeName": "SR.NO: 13 - Dark Blue Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-13) from official catalogue 'ULTRA-649'. Features Dark Blue Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-13.png",
+      "colors": [
+        {
+          "name": "Dark Blue Grey",
+          "hex": "#253337"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-14",
+      "name": "ULTRA-649 14",
+      "shadeName": "SR.NO: 14 - Deep Forest Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-14) from official catalogue 'ULTRA-649'. Features Deep Forest Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-14.png",
+      "colors": [
+        {
+          "name": "Deep Forest Green",
+          "hex": "#223B33"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "649-15",
+      "name": "ULTRA-649 15",
+      "shadeName": "SR.NO: 15 - Dark Forest Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (649-15) from official catalogue 'ULTRA-649'. Features Dark Forest Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/ultra-649/products/649-15.png",
+      "colors": [
+        {
+          "name": "Dark Forest Green",
+          "hex": "#192D26"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

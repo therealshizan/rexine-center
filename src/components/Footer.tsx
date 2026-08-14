@@ -1,13 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, MessageCircle, ArrowUp } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 import logoWhite from '../assets/rexine-logo-white.png';
+import { APPLICATIONS } from "../data/mockData";
 
 export const Footer: React.FC = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <footer className="bg-[#111111] text-white pt-14 pb-8 border-t border-white/10 text-xs font-sans">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
@@ -74,21 +71,22 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 3: APPLICATIONS */}
+          {/* Column 3: APPLICATIONS (Independent URL query parameter routing) */}
           <div className="space-y-3">
             <h4 className="font-button text-[11px] font-bold uppercase tracking-wider text-white">
               APPLICATIONS
             </h4>
             <ul className="space-y-1.5 text-gray-400 text-[11px]">
-              <li><Link to="/applications" className="hover:text-white transition-colors">Automotive</Link></li>
-              <li><Link to="/applications" className="hover:text-white transition-colors">Furniture</Link></li>
-              <li><Link to="/applications" className="hover:text-white transition-colors">Office</Link></li>
-              <li><Link to="/applications" className="hover:text-white transition-colors">Hospitality</Link></li>
-              <li><Link to="/applications" className="hover:text-white transition-colors">Marine</Link></li>
-              <li><Link to="/applications" className="hover:text-white transition-colors">Healthcare</Link></li>
-              <li><Link to="/applications" className="hover:text-white transition-colors">Education</Link></li>
-              <li><Link to="/applications" className="hover:text-white transition-colors">Retail</Link></li>
-              <li><Link to="/applications" className="hover:text-white transition-colors">Public Transport</Link></li>
+              {APPLICATIONS.map((app) => (
+                <li key={app.id}>
+                  <Link
+                    to={`/applications/${app.id}`}
+                    className="hover:text-white transition-colors block"
+                  >
+                    {app.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -124,7 +122,7 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 6 & 7: SUPPLY ACROSS INDIA */}
+          {/* Column 6: SUPPLY ACROSS INDIA */}
           <div className="space-y-3">
             <h4 className="font-button text-[11px] font-bold uppercase tracking-wider text-white">
               SUPPLY INDIA

@@ -1,0 +1,310 @@
+{
+  "slug": "star",
+  "title": "STAR - 100% Polyester Upholstery",
+  "code": "STAR",
+  "category": "100% Polyester Upholstery",
+  "year": "2026 Master Edition",
+  "salePrice": 800,
+  "description": "Official Rexine Centre STAR sample book featuring 16 premium 100% Polyester upholstery swatches (350 GSM, 50,000 Martindale Rubs, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
+  "coverImage": "/books/star/cover.png",
+  "fallbackCover": "src/assets/images/rexine_slate_charcoal_1785227428841.jpg",
+  "pdfPath": "/books/star/catalogue.pdf",
+  "designCount": 16,
+  "specs": {
+    "thickness": "1.2 mm",
+    "width": "140 CMS (54 Inches)",
+    "backing": "100% Polyester Backing",
+    "finish": "350 GSM Soft Touch",
+    "targetUse": "Sofas, Armchairs, Recliners, Cushions & Interior Upholstery"
+  },
+  "products": [
+    {
+      "code": "STAR-01",
+      "name": "STAR 01",
+      "shadeName": "SR.NO: 01 - Forest Sage",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-01) from official catalogue 'STAR'. Features Forest Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-01.png",
+      "colors": [
+        {
+          "name": "Forest Sage",
+          "hex": "#4E6151"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-02",
+      "name": "STAR 02",
+      "shadeName": "SR.NO: 02 - Rich Walnut",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-02) from official catalogue 'STAR'. Features Rich Walnut with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-02.png",
+      "colors": [
+        {
+          "name": "Rich Walnut",
+          "hex": "#61442A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-03",
+      "name": "STAR 03",
+      "shadeName": "SR.NO: 03 - Pale Olive",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-03) from official catalogue 'STAR'. Features Pale Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-03.png",
+      "colors": [
+        {
+          "name": "Pale Olive",
+          "hex": "#C5C6A1"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-04",
+      "name": "STAR 04",
+      "shadeName": "SR.NO: 04 - Muted Khaki",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-04) from official catalogue 'STAR'. Features Muted Khaki with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-04.png",
+      "colors": [
+        {
+          "name": "Muted Khaki",
+          "hex": "#A29D83"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-05",
+      "name": "STAR 05",
+      "shadeName": "SR.NO: 05 - Olive Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-05) from official catalogue 'STAR'. Features Olive Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-05.png",
+      "colors": [
+        {
+          "name": "Olive Grey",
+          "hex": "#595849"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-06",
+      "name": "STAR 06",
+      "shadeName": "SR.NO: 06 - Warm Moss Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-06) from official catalogue 'STAR'. Features Warm Moss Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-06.png",
+      "colors": [
+        {
+          "name": "Warm Moss Grey",
+          "hex": "#525446"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-07",
+      "name": "STAR 07",
+      "shadeName": "SR.NO: 07 - Deep Charcoal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-07) from official catalogue 'STAR'. Features Deep Charcoal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-07.png",
+      "colors": [
+        {
+          "name": "Deep Charcoal",
+          "hex": "#22231F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-08",
+      "name": "STAR 08",
+      "shadeName": "SR.NO: 08 - Deep Teal Blue",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-08) from official catalogue 'STAR'. Features Deep Teal Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-08.png",
+      "colors": [
+        {
+          "name": "Deep Teal Blue",
+          "hex": "#28515E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-09",
+      "name": "STAR 09",
+      "shadeName": "SR.NO: 09 - Dark Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-09) from official catalogue 'STAR'. Features Dark Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-09.png",
+      "colors": [
+        {
+          "name": "Dark Teal",
+          "hex": "#224349"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-10",
+      "name": "STAR 10",
+      "shadeName": "SR.NO: 10 - Jade Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-10) from official catalogue 'STAR'. Features Jade Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-10.png",
+      "colors": [
+        {
+          "name": "Jade Teal",
+          "hex": "#295B55"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-11",
+      "name": "STAR 11",
+      "shadeName": "SR.NO: 11 - Deep Emerald",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-11) from official catalogue 'STAR'. Features Deep Emerald with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-11.png",
+      "colors": [
+        {
+          "name": "Deep Emerald",
+          "hex": "#062E2A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-12",
+      "name": "STAR 12",
+      "shadeName": "SR.NO: 12 - Dark Forest Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-12) from official catalogue 'STAR'. Features Dark Forest Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-12.png",
+      "colors": [
+        {
+          "name": "Dark Forest Green",
+          "hex": "#1C281A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-13",
+      "name": "STAR 13",
+      "shadeName": "SR.NO: 13 - Sage Slate",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-13) from official catalogue 'STAR'. Features Sage Slate with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-13.png",
+      "colors": [
+        {
+          "name": "Sage Slate",
+          "hex": "#62716D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-14",
+      "name": "STAR 14",
+      "shadeName": "SR.NO: 14 - Muted Slate Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-14) from official catalogue 'STAR'. Features Muted Slate Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-14.png",
+      "colors": [
+        {
+          "name": "Muted Slate Green",
+          "hex": "#535F5C"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-15",
+      "name": "STAR 15",
+      "shadeName": "SR.NO: 15 - Dark Slate",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-15) from official catalogue 'STAR'. Features Dark Slate with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-15.png",
+      "colors": [
+        {
+          "name": "Dark Slate",
+          "hex": "#384143"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "STAR-16",
+      "name": "STAR 16",
+      "shadeName": "SR.NO: 16 - Deep Blue Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (STAR-16) from official catalogue 'STAR'. Features Deep Blue Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/star/products/STAR-16.png",
+      "colors": [
+        {
+          "name": "Deep Blue Grey",
+          "hex": "#293434"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

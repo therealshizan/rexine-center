@@ -12,7 +12,8 @@ import {
   Filter,
   CheckCircle2,
   Share2,
-  Printer
+  Printer,
+  ChevronLeft
 } from 'lucide-react';
 import { SAMPLE_BOOKS_DATA } from '../data/booksData';
 import { SampleBook, Product } from '../types';
@@ -99,27 +100,62 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
         Every physical sample book sent to dealers and architects carries a unique QR Code. Click any book below to simulate scanning and view all designs with RRP pricing.
       </p>
     </div>
-    <button
-      onClick={() => onOpenEnquiry(null)}
-      className="bg-[#C67C4E] hover:bg-[#b06a3d] text-white px-5 py-2.5 rounded-full font-button text-xs font-bold uppercase tracking-wider shrink-0 transition-colors shadow-md"
-    >
-      Request Physical Book
-    </button>
+    
+    <div className="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
+      {/* Slider Navigation Buttons */}
+      <div className="flex items-center gap-2">
+        <button
+          onClick={() => {
+            const container = document.getElementById('books-slider');
+            if (container) {
+              container.scrollBy({ left: -container.clientWidth * 0.75, behavior: 'smooth' });
+            }
+          }}
+          className="bg-white/5 hover:bg-[#C67C4E] border border-white/10 hover:border-[#C67C4E] text-white p-2.5 rounded-full transition-colors shadow-md"
+          aria-label="Scroll left"
+        >
+          <ChevronLeft className="w-4 h-4" />
+        </button>
+        <button
+          onClick={() => {
+            const container = document.getElementById('books-slider');
+            if (container) {
+              container.scrollBy({ left: container.clientWidth * 0.75, behavior: 'smooth' });
+            }
+          }}
+          className="bg-white/5 hover:bg-[#C67C4E] border border-white/10 hover:border-[#C67C4E] text-white p-2.5 rounded-full transition-colors shadow-md"
+          aria-label="Scroll right"
+        >
+          <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+
+      <button
+        onClick={() => onOpenEnquiry(null)}
+        className="bg-[#C67C4E] hover:bg-[#b06a3d] text-white px-5 py-2.5 rounded-full font-button text-xs font-bold uppercase tracking-wider shrink-0 transition-colors shadow-md"
+      >
+        Request Physical Book
+      </button>
+    </div>
   </div>
 
-  {/* Added .slice(0, 5) and adjusted grid columns to lg:grid-cols-5 */}
-  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-    {uniqueBooks.slice(0, 5).map((book) => (
+  {/* Slider Container - 2 cards visible on mobile, 3 on sm, 5 on lg */}
+  <div 
+    id="books-slider"
+    className="flex gap-4 overflow-x-auto scrollbar-none snap-x snap-mandatory scroll-smooth pb-2"
+    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+  >
+    {uniqueBooks.map((book) => (
       <div
         key={book.id}
         onClick={() => navigate(`/books/${book.id}`)}
-        className="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C67C4E] rounded-2xl p-3 cursor-pointer transition-all text-center group flex flex-col justify-between"
+        className="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C67C4E] rounded-2xl p-3 cursor-pointer transition-all text-center group flex flex-col justify-between shrink-0 snap-start w-[calc(50%-8px)] sm:w-[calc(33.333%-16px*2/3)] lg:w-[calc(20%-16px*4/5)]"
       >
         <div className="relative aspect-square rounded-xl overflow-hidden bg-gray-900 mb-2 border border-white/10">
           <img
             src={book.coverImage}
             alt={book.name}
-            className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             referrerPolicy="no-referrer"
           />
           <span className="absolute top-2 right-2 bg-[#C67C4E] text-white text-[9px] font-button font-bold uppercase px-1.5 py-0.5 rounded">
@@ -141,8 +177,7 @@ export const BooksPage: React.FC<BooksPageProps> = ({ onOpenEnquiry }) => {
       </div>
     ))}
   </div>
-</div>
-        {/* 2. BRAND & SEARCH FILTERS */}
+</div>      {/* 2. BRAND & SEARCH FILTERS */}
         <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm mb-10 flex flex-col md:flex-row items-center gap-4 justify-between">
           {/* Brand Filter Tabs */}
           <div className="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 scrollbar-none">

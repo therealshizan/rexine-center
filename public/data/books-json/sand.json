@@ -1,0 +1,382 @@
+{
+  "slug": "sand",
+  "title": "SAND - 55% POLY 45%PVC",
+  "code": "SAND",
+  "category": "55% POLY,45%PVC",
+  "year": "2026 Master Edition",
+  "salePrice": 800,
+  "description": "Official Rexine Centre SAND sample book featuring 20 premium 55% POLY,45%PVC swatches (500 GSM, 140 CMS Width) for luxury sofas, chairs, and interior projects.",
+  "coverImage": "/books/sand/cover.png",
+  "fallbackCover": "src/assets/images/rexine_cognac_nappa_1785227277160.jpg",
+  "pdfPath": "/books/sand/catalogue.pdf",
+  "designCount": 20,
+  "specs": {
+    "thickness": "1.2 mm",
+    "width": "140 CMS (54 Inches)",
+    "backing": "55% POLY, 45%PVC",
+    "finish": "500 GSM Soft Touch",
+    "targetUse": "Sofas, Armchairs, Recliners, Cushions & Interior Upholstery"
+  },
+  "products": [
+    {
+      "code": "SAND-01",
+      "name": "SAND 01",
+      "shadeName": "SR.NO: 01 - Warm Taupe",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-01) from official catalogue 'SAND'. Features Warm Taupe with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-01.png",
+      "colors": [
+        {
+          "name": "Warm Taupe",
+          "hex": "#82736B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-02",
+      "name": "SAND 02",
+      "shadeName": "SR.NO: 02 - Olive Sage",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-02) from official catalogue 'SAND'. Features Olive Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-02.png",
+      "colors": [
+        {
+          "name": "Olive Sage",
+          "hex": "#6D7353"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-03",
+      "name": "SAND 03",
+      "shadeName": "SR.NO: 03 - Pale Sage",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-03) from official catalogue 'SAND'. Features Pale Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-03.png",
+      "colors": [
+        {
+          "name": "Pale Sage",
+          "hex": "#E3E8D2"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-04",
+      "name": "SAND 04",
+      "shadeName": "SR.NO: 04 - Silver Sage",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-04) from official catalogue 'SAND'. Features Silver Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-04.png",
+      "colors": [
+        {
+          "name": "Silver Sage",
+          "hex": "#ADAD9F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-05",
+      "name": "SAND 05",
+      "shadeName": "SR.NO: 05 - Warm Stone",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-05) from official catalogue 'SAND'. Features Warm Stone with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-05.png",
+      "colors": [
+        {
+          "name": "Warm Stone",
+          "hex": "#B2AF9D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-06",
+      "name": "SAND 06",
+      "shadeName": "SR.NO: 06 - Muted Olive",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-06) from official catalogue 'SAND'. Features Muted Olive with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-06.png",
+      "colors": [
+        {
+          "name": "Muted Olive",
+          "hex": "#96947E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-07",
+      "name": "SAND 07",
+      "shadeName": "SR.NO: 07 - Sandy Beige",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-07) from official catalogue 'SAND'. Features Sandy Beige with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-07.png",
+      "colors": [
+        {
+          "name": "Sandy Beige",
+          "hex": "#BAB394"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-08",
+      "name": "SAND 08",
+      "shadeName": "SR.NO: 08 - Dusty Sage",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-08) from official catalogue 'SAND'. Features Dusty Sage with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-08.png",
+      "colors": [
+        {
+          "name": "Dusty Sage",
+          "hex": "#7D7E6E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-09",
+      "name": "SAND 09",
+      "shadeName": "SR.NO: 09 - Olive Grey",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-09) from official catalogue 'SAND'. Features Olive Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-09.png",
+      "colors": [
+        {
+          "name": "Olive Grey",
+          "hex": "#6E6D5E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-10",
+      "name": "SAND 10",
+      "shadeName": "SR.NO: 10 - Deep Charcoal",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-10) from official catalogue 'SAND'. Features Deep Charcoal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-10.png",
+      "colors": [
+        {
+          "name": "Deep Charcoal",
+          "hex": "#252422"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-11",
+      "name": "SAND 11",
+      "shadeName": "SR.NO: 11 - Cognac Brown",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-11) from official catalogue 'SAND'. Features Cognac Brown with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-11.png",
+      "colors": [
+        {
+          "name": "Cognac Brown",
+          "hex": "#6E4B36"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-12",
+      "name": "SAND 12",
+      "shadeName": "SR.NO: 12 - Warm Chestnut",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-12) from official catalogue 'SAND'. Features Warm Chestnut with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-12.png",
+      "colors": [
+        {
+          "name": "Warm Chestnut",
+          "hex": "#6D4A3B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-13",
+      "name": "SAND 13",
+      "shadeName": "SR.NO: 13 - Muted Teal",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-13) from official catalogue 'SAND'. Features Muted Teal with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-13.png",
+      "colors": [
+        {
+          "name": "Muted Teal",
+          "hex": "#4F7C7B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-14",
+      "name": "SAND 14",
+      "shadeName": "SR.NO: 14 - Deep Teal Green",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-14) from official catalogue 'SAND'. Features Deep Teal Green with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-14.png",
+      "colors": [
+        {
+          "name": "Deep Teal Green",
+          "hex": "#223D38"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-15",
+      "name": "SAND 15",
+      "shadeName": "SR.NO: 15 - Deep Burgundy",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-15) from official catalogue 'SAND'. Features Deep Burgundy with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-15.png",
+      "colors": [
+        {
+          "name": "Deep Burgundy",
+          "hex": "#502E2F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-16",
+      "name": "SAND 16",
+      "shadeName": "SR.NO: 16 - Deep Slate Blue",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-16) from official catalogue 'SAND'. Features Deep Slate Blue with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-16.png",
+      "colors": [
+        {
+          "name": "Deep Slate Blue",
+          "hex": "#1A313E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-17",
+      "name": "SAND 17",
+      "shadeName": "SR.NO: 17 - Sage Grey",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-17) from official catalogue 'SAND'. Features Sage Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-17.png",
+      "colors": [
+        {
+          "name": "Sage Grey",
+          "hex": "#7A857D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-18",
+      "name": "SAND 18",
+      "shadeName": "SR.NO: 18 - Cool Sage Grey",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-18) from official catalogue 'SAND'. Features Cool Sage Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-18.png",
+      "colors": [
+        {
+          "name": "Cool Sage Grey",
+          "hex": "#545A57"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-19",
+      "name": "SAND 19",
+      "shadeName": "SR.NO: 19 - Dark Slate Grey",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-19) from official catalogue 'SAND'. Features Dark Slate Grey with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-19.png",
+      "colors": [
+        {
+          "name": "Dark Slate Grey",
+          "hex": "#3E4443"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "SAND-20",
+      "name": "SAND 20",
+      "shadeName": "SR.NO: 20 - Deep Graphite",
+      "category": "55% POLY, 45%PVC",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (SAND-20) from official catalogue 'SAND'. Features Deep Graphite with reinforced backing and high abrasion resistance for contract and residential upholstery.",
+      "image": "/books/sand/products/SAND-20.png",
+      "colors": [
+        {
+          "name": "Deep Graphite",
+          "hex": "#202221"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

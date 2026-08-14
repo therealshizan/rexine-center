@@ -37,16 +37,17 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
   const [copiedLink, setCopiedLink] = useState(false);
   const [showQRModal, setShowQRModal] = useState(false);
   const [showPDFModal, setShowPDFModal] = useState(false);
+const wholesalePrice = book.salePrice || 1500;
 
-// Dynamic Price Mapping & Auto-Calculated Savings
-  const wholesalePrice = book.salePrice || 1500;
-  
-  // Calculate average RRP from products, or fallback to a 25% markup on wholesale
-  const avgSwatchRrp = book.products?.length > 0 
-    ? Math.round(book.products.reduce((acc, p) => acc + (p.rrp || 0), 0) / book.products.length)
+const rrpPrice =
+  book.products?.length > 0
+    ? Math.round(
+        book.products.reduce(
+          (acc, product) => acc + (product.rrp || 0),
+          0
+        ) / book.products.length
+      )
     : Math.round(wholesalePrice * 1.25);
-
-  const rrpPrice = avgSwatchRrp > wholesalePrice ? avgSwatchRrp : Math.round(wholesalePrice * 1.25);
   const savingAmount = Math.max(0, rrpPrice - wholesalePrice);
   // Filter swatches inside book
   const filteredProducts = book.products.filter((p) => {
