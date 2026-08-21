@@ -127,3 +127,23 @@ body {
   animation: client-marquee 30s linear infinite;
 }
 
+/* Marquee Animation for Leather Swatches */
+@keyframes leather-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-leather-marquee {
+  animation: leather-marquee 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-leather-marquee:hover {
+  animation-play-state: paused;
+}
+
+

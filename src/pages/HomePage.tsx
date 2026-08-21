@@ -4,6 +4,7 @@ import { HeroBanner } from '../components/HeroBanner';
 import OurClients from '../components/OurClients';
 import { HighlightsBar } from '../components/HighlightsBar';
 import { SearchSection } from '../components/SearchSection';
+import { LeatherMarquee } from '../components/LeatherMarquee';
 import { BrowseBooksSection } from '../components/BrowseBooksSection';
 import { CustomizerSection } from '../components/CustomizerSection';
 import { ApplicationsSection } from '../components/ApplicationsSection';
@@ -48,6 +49,9 @@ export const HomePage: React.FC<HomePageProps> = ({
         onSearchSubmit={onSearchSubmit}
         onOpenEnquiry={() => onOpenEnquiry(null)}
       />
+
+      {/* Leather Swatches Marquee Banner */}
+      <LeatherMarquee />
 
       {/* 4. Browse Physical Sample Books */}
       <BrowseBooksSection />

@@ -1,0 +1,414 @@
+{
+  "slug": "nova-201",
+  "title": "NOVA-201 - High Quality Vegan Fabric",
+  "code": "NOVA-201",
+  "category": "High Quality Vegan Fabric",
+  "year": "2026 Master Edition",
+  "salePrice": 800,
+  "description": "Official Rexine Centre NOVA-201 sample book featuring 22 premium High Quality Vegan Fabric swatches with water resistance, dust resistance, fungus resistance, soft touch, and high stitch tear strength for luxury sofas, chairs, and interior projects.",
+  "coverImage": "/book/nova-201/cover.png",
+  "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
+  "pdfPath": "/book/nova-201/catalogue.pdf",
+  "designCount": 22,
+  "specs": {
+    "targetUse": "Sofas, Armchairs, Recliners, Cushions & Interior Upholstery"
+  },
+  "products": [
+    {
+      "code": "201-01",
+      "name": "NOVA-201 01",
+      "shadeName": "SR.NO: 01",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-01) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-01.png",
+      "colors": [
+        {
+          "name": "SR.NO: 01",
+          "hex": "#778A8E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-02",
+      "name": "NOVA-201 02",
+      "shadeName": "SR.NO: 02",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-02) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-02.png",
+      "colors": [
+        {
+          "name": "SR.NO: 02",
+          "hex": "#3D5D57"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-03",
+      "name": "NOVA-201 03",
+      "shadeName": "SR.NO: 03",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-03) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-03.png",
+      "colors": [
+        {
+          "name": "SR.NO: 03",
+          "hex": "#E8EADC"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-04",
+      "name": "NOVA-201 04",
+      "shadeName": "SR.NO: 04",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-04) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-04.png",
+      "colors": [
+        {
+          "name": "SR.NO: 04",
+          "hex": "#E4D5CB"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-05",
+      "name": "NOVA-201 05",
+      "shadeName": "SR.NO: 05",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-05) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-05.png",
+      "colors": [
+        {
+          "name": "SR.NO: 05",
+          "hex": "#B2A290"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-06",
+      "name": "NOVA-201 06",
+      "shadeName": "SR.NO: 06",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-06) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-06.png",
+      "colors": [
+        {
+          "name": "SR.NO: 06",
+          "hex": "#C2A98E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-07",
+      "name": "NOVA-201 07",
+      "shadeName": "SR.NO: 07",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-07) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-07.png",
+      "colors": [
+        {
+          "name": "SR.NO: 07",
+          "hex": "#CBC7C0"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-08",
+      "name": "NOVA-201 08",
+      "shadeName": "SR.NO: 08",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-08) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-08.png",
+      "colors": [
+        {
+          "name": "SR.NO: 08",
+          "hex": "#AA9E97"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-09",
+      "name": "NOVA-201 09",
+      "shadeName": "SR.NO: 09",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-09) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-09.png",
+      "colors": [
+        {
+          "name": "SR.NO: 09",
+          "hex": "#90857F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-10",
+      "name": "NOVA-201 10",
+      "shadeName": "SR.NO: 10",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-10) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-10.png",
+      "colors": [
+        {
+          "name": "SR.NO: 10",
+          "hex": "#6E6253"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-11",
+      "name": "NOVA-201 11",
+      "shadeName": "SR.NO: 11",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-11) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-11.png",
+      "colors": [
+        {
+          "name": "SR.NO: 11",
+          "hex": "#695E51"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-12",
+      "name": "NOVA-201 12",
+      "shadeName": "SR.NO: 12",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-12) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-12.png",
+      "colors": [
+        {
+          "name": "SR.NO: 12",
+          "hex": "#362D26"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-13",
+      "name": "NOVA-201 13",
+      "shadeName": "SR.NO: 13",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-13) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-13.png",
+      "colors": [
+        {
+          "name": "SR.NO: 13",
+          "hex": "#916B3F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-14",
+      "name": "NOVA-201 14",
+      "shadeName": "SR.NO: 14",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-14) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-14.png",
+      "colors": [
+        {
+          "name": "SR.NO: 14",
+          "hex": "#A3542C"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-15",
+      "name": "NOVA-201 15",
+      "shadeName": "SR.NO: 15",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-15) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-15.png",
+      "colors": [
+        {
+          "name": "SR.NO: 15",
+          "hex": "#71412D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-16",
+      "name": "NOVA-201 16",
+      "shadeName": "SR.NO: 16",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-16) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-16.png",
+      "colors": [
+        {
+          "name": "SR.NO: 16",
+          "hex": "#361810"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-17",
+      "name": "NOVA-201 17",
+      "shadeName": "SR.NO: 17",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-17) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-17.png",
+      "colors": [
+        {
+          "name": "SR.NO: 17",
+          "hex": "#48352E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-18",
+      "name": "NOVA-201 18",
+      "shadeName": "SR.NO: 18",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-18) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-18.png",
+      "colors": [
+        {
+          "name": "SR.NO: 18",
+          "hex": "#643D30"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-19",
+      "name": "NOVA-201 19",
+      "shadeName": "SR.NO: 19",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-19) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-19.png",
+      "colors": [
+        {
+          "name": "SR.NO: 19",
+          "hex": "#0E1514"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-20",
+      "name": "NOVA-201 20",
+      "shadeName": "SR.NO: 20",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-20) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-20.png",
+      "colors": [
+        {
+          "name": "SR.NO: 20",
+          "hex": "#8D857C"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-21",
+      "name": "NOVA-201 21",
+      "shadeName": "SR.NO: 21",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-21) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-21.png",
+      "colors": [
+        {
+          "name": "SR.NO: 21",
+          "hex": "#747577"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "201-22",
+      "name": "NOVA-201 22",
+      "shadeName": "SR.NO: 22",
+      "category": "High Quality Vegan Fabric",
+      "rrp": 900,
+      "unit": "meter",
+      "description": "Premium swatch (201-22) from official catalogue 'NOVA-201'. Features High Quality Vegan Fabric with reinforced backing and high abrasion resistance for luxury sofas, chairs, and interior upholstery.",
+      "image": "/book/nova-201/products/201-22.png",
+      "colors": [
+        {
+          "name": "SR.NO: 22",
+          "hex": "#4D4A49"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "book": "KRAFT-204",
+  "source_pdf": "KRAFT 204 PDF DESGIN111.pdf",
+  "product_count": 20,
+  "products": [
+    {
+      "code": "204-01",
+      "serialNumber": "01",
+      "pdfPage": 5,
+      "image": "products/204-01.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-02",
+      "serialNumber": "02",
+      "pdfPage": 5,
+      "image": "products/204-02.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-03",
+      "serialNumber": "03",
+      "pdfPage": 5,
+      "image": "products/204-03.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-04",
+      "serialNumber": "04",
+      "pdfPage": 6,
+      "image": "products/204-04.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-05",
+      "serialNumber": "05",
+      "pdfPage": 6,
+      "image": "products/204-05.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-06",
+      "serialNumber": "06",
+      "pdfPage": 6,
+      "image": "products/204-06.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-07",
+      "serialNumber": "07",
+      "pdfPage": 7,
+      "image": "products/204-07.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-08",
+      "serialNumber": "08",
+      "pdfPage": 7,
+      "image": "products/204-08.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-09",
+      "serialNumber": "09",
+      "pdfPage": 7,
+      "image": "products/204-09.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-10",
+      "serialNumber": "10",
+      "pdfPage": 8,
+      "image": "products/204-10.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-11",
+      "serialNumber": "11",
+      "pdfPage": 8,
+      "image": "products/204-11.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-12",
+      "serialNumber": "12",
+      "pdfPage": 8,
+      "image": "products/204-12.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-13",
+      "serialNumber": "13",
+      "pdfPage": 9,
+      "image": "products/204-13.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-14",
+      "serialNumber": "14",
+      "pdfPage": 9,
+      "image": "products/204-14.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-15",
+      "serialNumber": "15",
+      "pdfPage": 9,
+      "image": "products/204-15.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-16",
+      "serialNumber": "16",
+      "pdfPage": 10,
+      "image": "products/204-16.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-17",
+      "serialNumber": "17",
+      "pdfPage": 10,
+      "image": "products/204-17.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-18",
+      "serialNumber": "18",
+      "pdfPage": 10,
+      "image": "products/204-18.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-19",
+      "serialNumber": "19",
+      "pdfPage": 11,
+      "image": "products/204-19.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    },
+    {
+      "code": "204-20",
+      "serialNumber": "20",
+      "pdfPage": 11,
+      "image": "products/204-20.png",
+      "extraction": "high-resolution crop from catalogue product page"
+    }
+  ]
+}

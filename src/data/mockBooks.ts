@@ -29,6 +29,14 @@ import luxe648 from './books-json/luxe-648.json'
 import sand from './books-json/sand.json'
 import star from './books-json/star.json'
 import ultra649 from './books-json/ultra-649.json'
+import nova201 from './books-json/nova-201.json'
+import sleek205 from './books-json/sleek-205.json'
+import home203 from './books-json/home-203.json'
+import kraft204 from './books-json/Kraft-204.json'
+import regal202 from './books-json/regal-202.json'
+import prime206 from './books-json/prime-206.json'
+import velveto207 from './books-json/velveto-207.json'
+
 
 export interface BookProduct {
   code: string;
@@ -174,6 +182,13 @@ export const MOCK_BOOKS: Book[] = [
    sand,
    star,
    ultra649,
+   nova201,
+   regal202,
+   home203,
+   kraft204,
+   sleek205,
+   prime206,
+   velveto207,
   // {
   //   slug: 'ddecor-luxury-velvet',
   //   title: "D'Decor - Luxury Velvet Vol. 1",

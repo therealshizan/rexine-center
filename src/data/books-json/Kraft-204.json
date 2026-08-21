@@ -1,0 +1,386 @@
+{
+  "slug": "kraft-204",
+  "title": "KRAFT-204 - High Performance Upholstery",
+  "code": "KRAFT-204",
+  "category": "High Performance Upholstery",
+  "year": "Not specified in catalogue",
+  "description": "Official Rexine Centre KRAFT-204 sample book featuring 20 fabric shades for high performance upholstery. The catalogue describes the collection with a natural look, soft feel, non-shading and durable fabric.",
+  "coverImage": "/book/kraft-204/cover.png",
+  "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
+  "pdfPath": "/book/kraft-204/catalogue.pdf",
+  "designCount": 20,
+  "salePrice": null,
+  "specs": {
+    "thickness": "Not specified in catalogue",
+    "width": "54 Inches",
+    "backing": "Not specified in catalogue",
+    "finish": "Not specified in catalogue",
+    "composition": "100% Polyester",
+    "martindale": "80,000+ Rubs",
+    "gsm": "450",
+    "glm": "630",
+    "targetUse": "Upholstery and Curtains"
+  },
+  "products": [
+    {
+      "code": "204-01",
+      "name": "KRAFT-204 01",
+      "shadeName": "SR.NO: 01 - Dusty Blush Pink",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 01 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG1.png",
+      "colors": [
+        {
+          "name": "Dusty Blush Pink",
+          "hex": "#D9B7B0"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-02",
+      "name": "KRAFT-204 02",
+      "shadeName": "SR.NO: 02 - Sage Green",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 02 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG2.png",
+      "colors": [
+        {
+          "name": "Sage Green",
+          "hex": "#9DB4A7"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-03",
+      "name": "KRAFT-204 03",
+      "shadeName": "SR.NO: 03 - Light Grey",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 03 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG3.png",
+      "colors": [
+        {
+          "name": "Light Grey",
+          "hex": "#D2D0CA"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-04",
+      "name": "KRAFT-204 04",
+      "shadeName": "SR.NO: 04 - Warm Greige",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 04 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG4.png",
+      "colors": [
+        {
+          "name": "Warm Greige",
+          "hex": "#D1C8B8"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-05",
+      "name": "KRAFT-204 05",
+      "shadeName": "SR.NO: 05 - Light Taupe",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 05 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG5.png",
+      "colors": [
+        {
+          "name": "Light Taupe",
+          "hex": "#BEB29F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-06",
+      "name": "KRAFT-204 06",
+      "shadeName": "SR.NO: 06 - Warm Taupe",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 06 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG6.png",
+      "colors": [
+        {
+          "name": "Warm Taupe",
+          "hex": "#9D8B70"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-07",
+      "name": "KRAFT-204 07",
+      "shadeName": "SR.NO: 07 - Dark Olive Brown",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 07 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG7.png",
+      "colors": [
+        {
+          "name": "Dark Olive Brown",
+          "hex": "#625A46"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-08",
+      "name": "KRAFT-204 08",
+      "shadeName": "SR.NO: 08 - Cool Grey",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 08 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG8.png",
+      "colors": [
+        {
+          "name": "Cool Grey",
+          "hex": "#A9AAA6"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-09",
+      "name": "KRAFT-204 09",
+      "shadeName": "SR.NO: 09 - Medium Brown",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 09 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG9.png",
+      "colors": [
+        {
+          "name": "Medium Brown",
+          "hex": "#756455"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-10",
+      "name": "KRAFT-204 10",
+      "shadeName": "SR.NO: 10 - Charcoal",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 10 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG10.png",
+      "colors": [
+        {
+          "name": "Charcoal",
+          "hex": "#34332D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-11",
+      "name": "KRAFT-204 11",
+      "shadeName": "SR.NO: 11 - Light Blue Grey",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 11 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG11.png",
+      "colors": [
+        {
+          "name": "Light Blue Grey",
+          "hex": "#BFC4C1"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-12",
+      "name": "KRAFT-204 12",
+      "shadeName": "SR.NO: 12 - Dusty Blue",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 12 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG12.png",
+      "colors": [
+        {
+          "name": "Dusty Blue",
+          "hex": "#829BA3"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-13",
+      "name": "KRAFT-204 13",
+      "shadeName": "SR.NO: 13 - Muted Blue Grey",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 13 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG13.png",
+      "colors": [
+        {
+          "name": "Muted Blue Grey",
+          "hex": "#758B8A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-14",
+      "name": "KRAFT-204 14",
+      "shadeName": "SR.NO: 14 - Deep Slate",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 14 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG14.png",
+      "colors": [
+        {
+          "name": "Deep Slate",
+          "hex": "#4E5A5A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-15",
+      "name": "KRAFT-204 15",
+      "shadeName": "SR.NO: 15 - Dusty Rose",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 15 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG15.png",
+      "colors": [
+        {
+          "name": "Dusty Rose",
+          "hex": "#D79C99"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-16",
+      "name": "KRAFT-204 16",
+      "shadeName": "SR.NO: 16 - Rust Brown",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 16 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG16.png",
+      "colors": [
+        {
+          "name": "Rust Brown",
+          "hex": "#7C342A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-17",
+      "name": "KRAFT-204 17",
+      "shadeName": "SR.NO: 17 - Denim Blue",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 17 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG17.png",
+      "colors": [
+        {
+          "name": "Denim Blue",
+          "hex": "#3E7086"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-18",
+      "name": "KRAFT-204 18",
+      "shadeName": "SR.NO: 18 - Deep Teal",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 18 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG18.png",
+      "colors": [
+        {
+          "name": "Deep Teal",
+          "hex": "#0B4654"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-19",
+      "name": "KRAFT-204 19",
+      "shadeName": "SR.NO: 19 - Deep Teal Green",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 19 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG19.png",
+      "colors": [
+        {
+          "name": "Deep Teal Green",
+          "hex": "#07524D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "204-20",
+      "name": "KRAFT-204 20",
+      "shadeName": "SR.NO: 20 - Emerald Green",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "KRAFT-204 swatch 20 from the official Rexine Centre catalogue.",
+      "image": "/book/kraft-204/products/PDF1_P3_IMG20.png",
+      "colors": [
+        {
+          "name": "Emerald Green",
+          "hex": "#31815F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

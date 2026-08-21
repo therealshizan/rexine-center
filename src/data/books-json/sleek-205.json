@@ -1,0 +1,378 @@
+{
+  "slug": "sleek-205",
+  "title": "SLEEK-205 - 100% Polyester Upholstery",
+  "code": "SLEEK-205",
+  "category": "100% Polyester Upholstery",
+  "year": "Not specified in catalogue",
+  "description": "Official Rexine Centre SLEEK-205 sample book featuring 16 upholstery swatches in 100% polyester composition, 54 inches width, 40,000 Martindale rubs and GLM 560. The catalogue presents the collection for upholstery applications.",
+  "coverImage": "/book/sleek-205/cover.png",
+  "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
+  "pdfPath": "/book/sleek-205/catalogue.pdf",
+  "designCount": 16,
+  "salePrice": null,
+  "specs": {
+    "thickness": "Not specified in catalogue",
+    "width": "54 Inches",
+    "backing": "Not specified in catalogue",
+    "finish": "Not specified in catalogue",
+    "composition": "100% Polyester",
+    "martindale": "40,000 Rubs",
+    "glm": "560",
+    "targetUse": "Upholstery"
+  },
+  "products": [
+    {
+      "code": "205-01",
+      "name": "SLEEK-205 01",
+      "shadeName": "SR.NO: 01 - Olive Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 01 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 01.",
+      "image": "/book/sleek-205/products/205-01.png",
+      "colors": [
+        {
+          "name": "Olive Green",
+          "hex": "#4E623B"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-01.png",
+        "/book/sleek-205/products/205-01-chair1.png"
+      ]
+    },
+    {
+      "code": "205-02",
+      "name": "SLEEK-205 02",
+      "shadeName": "SR.NO: 02 - Rust Brown",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 02 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 02.",
+      "image": "/book/sleek-205/products/205-02.png",
+      "colors": [
+        {
+          "name": "Rust Brown",
+          "hex": "#96583F"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-02.png",
+        "/book/sleek-205/products/205-02-chair1.png"
+      ]
+    },
+    {
+      "code": "205-03",
+      "name": "SLEEK-205 03",
+      "shadeName": "SR.NO: 03 - Slate Blue Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 03 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 03.",
+      "image": "/book/sleek-205/products/205-03.png",
+      "colors": [
+        {
+          "name": "Slate Blue Grey",
+          "hex": "#475758"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-03.png",
+        "/book/sleek-205/products/205-03-chair1.png",
+        "/book/sleek-205/products/205-03-chair2.png"
+      ]
+    },
+    {
+      "code": "205-04",
+      "name": "SLEEK-205 04",
+      "shadeName": "SR.NO: 04 - Warm Ivory",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 04 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 04.",
+      "image": "/book/sleek-205/products/205-04.png",
+      "colors": [
+        {
+          "name": "Warm Ivory",
+          "hex": "#CEC1B2"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-04.png",
+        "/book/sleek-205/products/205-04-chair1.png"
+      ]
+    },
+    {
+      "code": "205-05",
+      "name": "SLEEK-205 05",
+      "shadeName": "SR.NO: 05 - Warm Taupe",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 05 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 05.",
+      "image": "/book/sleek-205/products/205-05.png",
+      "colors": [
+        {
+          "name": "Warm Taupe",
+          "hex": "#B0A195"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-05.png",
+        "/book/sleek-205/products/205-05-chair1.png"
+      ]
+    },
+    {
+      "code": "205-06",
+      "name": "SLEEK-205 06",
+      "shadeName": "SR.NO: 06 - Beige Taupe",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 06 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 06.",
+      "image": "/book/sleek-205/products/205-06.png",
+      "colors": [
+        {
+          "name": "Beige Taupe",
+          "hex": "#A18D7E"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-06.png",
+        "/book/sleek-205/products/205-06-chair1.png"
+      ]
+    },
+    {
+      "code": "205-07",
+      "name": "SLEEK-205 07",
+      "shadeName": "SR.NO: 07 - Dark Taupe Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 07 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 07.",
+      "image": "/book/sleek-205/products/205-07.png",
+      "colors": [
+        {
+          "name": "Dark Taupe Grey",
+          "hex": "#685F55"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-07.png",
+        "/book/sleek-205/products/205-07-chair1.png"
+      ]
+    },
+    {
+      "code": "205-08",
+      "name": "SLEEK-205 08",
+      "shadeName": "SR.NO: 08 - Charcoal Taupe",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 08 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 08.",
+      "image": "/book/sleek-205/products/205-08.png",
+      "colors": [
+        {
+          "name": "Charcoal Taupe",
+          "hex": "#4A423A"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-08.png",
+        "/book/sleek-205/products/205-08-chair1.png"
+      ]
+    },
+    {
+      "code": "205-09",
+      "name": "SLEEK-205 09",
+      "shadeName": "SR.NO: 09 - Light Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 09 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 09.",
+      "image": "/book/sleek-205/products/205-09.png",
+      "colors": [
+        {
+          "name": "Light Grey",
+          "hex": "#C9C8BF"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-09.png",
+        "/book/sleek-205/products/205-09-chair1.png"
+      ]
+    },
+    {
+      "code": "205-10",
+      "name": "SLEEK-205 10",
+      "shadeName": "SR.NO: 10 - Medium Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 10 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 10.",
+      "image": "/book/sleek-205/products/205-10.png",
+      "colors": [
+        {
+          "name": "Medium Grey",
+          "hex": "#8E8D8C"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-10.png",
+        "/book/sleek-205/products/205-10-chair1.png"
+      ]
+    },
+    {
+      "code": "205-11",
+      "name": "SLEEK-205 11",
+      "shadeName": "SR.NO: 11 - Charcoal",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 11 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 11.",
+      "image": "/book/sleek-205/products/205-11.png",
+      "colors": [
+        {
+          "name": "Charcoal",
+          "hex": "#42403F"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-11.png",
+        "/book/sleek-205/products/205-11-chair1.png"
+      ]
+    },
+    {
+      "code": "205-12",
+      "name": "SLEEK-205 12",
+      "shadeName": "SR.NO: 12 - Black",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 12 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 12.",
+      "image": "/book/sleek-205/products/205-12.png",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#2A2827"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-12.png",
+        "/book/sleek-205/products/205-12-chair1.png"
+      ]
+    },
+    {
+      "code": "205-13",
+      "name": "SLEEK-205 13",
+      "shadeName": "SR.NO: 13 - Dark Brown",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 13 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 13.",
+      "image": "/book/sleek-205/products/205-13.png",
+      "colors": [
+        {
+          "name": "Dark Brown",
+          "hex": "#3E342A"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-13.png",
+        "/book/sleek-205/products/205-13-chair1.png"
+      ]
+    },
+    {
+      "code": "205-14",
+      "name": "SLEEK-205 14",
+      "shadeName": "SR.NO: 14 - Sage Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 14 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 14.",
+      "image": "/book/sleek-205/products/205-14.png",
+      "colors": [
+        {
+          "name": "Sage Green",
+          "hex": "#434A3C"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-14.png",
+        "/book/sleek-205/products/205-14-chair1.png"
+      ]
+    },
+    {
+      "code": "205-15",
+      "name": "SLEEK-205 15",
+      "shadeName": "SR.NO: 15 - Deep Teal Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 15 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 15.",
+      "image": "/book/sleek-205/products/205-15.png",
+      "colors": [
+        {
+          "name": "Deep Teal Green",
+          "hex": "#2D443F"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-15.png",
+        "/book/sleek-205/products/205-15-chair1.png"
+      ]
+    },
+    {
+      "code": "205-16",
+      "name": "SLEEK-205 16",
+      "shadeName": "SR.NO: 16 - Deep Forest Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "SLEEK-205 swatch 16 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 16.",
+      "image": "/book/sleek-205/products/205-16.png",
+      "colors": [
+        {
+          "name": "Deep Forest Green",
+          "hex": "#2C342B"
+        }
+      ],
+      "specs": {},
+      "inStock": true,
+      "gallery": [
+        "/book/sleek-205/products/205-16.png",
+        "/book/sleek-205/products/205-16-chair1.png"
+      ]
+    }
+  ]
+}

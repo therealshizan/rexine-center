@@ -1,0 +1,386 @@
+{
+  "slug": "regal-202",
+  "title": "REGAL-202 - High Performance Upholstery",
+  "code": "REGAL-202",
+  "category": "High Performance Upholstery",
+  "year": "Not specified in catalogue",
+  "description": "Official Rexine Centre REGAL-202 premium e-book collection featuring high-performance textured fabrics with a water-repellent finish, soft feel and matte finish. The collection is designed for heavy-duty residential and commercial upholstery applications, including upholstered furniture and accessories.",
+  "coverImage": "/book/regal-202/cover.png",
+  "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
+  "pdfPath": "/book/regal-202/catalogue.pdf",
+  "designCount": 18,
+  "salePrice": null,
+  "specs": {
+    "thickness": "Not specified in catalogue",
+    "width": "54 Inches",
+    "backing": "Not specified in catalogue",
+    "finish": "Matte finish",
+    "composition": "100% Polyester",
+    "martindale": "60,000+ Rubs",
+    "gsm": "520",
+    "glm": "725",
+    "targetUse": "Upholstered furniture and accessories"
+  },
+  "products": [
+    {
+      "code": "202-01",
+      "name": "REGAL-202 01",
+      "shadeName": "SR.NO: 01 - Warm Beige",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 01 from the official Rexine Centre catalogue. Catalogue SKU: 7901.",
+      "image": "/book/regal-202/products/PDF1_P3_IMG2.png",
+      "colors": [
+        {
+          "name": "Warm Beige",
+          "hex": "#D4A86F"
+        }
+      ],
+      "specs": {
+        "sku": "7901"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-02",
+      "name": "REGAL-202 02",
+      "shadeName": "SR.NO: 02 - Sage Green",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 02 from the official Rexine Centre catalogue. Catalogue SKU: 7902.",
+      "image": "/book/regal-202/products/PDF1_P3_IMG3.png",
+      "colors": [
+        {
+          "name": "Sage Green",
+          "hex": "#A8B7AA"
+        }
+      ],
+      "specs": {
+        "sku": "7902"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-03",
+      "name": "REGAL-202 03",
+      "shadeName": "SR.NO: 03 - Soft Ivory",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 03 from the official Rexine Centre catalogue. Catalogue SKU: 7903.",
+      "image": "/book/regal-202/products/PDF1_P3_IMG4.png",
+      "colors": [
+        {
+          "name": "Soft Ivory",
+          "hex": "#E8E6D8"
+        }
+      ],
+      "specs": {
+        "sku": "7903"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-04",
+      "name": "REGAL-202 04",
+      "shadeName": "SR.NO: 04 - Golden Beige",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 04 from the official Rexine Centre catalogue. Catalogue SKU: 7904.",
+      "image": "/book/regal-202/products/PDF1_P3_IMG5.png",
+      "colors": [
+        {
+          "name": "Golden Beige",
+          "hex": "#D5AE76"
+        }
+      ],
+      "specs": {
+        "sku": "7904"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-05",
+      "name": "REGAL-202 05",
+      "shadeName": "SR.NO: 05 - Sage Grey",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 05 from the official Rexine Centre catalogue. Catalogue SKU: 7905.",
+      "image": "/book/regal-202/products/PDF1_P3_IMG6.png",
+      "colors": [
+        {
+          "name": "Sage Grey",
+          "hex": "#A7B7A9"
+        }
+      ],
+      "specs": {
+        "sku": "7905"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-06",
+      "name": "REGAL-202 06",
+      "shadeName": "SR.NO: 06 - Warm Ivory",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 06 from the official Rexine Centre catalogue. Catalogue SKU: 7906.",
+      "image": "/book/regal-202/products/PDF1_P3_IMG7.png",
+      "colors": [
+        {
+          "name": "Warm Ivory",
+          "hex": "#E5E1D2"
+        }
+      ],
+      "specs": {
+        "sku": "7906"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-07",
+      "name": "REGAL-202 07",
+      "shadeName": "SR.NO: 07 - Soft White",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 07 from the official Rexine Centre catalogue. Catalogue SKU: 7907.",
+      "image": "/book/regal-202/products/PDF1_P6_IMG2.png",
+      "colors": [
+        {
+          "name": "Soft White",
+          "hex": "#E4E4DB"
+        }
+      ],
+      "specs": {
+        "sku": "7907"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-08",
+      "name": "REGAL-202 08",
+      "shadeName": "SR.NO: 08 - Blush Pink",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 08 from the official Rexine Centre catalogue. Catalogue SKU: 7908.",
+      "image": "/book/regal-202/products/PDF1_P6_IMG3.png",
+      "colors": [
+        {
+          "name": "Blush Pink",
+          "hex": "#E8D0C5"
+        }
+      ],
+      "specs": {
+        "sku": "7908"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-09",
+      "name": "REGAL-202 09",
+      "shadeName": "SR.NO: 09 - Light Beige",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 09 from the official Rexine Centre catalogue. Catalogue SKU: 7909.",
+      "image": "/book/regal-202/products/PDF1_P6_IMG4.png",
+      "colors": [
+        {
+          "name": "Light Beige",
+          "hex": "#D5C9A8"
+        }
+      ],
+      "specs": {
+        "sku": "7909"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-10",
+      "name": "REGAL-202 10",
+      "shadeName": "SR.NO: 10 - Pale Grey",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 10 from the official Rexine Centre catalogue. Catalogue SKU: 7910.",
+      "image": "/book/regal-202/products/PDF1_P6_IMG5.png",
+      "colors": [
+        {
+          "name": "Pale Grey",
+          "hex": "#D9D9D1"
+        }
+      ],
+      "specs": {
+        "sku": "7910"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-11",
+      "name": "REGAL-202 11",
+      "shadeName": "SR.NO: 11 - Soft Blush",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 11 from the official Rexine Centre catalogue. Catalogue SKU: 7911.",
+      "image": "/book/regal-202/products/PDF1_P6_IMG6.png",
+      "colors": [
+        {
+          "name": "Soft Blush",
+          "hex": "#E8D2C7"
+        }
+      ],
+      "specs": {
+        "sku": "7911"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-12",
+      "name": "REGAL-202 12",
+      "shadeName": "SR.NO: 12 - Champagne Beige",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 12 from the official Rexine Centre catalogue. Catalogue SKU: 7912.",
+      "image": "/book/regal-202/products/PDF1_P6_IMG7.png",
+      "colors": [
+        {
+          "name": "Champagne Beige",
+          "hex": "#D8C49A"
+        }
+      ],
+      "specs": {
+        "sku": "7912"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-13",
+      "name": "REGAL-202 13",
+      "shadeName": "SR.NO: 13 - Cool Light Grey",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 13 from the official Rexine Centre catalogue. Catalogue SKU: 7913.",
+      "image": "/book/regal-202/products/PDF1_P7_IMG2.png",
+      "colors": [
+        {
+          "name": "Cool Light Grey",
+          "hex": "#C7C8C3"
+        }
+      ],
+      "specs": {
+        "sku": "7913"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-14",
+      "name": "REGAL-202 14",
+      "shadeName": "SR.NO: 14 - Warm Grey",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 14 from the official Rexine Centre catalogue. Catalogue SKU: 7914.",
+      "image": "/book/regal-202/products/PDF1_P7_IMG3.png",
+      "colors": [
+        {
+          "name": "Warm Grey",
+          "hex": "#B9B5A8"
+        }
+      ],
+      "specs": {
+        "sku": "7914"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-15",
+      "name": "REGAL-202 15",
+      "shadeName": "SR.NO: 15 - Terracotta",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 15 from the official Rexine Centre catalogue. Catalogue SKU: 7915.",
+      "image": "/book/regal-202/products/PDF1_P7_IMG4.png",
+      "colors": [
+        {
+          "name": "Terracotta",
+          "hex": "#B77B61"
+        }
+      ],
+      "specs": {
+        "sku": "7915"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-16",
+      "name": "REGAL-202 16",
+      "shadeName": "SR.NO: 16 - Light Grey",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 16 from the official Rexine Centre catalogue. Catalogue SKU: 7916.",
+      "image": "/book/regal-202/products/PDF1_P7_IMG5.png",
+      "colors": [
+        {
+          "name": "Light Grey",
+          "hex": "#D4D4CE"
+        }
+      ],
+      "specs": {
+        "sku": "7916"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-17",
+      "name": "REGAL-202 17",
+      "shadeName": "SR.NO: 17 - Greige",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 17 from the official Rexine Centre catalogue. Catalogue SKU: 7917.",
+      "image": "/book/regal-202/products/PDF1_P7_IMG6.png",
+      "colors": [
+        {
+          "name": "Greige",
+          "hex": "#B7B3A7"
+        }
+      ],
+      "specs": {
+        "sku": "7917"
+      },
+      "inStock": true
+    },
+    {
+      "code": "202-18",
+      "name": "REGAL-202 18",
+      "shadeName": "SR.NO: 18 - Dusty Terracotta",
+      "category": "High Performance Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "REGAL-202 swatch 18 from the official Rexine Centre catalogue. Catalogue SKU: 7918.",
+      "image": "/book/regal-202/products/PDF1_P7_IMG7.png",
+      "colors": [
+        {
+          "name": "Dusty Terracotta",
+          "hex": "#B88772"
+        }
+      ],
+      "specs": {
+        "sku": "7918"
+      },
+      "inStock": true
+    }
+  ]
+}
