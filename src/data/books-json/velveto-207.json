@@ -1,0 +1,546 @@
+{
+  "slug": "velveto-207",
+  "title": "VELVETO-207 - Premium Velvet Upholstery",
+  "code": "VELVETO-207",
+  "category": "Premium Velvet Upholstery",
+  "year": "Not specified in catalogue",
+  "description": "Official Rexine Centre VELVETO-207 sample book featuring 30 premium velvet upholstery swatches in a rich, full-bodied velvet texture. The collection spans warm neutrals, jewel tones, greens, and deep darks for high-end residential and commercial applications.",
+  "coverImage": "/book/velveto-207/cover.png",
+  "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
+  "pdfPath": "/book/velveto-207/catalogue.pdf",
+  "designCount": 30,
+  "salePrice": null,
+  "specs": {
+    "thickness": "Not specified in catalogue",
+    "width": "54 Inches",
+    "backing": "Not specified in catalogue",
+    "finish": "Not specified in catalogue",
+    "composition": "Not specified in catalogue",
+    "martindale": "Not specified in catalogue",
+    "targetUse": "Upholstery"
+  },
+  "products": [
+    {
+      "code": "207-01",
+      "name": "VELVETO-207 01",
+      "shadeName": "SR.NO: 01 - Dusty Salmon",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 01 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 01.",
+      "image": "/book/velveto-207/products/PDF1_P2_IMG1.png",
+      "colors": [
+        {
+          "name": "Dusty Salmon",
+          "hex": "#D98475"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-02",
+      "name": "VELVETO-207 02",
+      "shadeName": "SR.NO: 02 - Muted Rose",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 02 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 02.",
+      "image": "/book/velveto-207/products/PDF1_P2_IMG2.png",
+      "colors": [
+        {
+          "name": "Muted Rose",
+          "hex": "#C57C79"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-03",
+      "name": "VELVETO-207 03",
+      "shadeName": "SR.NO: 03 - Antique Mauve",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 03 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 03.",
+      "image": "/book/velveto-207/products/PDF1_P2_IMG3.png",
+      "colors": [
+        {
+          "name": "Antique Mauve",
+          "hex": "#AE6571"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-04",
+      "name": "VELVETO-207 04",
+      "shadeName": "SR.NO: 04 - Off White",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 04 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 04.",
+      "image": "/book/velveto-207/products/PDF1_P2_IMG4.png",
+      "colors": [
+        {
+          "name": "Off White",
+          "hex": "#FDFBEC"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-05",
+      "name": "VELVETO-207 05",
+      "shadeName": "SR.NO: 05 - Warm White",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 05 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 05.",
+      "image": "/book/velveto-207/products/PDF1_P2_IMG5.png",
+      "colors": [
+        {
+          "name": "Warm White",
+          "hex": "#FDFBE6"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-06",
+      "name": "VELVETO-207 06",
+      "shadeName": "SR.NO: 06 - Linen Cream",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 06 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 06.",
+      "image": "/book/velveto-207/products/PDF1_P4_IMG1.png",
+      "colors": [
+        {
+          "name": "Linen Cream",
+          "hex": "#E6DCC1"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-07",
+      "name": "VELVETO-207 07",
+      "shadeName": "SR.NO: 07 - Warm Sand",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 07 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 07.",
+      "image": "/book/velveto-207/products/PDF1_P4_IMG2.png",
+      "colors": [
+        {
+          "name": "Warm Sand",
+          "hex": "#DBCBAB"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-08",
+      "name": "VELVETO-207 08",
+      "shadeName": "SR.NO: 08 - Natural Beige",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 08 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 08.",
+      "image": "/book/velveto-207/products/PDF1_P4_IMG3.png",
+      "colors": [
+        {
+          "name": "Natural Beige",
+          "hex": "#C3B492"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-09",
+      "name": "VELVETO-207 09",
+      "shadeName": "SR.NO: 09 - Camel",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 09 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 09.",
+      "image": "/book/velveto-207/products/PDF1_P4_IMG4.png",
+      "colors": [
+        {
+          "name": "Camel",
+          "hex": "#B69C75"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-10",
+      "name": "VELVETO-207 10",
+      "shadeName": "SR.NO: 10 - Warm Taupe",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 10 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 10.",
+      "image": "/book/velveto-207/products/PDF1_P4_IMG5.png",
+      "colors": [
+        {
+          "name": "Warm Taupe",
+          "hex": "#A5947A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-11",
+      "name": "VELVETO-207 11",
+      "shadeName": "SR.NO: 11 - Pale Gold",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 11 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 11.",
+      "image": "/book/velveto-207/products/PDF1_P6_IMG1.png",
+      "colors": [
+        {
+          "name": "Pale Gold",
+          "hex": "#D5B576"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-12",
+      "name": "VELVETO-207 12",
+      "shadeName": "SR.NO: 12 - Golden Yellow",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 12 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 12.",
+      "image": "/book/velveto-207/products/PDF1_P6_IMG2.png",
+      "colors": [
+        {
+          "name": "Golden Yellow",
+          "hex": "#DAB46E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-13",
+      "name": "VELVETO-207 13",
+      "shadeName": "SR.NO: 13 - Warm Brown",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 13 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 13.",
+      "image": "/book/velveto-207/products/PDF1_P6_IMG3.png",
+      "colors": [
+        {
+          "name": "Warm Brown",
+          "hex": "#8F6D44"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-14",
+      "name": "VELVETO-207 14",
+      "shadeName": "SR.NO: 14 - Amber Brown",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 14 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 14.",
+      "image": "/book/velveto-207/products/PDF1_P6_IMG4.png",
+      "colors": [
+        {
+          "name": "Amber Brown",
+          "hex": "#8E622D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-15",
+      "name": "VELVETO-207 15",
+      "shadeName": "SR.NO: 15 - Deep Chocolate",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 15 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 15.",
+      "image": "/book/velveto-207/products/PDF1_P6_IMG5.png",
+      "colors": [
+        {
+          "name": "Deep Chocolate",
+          "hex": "#4B2A12"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-16",
+      "name": "VELVETO-207 16",
+      "shadeName": "SR.NO: 16 - Taupe Charcoal",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 16 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 16.",
+      "image": "/book/velveto-207/products/PDF1_P8_IMG1.png",
+      "colors": [
+        {
+          "name": "Taupe Charcoal",
+          "hex": "#5F4F43"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-17",
+      "name": "VELVETO-207 17",
+      "shadeName": "SR.NO: 17 - Near Black",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 17 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 17.",
+      "image": "/book/velveto-207/products/PDF1_P8_IMG2.png",
+      "colors": [
+        {
+          "name": "Near Black",
+          "hex": "#130603"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-18",
+      "name": "VELVETO-207 18",
+      "shadeName": "SR.NO: 18 - Pale Sage",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 18 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 18.",
+      "image": "/book/velveto-207/products/PDF1_P8_IMG3.png",
+      "colors": [
+        {
+          "name": "Pale Sage",
+          "hex": "#C2C7C2"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-19",
+      "name": "VELVETO-207 19",
+      "shadeName": "SR.NO: 19 - Steel Teal",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 19 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 19.",
+      "image": "/book/velveto-207/products/PDF1_P8_IMG4.png",
+      "colors": [
+        {
+          "name": "Steel Teal",
+          "hex": "#758686"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-20",
+      "name": "VELVETO-207 20",
+      "shadeName": "SR.NO: 20 - Dark Sage",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 20 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 20.",
+      "image": "/book/velveto-207/products/PDF1_P8_IMG5.png",
+      "colors": [
+        {
+          "name": "Dark Sage",
+          "hex": "#5D6760"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-21",
+      "name": "VELVETO-207 21",
+      "shadeName": "SR.NO: 21 - Deep Teal",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 21 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 21.",
+      "image": "/book/velveto-207/products/PDF1_P10_IMG1.png",
+      "colors": [
+        {
+          "name": "Deep Teal",
+          "hex": "#40504F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-22",
+      "name": "VELVETO-207 22",
+      "shadeName": "SR.NO: 22 - Forest Black",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 22 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 22.",
+      "image": "/book/velveto-207/products/PDF1_P10_IMG2.png",
+      "colors": [
+        {
+          "name": "Forest Black",
+          "hex": "#101C1A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-23",
+      "name": "VELVETO-207 23",
+      "shadeName": "SR.NO: 23 - Peach Terracotta",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 23 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 23.",
+      "image": "/book/velveto-207/products/PDF1_P10_IMG3.png",
+      "colors": [
+        {
+          "name": "Peach Terracotta",
+          "hex": "#D9A483"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-24",
+      "name": "VELVETO-207 24",
+      "shadeName": "SR.NO: 24 - Burgundy Red",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 24 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 24.",
+      "image": "/book/velveto-207/products/PDF1_P10_IMG4.png",
+      "colors": [
+        {
+          "name": "Burgundy Red",
+          "hex": "#932C28"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-25",
+      "name": "VELVETO-207 25",
+      "shadeName": "SR.NO: 25 - Deep Red",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 25 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 25.",
+      "image": "/book/velveto-207/products/PDF1_P10_IMG5.png",
+      "colors": [
+        {
+          "name": "Deep Red",
+          "hex": "#A2210D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-26",
+      "name": "VELVETO-207 26",
+      "shadeName": "SR.NO: 26 - Soft Mint",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 26 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 26.",
+      "image": "/book/velveto-207/products/PDF1_P12_IMG1.png",
+      "colors": [
+        {
+          "name": "Soft Mint",
+          "hex": "#90BE90"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-27",
+      "name": "VELVETO-207 27",
+      "shadeName": "SR.NO: 27 - Emerald Sage",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 27 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 27.",
+      "image": "/book/velveto-207/products/PDF1_P12_IMG2.png",
+      "colors": [
+        {
+          "name": "Emerald Sage",
+          "hex": "#609C7D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-28",
+      "name": "VELVETO-207 28",
+      "shadeName": "SR.NO: 28 - Deep Teal Green",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 28 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 28.",
+      "image": "/book/velveto-207/products/PDF1_P12_IMG3.png",
+      "colors": [
+        {
+          "name": "Deep Teal Green",
+          "hex": "#187168"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "207-29",
+      "name": "VELVETO-207 29",
+      "shadeName": "SR.NO: 29 - Dark Forest",
+      "category": "Premium Velvet Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "VELVETO-207 swatch 29 from the official Rexine Centre catalogue. The catalogue identifies this design as SR. NO. 29.",
+      "image": "/book/velveto-207/products/PDF1_P12_IMG4.png",
+      "colors": [
+        {
+          "name": "Dark Forest",
+          "hex": "#011415"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

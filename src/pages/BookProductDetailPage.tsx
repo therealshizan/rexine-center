@@ -154,7 +154,7 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
                       e.currentTarget.src = product.fallbackImage;
                     }
                   }}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 />
 
                 <div
@@ -172,46 +172,36 @@ export const BookProductDetailPage: React.FC<BookProductDetailPageProps> = ({
               </div>
 
               {/* Thumbnail Bar */}
-              {/* <div className="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
-                <button
-                  onClick={() => setSelectedImage(product.image)}
-                  className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-all shrink-0 ${
-                    activeMainImage === product.image ? 'border-[#C67C4E] shadow-md' : 'border-gray-200 opacity-70 hover:opacity-100'
-                  }`}
-                >
-                  <img
-                    src={product.image}
-                    alt="Main Swatch"
-                    onError={(e) => {
-                      if (product.fallbackImage) e.currentTarget.src = product.fallbackImage;
-                    }}
-                    className="w-full h-full object-cover"
-                  />
-                </button>
+              {(product.gallery && product.gallery.length > 1) || (product.fallbackImage && product.fallbackImage !== product.image) ? (
+                <div className="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
+                  {(product.gallery || (product.fallbackImage && product.fallbackImage !== product.image ? [product.image, product.fallbackImage] : [product.image])).map((imgSrc, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setSelectedImage(imgSrc)}
+                      className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-all shrink-0 ${
+                        activeMainImage === imgSrc ? 'border-[#C67C4E] shadow-md' : 'border-gray-200 opacity-70 hover:opacity-100'
+                      }`}
+                    >
+                      <img
+                        src={imgSrc}
+                        alt={`Thumbnail ${idx + 1}`}
+                        onError={(e) => {
+                          if (product.fallbackImage) e.currentTarget.src = product.fallbackImage;
+                        }}
+                        className="w-full h-full object-contain"
+                      />
+                    </button>
+                  ))}
 
-                {product.fallbackImage && product.fallbackImage !== product.image && (
                   <button
-                    onClick={() => setSelectedImage(product.fallbackImage!)}
-                    className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-all shrink-0 ${
-                      activeMainImage === product.fallbackImage ? 'border-[#C67C4E] shadow-md' : 'border-gray-200 opacity-70 hover:opacity-100'
-                    }`}
+                    onClick={() => navigate(`/books/${book.slug}`)}
+                    className="w-20 h-20 rounded-xl border border-dashed border-gray-300 bg-gray-50 flex flex-col items-center justify-center text-[10px] font-button font-bold uppercase text-gray-500 hover:border-[#C67C4E] hover:text-[#C67C4E] transition-colors shrink-0"
                   >
-                    <img
-                      src={product.fallbackImage}
-                      alt="Texture Zoom"
-                      className="w-full h-full object-cover"
-                    />
+                    <Layers className="w-4 h-4 mb-1" />
+                    <span>+ All Swatches</span>
                   </button>
-                )}
-
-                <button
-                  onClick={() => navigate(`/books/${book.slug}`)}
-                  className="w-20 h-20 rounded-xl border border-dashed border-gray-300 bg-gray-50 flex flex-col items-center justify-center text-[10px] font-button font-bold uppercase text-gray-500 hover:border-[#C67C4E] hover:text-[#C67C4E] transition-colors shrink-0"
-                >
-                  <Layers className="w-4 h-4 mb-1" />
-                  <span>+ All Swatches</span>
-                </button>
-              </div> */}
+                </div>
+              ) : null}
             </div>
 
             {/* Specifications & Purchasing Column (Right) */}

@@ -1,0 +1,510 @@
+{
+  "slug": "prime-206",
+  "title": "PRIME-206 - Premium Upholstery Fabric",
+  "code": "PRIME-206",
+  "category": "Premium Upholstery Fabric",
+  "year": "Not specified in catalogue",
+  "description": "Official Rexine Centre PRIME-206 sample book featuring 27 premium upholstery fabric swatches with a rich woven texture. Designed for high-end residential and commercial upholstery applications.",
+  "coverImage": "/book/prime-206/cover.png",
+  "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
+  "pdfPath": "/book/prime-206/catalogue.pdf",
+  "designCount": 27,
+  "salePrice": null,
+  "specs": {
+    "thickness": "Not specified in catalogue",
+    "width": "54 Inches",
+    "backing": "Not specified in catalogue",
+    "finish": "Not specified in catalogue",
+    "composition": "Not specified in catalogue",
+    "martindale": "Not specified in catalogue",
+    "targetUse": "Upholstery"
+  },
+  "products": [
+    {
+      "code": "206-01",
+      "name": "PRIME-206 01",
+      "shadeName": "SR.NO: 01 - Warm Cream",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 01 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P3_IMG1.png",
+      "colors": [
+        {
+          "name": "Warm Cream",
+          "hex": "#D2C1A8"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-02",
+      "name": "PRIME-206 02",
+      "shadeName": "SR.NO: 02 - Soft Cream",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 02 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P3_IMG2.png",
+      "colors": [
+        {
+          "name": "Soft Cream",
+          "hex": "#DECBAB"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-03",
+      "name": "PRIME-206 03",
+      "shadeName": "SR.NO: 03 - Light Cream",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 03 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P3_IMG3.png",
+      "colors": [
+        {
+          "name": "Light Cream",
+          "hex": "#E3D0B0"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-04",
+      "name": "PRIME-206 04",
+      "shadeName": "SR.NO: 04 - Off White",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 04 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P4_IMG1.png",
+      "colors": [
+        {
+          "name": "Off White",
+          "hex": "#FCFCF1"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-05",
+      "name": "PRIME-206 05",
+      "shadeName": "SR.NO: 05 - Warm White",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 05 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P4_IMG2.png",
+      "colors": [
+        {
+          "name": "Warm White",
+          "hex": "#FBFCED"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-06",
+      "name": "PRIME-206 06",
+      "shadeName": "SR.NO: 06 - Sand Beige",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 06 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P4_IMG3.png",
+      "colors": [
+        {
+          "name": "Sand Beige",
+          "hex": "#C7B69E"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-07",
+      "name": "PRIME-206 07",
+      "shadeName": "SR.NO: 07 - Mocha Brown",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 07 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P5_IMG1.png",
+      "colors": [
+        {
+          "name": "Mocha Brown",
+          "hex": "#756661"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-08",
+      "name": "PRIME-206 08",
+      "shadeName": "SR.NO: 08 - Ivory",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 08 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P5_IMG2.png",
+      "colors": [
+        {
+          "name": "Ivory",
+          "hex": "#E7E0CB"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-09",
+      "name": "PRIME-206 09",
+      "shadeName": "SR.NO: 09 - Warm Ivory",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 09 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P5_IMG3.png",
+      "colors": [
+        {
+          "name": "Warm Ivory",
+          "hex": "#E7E0CB"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-10",
+      "name": "PRIME-206 10",
+      "shadeName": "SR.NO: 10 - Deep Chocolate",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 10 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P6_IMG1.png",
+      "colors": [
+        {
+          "name": "Deep Chocolate",
+          "hex": "#4E3731"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-11",
+      "name": "PRIME-206 11",
+      "shadeName": "SR.NO: 11 - Dark Espresso",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 11 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P6_IMG2.png",
+      "colors": [
+        {
+          "name": "Dark Espresso",
+          "hex": "#48312A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-12",
+      "name": "PRIME-206 12",
+      "shadeName": "SR.NO: 12 - Warm Taupe",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 12 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P6_IMG3.png",
+      "colors": [
+        {
+          "name": "Warm Taupe",
+          "hex": "#736561"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-13",
+      "name": "PRIME-206 13",
+      "shadeName": "SR.NO: 13 - Silver Grey",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 13 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P7_IMG1.png",
+      "colors": [
+        {
+          "name": "Silver Grey",
+          "hex": "#C4C8C8"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-14",
+      "name": "PRIME-206 14",
+      "shadeName": "SR.NO: 14 - Jet Black",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 14 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P7_IMG2.png",
+      "colors": [
+        {
+          "name": "Jet Black",
+          "hex": "#392E2B"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-15",
+      "name": "PRIME-206 15",
+      "shadeName": "SR.NO: 15 - Deep Black",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 15 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P7_IMG3.png",
+      "colors": [
+        {
+          "name": "Deep Black",
+          "hex": "#3A2D29"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-16",
+      "name": "PRIME-206 16",
+      "shadeName": "SR.NO: 16 - Cool Slate",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 16 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P8_IMG1.png",
+      "colors": [
+        {
+          "name": "Cool Slate",
+          "hex": "#767B7F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-17",
+      "name": "PRIME-206 17",
+      "shadeName": "SR.NO: 17 - Steel Blue Grey",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 17 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P8_IMG2.png",
+      "colors": [
+        {
+          "name": "Steel Blue Grey",
+          "hex": "#868A91"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-18",
+      "name": "PRIME-206 18",
+      "shadeName": "SR.NO: 18 - Pale Silver",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 18 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P8_IMG3.png",
+      "colors": [
+        {
+          "name": "Pale Silver",
+          "hex": "#BBBEBC"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-19",
+      "name": "PRIME-206 19",
+      "shadeName": "SR.NO: 19 - Denim Blue",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 19 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P9_IMG1.png",
+      "colors": [
+        {
+          "name": "Denim Blue",
+          "hex": "#466180"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-20",
+      "name": "PRIME-206 20",
+      "shadeName": "SR.NO: 20 - Near Black",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 20 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P9_IMG2.png",
+      "colors": [
+        {
+          "name": "Near Black",
+          "hex": "#332F2C"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-21",
+      "name": "PRIME-206 21",
+      "shadeName": "SR.NO: 21 - Charcoal",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 21 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P9_IMG3.png",
+      "colors": [
+        {
+          "name": "Charcoal",
+          "hex": "#36332F"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-22",
+      "name": "PRIME-206 22",
+      "shadeName": "SR.NO: 22 - Olive Khaki",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 22 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P10_IMG1.png",
+      "colors": [
+        {
+          "name": "Olive Khaki",
+          "hex": "#787851"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-23",
+      "name": "PRIME-206 23",
+      "shadeName": "SR.NO: 23 - Olive Green",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 23 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P10_IMG2.png",
+      "colors": [
+        {
+          "name": "Olive Green",
+          "hex": "#808155"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-24",
+      "name": "PRIME-206 24",
+      "shadeName": "SR.NO: 24 - Slate Blue",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 24 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P10_IMG3.png",
+      "colors": [
+        {
+          "name": "Slate Blue",
+          "hex": "#4B6481"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-25",
+      "name": "PRIME-206 25",
+      "shadeName": "SR.NO: 25 - Dark Teal",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 25 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P11_IMG1.png",
+      "colors": [
+        {
+          "name": "Dark Teal",
+          "hex": "#3D4441"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-26",
+      "name": "PRIME-206 26",
+      "shadeName": "SR.NO: 26 - Deep Forest",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 26 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P11_IMG2.png",
+      "colors": [
+        {
+          "name": "Deep Forest",
+          "hex": "#3F4A46"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "206-27",
+      "name": "PRIME-206 27",
+      "shadeName": "SR.NO: 27 - Sage Grey",
+      "category": "Premium Upholstery Fabric",
+      "rrp": null,
+      "unit": "meter",
+      "description": "PRIME-206 swatch 27 from the official Rexine Centre catalogue.",
+      "image": "/book/prime-206/products/PDF1_P12_IMG1.png",
+      "colors": [
+        {
+          "name": "Sage Grey",
+          "hex": "#98A199"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "slug": "home-203",
+  "title": "HOME-203 - 100% Polyester Upholstery",
+  "code": "HOME-203",
+  "category": "100% Polyester Upholstery",
+  "year": "Not specified in catalogue",
+  "description": "Official Rexine Centre HOME-203 sample book featuring 20 upholstery swatches in 100% polyester composition, 54 inches width, 40,000+ Martindale rubs, 380 GSM and GLM 540.",
+  "coverImage": "/book/home-203/cover.png",
+  "fallbackCover": "src/assets/images/rexine_emerald_green_1785227447891.jpg",
+  "pdfPath": "/book/home-203/catalogue.pdf",
+  "designCount": 20,
+  "salePrice": null,
+  "specs": {
+    "thickness": "Not specified in catalogue",
+    "width": "54 Inches",
+    "backing": "Not specified in catalogue",
+    "finish": "Not specified in catalogue",
+    "composition": "100% Polyester",
+    "martindale": "40,000+ Rubs",
+    "gsm": "380",
+    "glm": "540",
+    "targetUse": "Upholstery and Curtains"
+  },
+  "products": [
+    {
+      "code": "203-01",
+      "name": "HOME-203 01",
+      "shadeName": "SR.NO: 01 - Soft Mint Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 01 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-01.png",
+      "colors": [
+        {
+          "name": "Soft Mint Green",
+          "hex": "#A8C5B5"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-02",
+      "name": "HOME-203 02",
+      "shadeName": "SR.NO: 02 - Terracotta",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 02 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-02.png",
+      "colors": [
+        {
+          "name": "Terracotta",
+          "hex": "#B8664D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-03",
+      "name": "HOME-203 03",
+      "shadeName": "SR.NO: 03 - Warm Ochre",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 03 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-03.png",
+      "colors": [
+        {
+          "name": "Warm Ochre",
+          "hex": "#C79A5D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-04",
+      "name": "HOME-203 04",
+      "shadeName": "SR.NO: 04 - Warm Cream",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 04 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-04.png",
+      "colors": [
+        {
+          "name": "Warm Cream",
+          "hex": "#E8DFC8"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-05",
+      "name": "HOME-203 05",
+      "shadeName": "SR.NO: 05 - Ivory",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 05 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-05.png",
+      "colors": [
+        {
+          "name": "Ivory",
+          "hex": "#E5E0D2"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-06",
+      "name": "HOME-203 06",
+      "shadeName": "SR.NO: 06 - Cool White",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 06 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-06.png",
+      "colors": [
+        {
+          "name": "Cool White",
+          "hex": "#E1E4DD"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-07",
+      "name": "HOME-203 07",
+      "shadeName": "SR.NO: 07 - Light Beige",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 07 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-07.png",
+      "colors": [
+        {
+          "name": "Light Beige",
+          "hex": "#D6CCBB"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-08",
+      "name": "HOME-203 08",
+      "shadeName": "SR.NO: 08 - Pale Blush",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 08 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-08.png",
+      "colors": [
+        {
+          "name": "Pale Blush",
+          "hex": "#E3CFC2"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-09",
+      "name": "HOME-203 09",
+      "shadeName": "SR.NO: 09 - Sand Beige",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 09 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-09.png",
+      "colors": [
+        {
+          "name": "Sand Beige",
+          "hex": "#B6A684"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-10",
+      "name": "HOME-203 10",
+      "shadeName": "SR.NO: 10 - Camel Beige",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 10 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-10.png",
+      "colors": [
+        {
+          "name": "Camel Beige",
+          "hex": "#A58D69"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-11",
+      "name": "HOME-203 11",
+      "shadeName": "SR.NO: 11 - Taupe Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 11 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-11.png",
+      "colors": [
+        {
+          "name": "Taupe Grey",
+          "hex": "#A69A8D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-12",
+      "name": "HOME-203 12",
+      "shadeName": "SR.NO: 12 - Dusty Pink",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 12 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-12.png",
+      "colors": [
+        {
+          "name": "Dusty Pink",
+          "hex": "#D9AAA0"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-13",
+      "name": "HOME-203 13",
+      "shadeName": "SR.NO: 13 - Denim Blue",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 13 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-13.png",
+      "colors": [
+        {
+          "name": "Denim Blue",
+          "hex": "#47738A"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-14",
+      "name": "HOME-203 14",
+      "shadeName": "SR.NO: 14 - Deep Teal",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 14 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-14.png",
+      "colors": [
+        {
+          "name": "Deep Teal",
+          "hex": "#064C47"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-15",
+      "name": "HOME-203 15",
+      "shadeName": "SR.NO: 15 - Forest Green",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 15 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-15.png",
+      "colors": [
+        {
+          "name": "Forest Green",
+          "hex": "#164627"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-16",
+      "name": "HOME-203 16",
+      "shadeName": "SR.NO: 16 - Soft White",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 16 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-16.png",
+      "colors": [
+        {
+          "name": "Soft White",
+          "hex": "#E2DED6"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-17",
+      "name": "HOME-203 17",
+      "shadeName": "SR.NO: 17 - Burnt Orange",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 17 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-17.png",
+      "colors": [
+        {
+          "name": "Burnt Orange",
+          "hex": "#9B3E13"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-18",
+      "name": "HOME-203 18",
+      "shadeName": "SR.NO: 18 - Warm Off White",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 18 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-18.png",
+      "colors": [
+        {
+          "name": "Warm Off White",
+          "hex": "#E4DDD0"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-19",
+      "name": "HOME-203 19",
+      "shadeName": "SR.NO: 19 - Sage Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 19 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-19.png",
+      "colors": [
+        {
+          "name": "Sage Grey",
+          "hex": "#9CA49D"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    },
+    {
+      "code": "203-20",
+      "name": "HOME-203 20",
+      "shadeName": "SR.NO: 20 - Charcoal Grey",
+      "category": "100% Polyester Upholstery",
+      "rrp": null,
+      "unit": "meter",
+      "description": "HOME-203 swatch 20 from the official Rexine Centre catalogue.",
+      "image": "/book/home-203/products/203-20.png",
+      "colors": [
+        {
+          "name": "Charcoal Grey",
+          "hex": "#646A68"
+        }
+      ],
+      "specs": {},
+      "inStock": true
+    }
+  ]
+}
